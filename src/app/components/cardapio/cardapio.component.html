@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="cardapio.component.css">
+
+<body class="mulish-fonte">
+    <header>
+        <button id="ver-pedidos">
+            VER PEDIDOS
+        </button>
+    </header>
+
+    <main>
+        <h1 id="categoria">
+            CATEGORIAS
+        </h1>
+
+        <div *ngFor="let dish of dishes; let last = last" class="cardapio">
+            <button class="botao-item-cardapio">
+                <div class="dish-nome">
+                    <h2>{{ dish.name }}</h2>
+                    <div class="dish-info">
+                        <p class="dish-descricao">{{ dish.description }}</p>
+                        <p class="dish-preco">R{{ dish.price | currency }}</p>
+                    </div>
+                </div>
+                <img [src]="dish.image" alt="{{ dish.name }}" class="dish-image" />
+            </button>
+            <div *ngIf="!last" class="linha-separadora"></div>
+        </div>
+            
+    </main>
+    
+</body>

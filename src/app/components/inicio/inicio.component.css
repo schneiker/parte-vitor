@@ -1,0 +1,71 @@
+body  {
+
+    max-width: 878px;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+header {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-block: 5px;
+}
+
+.bem-vindo {
+    color: #ffff;
+    max-width: 414px;
+    font-size: 50px;
+}
+
+.bem-vindo p {
+    font-size: 25px;
+}
+
+.menu  {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: auto;
+
+}
+
+.menu img {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.menu div  {
+    align-items: flex-start;
+}
+
+.mulish-fonte {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 32;
+    font-style: bold;
+}
+
+
+
+  .botao-inicio {
+  max-width: 100%;
+  margin: 14px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: #dad9d90e; 
+  color: white;
+  font-size: 40px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius:10px;
+  gap: 20px;
+
+}
+
