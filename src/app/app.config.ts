@@ -4,9 +4,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { DishFormComponent } from './components/dish-form/dish-form.component';
 import { CardapioComponent } from './components/cardapio/cardapio.component';
 import { InicioComponent } from './components/inicio/inicio.component';
-import { RouterModule} from '@angular/router';
 import { DishListComponent } from './components/dish-list/dish-list.component';
 import { ExecutivosComponent } from './components/cardapio/executivos/executivos.component';
+import { BebidasComponent } from './components/cardapio/bebidas/bebidas.component';
+import { PorcoesComponent } from './components/cardapio/porcoes/porcoes.component';
 
 
 const routes: Routes = [
@@ -14,9 +15,11 @@ const routes: Routes = [
   { path: 'cardapio', component: CardapioComponent },
   { path: 'add-dish', component: DishFormComponent },
   { path: 'dish-list/edit-dish/:id', component: DishFormComponent },
-  {path: 'dish-list', component: DishListComponent},
-  {path: 'dish-form', component: DishFormComponent},
-  {path: 'cardapio/executivos', component: ExecutivosComponent},
+  { path: 'dish-list', component: DishListComponent},
+  { path: 'dish-form', component: DishFormComponent},
+  { path: 'cardapio/executivos', component: ExecutivosComponent},
+  { path: 'cardapio/bebidas', component: BebidasComponent},
+  { path: 'cardapio/porcoes', component: PorcoesComponent},
   
 ];
 

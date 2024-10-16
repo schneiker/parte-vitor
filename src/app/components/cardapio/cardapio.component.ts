@@ -27,7 +27,11 @@ export class CardapioComponent implements OnInit {
   }
 
   irParaBebidas(){
-    this.router.navigate(['/cardapio/bebidas'])
+    this.router.navigate(['/cardapio/bebidas']);
+  }
+
+  irParaPorcoes(){
+    this.router.navigate(['/cardapio/porcoes'])
   }
 }
 
