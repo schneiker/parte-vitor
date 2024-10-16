@@ -10,7 +10,7 @@ export interface Dish {
   description: string;
   price: number;
   image: string;
-  categoria: string;
+  category: string;
 }
 
 export interface Category  {
@@ -23,7 +23,7 @@ export interface Category  {
   providedIn: 'root'
 })
 export class DishService {
-  private apiUrl = 'http://192.168.5.106:3000/dishes';
+  private apiUrl = 'http://localhost:3000/dishes';
 
   constructor(private http: HttpClient) {}
 
@@ -46,6 +46,10 @@ export class DishService {
 
   deleteDish(id: number): Observable<Dish> {
     return this.http.delete<Dish>(`${this.apiUrl}/${id}`);
+  }
+
+  getDishesByCategory(category: string): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}?category=${category}`);
   }
 
 }

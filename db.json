@@ -7,29 +7,32 @@
       "price": 23,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz_fVou6yoSlq9Djxe9pNq-21LWCQe_coc6Q&s"
     },
+
     {
       "id": 2,
       "name": "Laspro",
       "description": "Atribuir estação a entidade",
       "price": 5,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz_fVou6yoSlq9Djxe9pNq-21LWCQe_coc6Q&s",
-      "categoria": "executivos"
+      "category": "executivos"
     },
+
     {
       "id": 4,
       "name": "Danilo _ instalar RM",
       "description": "sf sdf ",
       "price": 4,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz_fVou6yoSlq9Djxe9pNq-21LWCQe_coc6Q&s",
-      "categoria": "porções"
+      "category": "porções"
     },
+
     {
       "id": 8,
       "name": "Laspro",
       "description": "Atribuir chamado através do e-mail",
       "price": 3,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz_fVou6yoSlq9Djxe9pNq-21LWCQe_coc6Q&s",
-      "categoria": "porções"
+      "category": "porções"
     }
   ]
 }
