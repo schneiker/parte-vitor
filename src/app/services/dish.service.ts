@@ -48,8 +48,8 @@ export class DishService {
     return this.http.delete<Dish>(`${this.apiUrl}/${id}`);
   }
 
-  getDishesByCategory(category: string): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}?category=${category}`);
+  getDishesByCategory(category: string): Observable<Dish[]> {
+    return this.http.get<Dish[]>(`${this.apiUrl}?category=${category}`);
   }
 
 }

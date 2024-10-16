@@ -1,9 +1,20 @@
 header {
+    border: 1px solid red;
     margin: auto;
     max-width: 414px;
     padding: 16px 24px;
     display: flex;
     justify-content: flex-end;
+}
+
+
+body {
+    border: 1px solid blue;
+    max-width: 414px;
+    margin: auto;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    color: #ffff;
 }
 
 #ver-pedidos {
@@ -22,15 +33,6 @@ header {
     font-weight: bold;
 }
 
-body {
-
-    max-width: 414px;
-    margin: auto;
-    text-align: center;
-    font-family: "Mulish", sans-serif;
-    color: #ffff;
-}
-
 .cardapio {
     margin: 0;
     display: flex;
@@ -44,13 +46,13 @@ body {
     padding-bottom: 5px;
     display: flex;
     flex-direction: column;
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left; 
 }
 
 .dish-info {
     margin: 0;
     display: flex;
-    flex-direction: column; /* Alinha descrição e preço em coluna */
+    flex-direction: column; 
     font-size: 12px;
 }
 
@@ -62,20 +64,23 @@ body {
     
 }
 
-.botao-item-cardapio {
-    line-height: 1.2; 
-    margin: 14px;
-    justify-content: space-between;
+.menu  {
+    margin: auto;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: auto;
 
-    color: white;
-    border: 0;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    gap: 20px;
+}
 
+.menu img {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.menu div  {
+    align-items: flex-start;
 }
 
 .cardapio div {
@@ -87,22 +92,19 @@ body {
     font-weight: 700;
 }
 
-.dish-descricao {
-    font-size: 12px;
-    text-align: left;
-    margin-top: auto;
-}
-
-.dish-preco {
-    font-size: 15px;
-    text-align: left;
-    margin-top: auto;
-    
-}
-
-.linha-separadora {
-    height: 1px;
-    background-color: #ccc;
-    margin: auto;
-    width: 80%;
-}
+.botao-item-cardapio {
+    max-width: 100%;
+    margin: 14px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: #dad9d90e; 
+    color: white;
+    font-size: 40px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius:10px;
+    gap: 20px;
+  
+  }

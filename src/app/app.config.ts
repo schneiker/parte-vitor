@@ -8,6 +8,7 @@ import { RouterModule} from '@angular/router';
 import { DishListComponent } from './components/dish-list/dish-list.component';
 import { ExecutivosComponent } from './components/cardapio/executivos/executivos.component';
 
+
 const routes: Routes = [
   { path: '', component: InicioComponent},
   { path: 'cardapio', component: CardapioComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'dish-list', component: DishListComponent},
   {path: 'dish-form', component: DishFormComponent},
   {path: 'cardapio/executivos', component: ExecutivosComponent},
+  
 ];
 
 export const appConfig: ApplicationConfig = {

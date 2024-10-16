@@ -1,5 +1,4 @@
 body  {
-
     max-width: 878px;
     align-items: center;
     margin: auto;
@@ -8,6 +7,7 @@ body  {
 }
 
 header {
+    max-width: 414;
     display: block;
     text-align: center;
     padding-bottom: 10px;

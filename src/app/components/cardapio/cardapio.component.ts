@@ -25,6 +25,10 @@ export class CardapioComponent implements OnInit {
   irParaExecutivo() {
     this.router.navigate(['/cardapio/executivos']);
   }
+
+  irParaBebidas(){
+    this.router.navigate(['/cardapio/bebidas'])
+  }
 }
 
 
