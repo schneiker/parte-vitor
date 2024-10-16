@@ -18,7 +18,7 @@ export class PorcoesComponent implements OnInit {
   constructor(private dishService: DishService) {}
 
   ngOnInit() {
-    this.dishService.getDishesByCategory('porcoes').subscribe(data => {
+    this.dishService.getDishesByCategory('executivos').subscribe(data => {
       this.dishes = data;
       this.loading = false;
     }, error => {

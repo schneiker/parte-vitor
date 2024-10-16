@@ -1,5 +1,4 @@
 header {
-    border: 1px solid red;
     margin: auto;
     max-width: 414px;
     padding: 16px 24px;
@@ -9,7 +8,6 @@ header {
 
 
 body {
-    border: 1px solid blue;
     max-width: 414px;
     margin: auto;
     text-align: center;

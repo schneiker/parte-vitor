@@ -6,6 +6,22 @@ header {
     justify-content: flex-end;
 }
 
+.voltar {
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    max-width: 134px;
+    width: 100%;
+    height: 32px;
+    color: #ffff;
+    background-color: #595E65;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 #ver-pedidos {
     border: none;
     justify-content: center;
