@@ -1,0 +1,12 @@
+<section>
+    <div id="detalhes-pedido">
+        <h1>Exemplo</h1>
+        <p id="pedido-e-status">Nº pedidos - Status</p>
+        <p id="numero-pedido">Pedido nº</p>
+    </div>
+    
+    <form id="detalhes-botao">
+        <input type="number" placeholder="Digite o código do cliente" (input)="onInputChange($event); limitDigits($event)"/>
+        <button type="button" [ngClass]="{'active-button': isButtonActive}" (click)="abrirDiaPagCon()">Confirmar</button>
+    </form>
+</section>

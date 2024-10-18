@@ -1,0 +1,25 @@
+<section>
+    <div id="endereco">
+        <div id="dados">
+            <h2 *ngIf="!esconderH2">Nome</h2>
+            <p>Endereço de Entrega</p>
+            <p>Endereço</p>
+        </div>
+        <div class="botao">
+            <button id="botao-da-rota" (click)="abrirRota()">
+                <div>
+                    <img src="assets/mapa.png" alt="imagem-da-rota">
+                    <p>Mapa</p>
+                </div>
+            </button>
+        </div>
+        
+    </div>
+    
+    <app-previsao-de-entrega *ngIf="mostrarPrevisaoEntrega"></app-previsao-de-entrega>
+    <app-dialog-confirme-o-pagamento *ngIf="mostrarDiaPagamento"></app-dialog-confirme-o-pagamento>          
+
+    <div>
+        <button id="botao-c-entrega" (click)="openDialog()">Cheguei na entrega</button>
+    </div>
+</section>
