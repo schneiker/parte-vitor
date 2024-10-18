@@ -10,6 +10,7 @@ body {
     --branco-figma: #fff;
     --amarelo-figma: #E8BB2D;
     --laranja-figma: #FF9A00;
+    --verde-figma: #4CB24A;
     --cinza-figma: #455A64;
     --cinza-texto: #4D4D4D;
     --preto-texto: #000;
@@ -22,3 +23,5 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

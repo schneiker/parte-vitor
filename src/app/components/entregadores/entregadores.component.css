@@ -1,0 +1,59 @@
+#circulo-disponibilidade-entregador {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: var(--verde-entregador-disponivel);
+    margin-top: 16px;
+}
+
+#entregador-status {
+    display: flex;
+    box-sizing: border-box;
+    align-items: top;
+    gap: 19px;
+    padding-left: 16px;
+    padding-top: 13px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    height: 75px;
+    background-color: var(--branco-figma);
+}
+
+#entregador-status h2{
+    font-size: 16px;
+    margin-top: 5px;
+    background-color: var(--branco-figma);
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+#entregador {
+    background-color: var(--branco-figma);
+    width: 173px;
+    min-height: 122px;
+    box-sizing: border-box;
+}
+
+#botao {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    border: none;
+    background-color: var(--verde-entregador-disponivel);
+    color: white;
+    width: 161px;
+    height: 37px;
+    color: var(--branco-figma);
+}
+
+.css-botao {
+    height: 47px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    background-color: var(--branco-figma);
+}

@@ -8,7 +8,7 @@
 }
 
 .info-pedido-pai {
-    background-color: var(--amarelo-figma);
+    background-color: var(--verde-figma);
     height: 76px;
     width: 100%;
     display: flex;
@@ -22,7 +22,7 @@
     justify-content: space-between;
     padding-left: 16px;
     padding-right: 16px;
-    background-color: var(--amarelo-figma);
+    background-color: var(--verde-figma);
 }
 
 .detalhes-pedido {
@@ -54,7 +54,7 @@
 
 .b-finalizar {
     color: var(--branco-figma);
-    background-color: var(--amarelo-figma);
+    background-color: var(--verde-figma);
     border: none;
     width: 168px;
     height: 37px;
@@ -68,7 +68,7 @@
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
-    background-color: var(--amarelo-figma);
+    background-color: var(--verde-figma);
 }
 
 .texto-preto {
