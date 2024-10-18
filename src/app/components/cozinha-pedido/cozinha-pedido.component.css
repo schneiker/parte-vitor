@@ -1,0 +1,96 @@
+.pedido {
+    box-sizing: border-box;
+    background-color: var(--branco-figma);
+    width: 180px;
+    min-height: 256px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-pedido-pai {
+    background-color: var(--amarelo-figma);
+    height: 76px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.info-pedido {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: var(--amarelo-figma);
+}
+
+.detalhes-pedido {
+    background-color: var(--branco-figma);
+    box-sizing: border-box;
+    width: 100%;
+    height: 131px;
+}
+.detalhes-pedido p {
+    padding-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.detalhes-pedido h3 {
+    padding-left: 12px;
+    margin-bottom: 0px;
+}
+
+#botao {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 49px;
+    justify-content: center;
+    background-color: var(--branco-figma);
+}
+
+.b-finalizar {
+    color: var(--branco-figma);
+    background-color: var(--amarelo-figma);
+    border: none;
+    width: 168px;
+    height: 37px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+.texto-branco {
+    color: var(--branco-texto);
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    background-color: var(--amarelo-figma);
+}
+
+.texto-preto {
+    color: var(--preto-texto);
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    background-color: var(--branco-figma);
+}
+
+.texto-cinza {
+    color: var(--cinza-texto);
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    background-color: var(--branco-figma);
+}
+
+#titulo-h3 {
+    font-size: 14px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    background-color: var(--branco-figma);
+}
