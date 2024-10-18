@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+}  
+
 :root {
     --fundo: #1F2027;
     --vermelho-figma: #D32E2E;
@@ -13,3 +19,6 @@
     --cinza-botao-inativo: #818D9F;
     --fundo-telas: #25262D;
 }
+
+html, body { height: 100%; }
+body { margin: 0; }
