@@ -1,0 +1,54 @@
+<section>
+    <header>
+        <button id=""><mat-icon>arrow_back_ios</mat-icon></button>
+        <h1>Finalize seu pedido</h1>
+    </header>
+
+    <div class="forms">
+        <form>
+            <input type="text" class="forms-pessoais"
+            placeholder="Inserir CPF"
+            [value]="cpfSalvo || ''"
+            (click)="abrirDialogCpf()" readonly>
+        </form>
+
+        <form>
+            <input type="text" class="forms-pessoais"
+            placeholder="Inserir Endereço"
+            [value]="enderecoSalvo ? enderecoSalvo.logradouro + ', ' + enderecoSalvo.numero + ' - ' + enderecoSalvo.bairro : ''"
+            (click)="abrirDialogoInserirEndereco()" readonly>
+        </form>
+    </div>
+
+    <div>
+        <h2>Resumo de valores</h2>
+        <hr>
+        <div class="resumo-de-valores">
+            <p>Subtotal</p>
+            <p>Taxa de entrega</p>
+            <p>Total</p>
+        </div>
+
+        <div>
+            <p>R$00,00</p>
+            <p>R$00,00</p>
+            <p>R$00,00</p>
+        </div>
+    </div>
+
+    <div id="pagamento">
+        <h2>Pagamento</h2>
+        <hr/>
+        <p id="texto">Realizar no ato da entrega</p>
+    </div>
+
+    <div id="observacao">
+        <h3>Observação no pedido?</h3>
+        <form>
+            <input type="text" class="forms-observacao" placeholder="Digite aqui">
+        </form>
+    </div>
+
+    <button (click)="navegarParaOutroComponente()" id="botao-fazer-pedido">Fazer o pedido</button>
+
+</section>
