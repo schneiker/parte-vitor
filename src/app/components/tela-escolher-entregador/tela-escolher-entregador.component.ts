@@ -24,5 +24,4 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './tela-escolher-entregador.component.css'
 })
 export class TelaEscolherEntregadorComponent {
-
 }
