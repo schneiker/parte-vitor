@@ -1,38 +1,40 @@
 <section>
     <header>
-        <button id=""><mat-icon>arrow_back_ios</mat-icon></button>
+        <button id="botao-seta-voltar"><mat-icon>arrow_back_ios</mat-icon></button>
         <h1>Finalize seu pedido</h1>
     </header>
 
     <div class="forms">
         <form>
-            <input type="text" class="forms-pessoais"
-            placeholder="Inserir CPF"
-            [value]="cpfSalvo || ''"
-            (click)="abrirDialogCpf()" readonly>
+          <input type="text" class="forms-pessoais"
+                 placeholder="Inserir CPF"
+                 [value]="cpfSalvo || ''"
+                 (click)="abrirDialogCpf()" readonly>
         </form>
-
+    
         <form>
-            <input type="text" class="forms-pessoais"
-            placeholder="Inserir Endereço"
-            [value]="enderecoSalvo ? enderecoSalvo.logradouro + ', ' + enderecoSalvo.numero + ' - ' + enderecoSalvo.bairro : ''"
-            (click)="abrirDialogoInserirEndereco()" readonly>
+          <input type="text" class="forms-pessoais"
+                 placeholder="Inserir Endereço"
+                 [value]="enderecoSalvo ? enderecoSalvo.logradouro + ', ' + enderecoSalvo.numero + ' - ' + enderecoSalvo.bairro : ''"
+                 (click)="abrirDialogoInserirEndereco()" readonly>
         </form>
     </div>
 
-    <div>
+    <div id="valores">
         <h2>Resumo de valores</h2>
         <hr>
         <div class="resumo-de-valores">
-            <p>Subtotal</p>
-            <p>Taxa de entrega</p>
-            <p>Total</p>
-        </div>
-
-        <div>
-            <p>R$00,00</p>
-            <p>R$00,00</p>
-            <p>R$00,00</p>
+            <div>
+                <p>Subtotal</p>
+                <p>Taxa de entrega</p>
+                <p>Total</p>
+            </div>
+    
+            <div>
+                <p>R$00,00</p>
+                <p>R$00,00</p>
+                <p>R$00,00</p>
+            </div>
         </div>
     </div>
 
@@ -49,6 +51,11 @@
         </form>
     </div>
 
-    <button (click)="navegarParaOutroComponente()" id="botao-fazer-pedido">Fazer o pedido</button>
-
+    <div class="container">
+        <button 
+          [ngClass]="{'active-button': isButtonEnabled, 'inactive-button': !isButtonEnabled}"
+          [disabled]="!isButtonEnabled"
+          (click)="navegarParaOutroComponente()"
+          id="botao-fazer-pedido">Fazer o pedido</button>
+    </div>
 </section>

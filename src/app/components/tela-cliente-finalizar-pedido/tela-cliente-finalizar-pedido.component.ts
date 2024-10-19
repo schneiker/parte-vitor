@@ -4,19 +4,23 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { InserirCpfComponent } from '../inserir-cpf/inserir-cpf.component';
 import { InserirEnderecoComponent } from '../inserir-endereco/inserir-endereco.component';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-tela-cliente-finalizar-pedido',
   standalone: true,
-  imports: [MatIcon],
+  imports: [MatIcon,
+    NgClass
+  ],
   templateUrl: './tela-cliente-finalizar-pedido.component.html',
   styleUrl: './tela-cliente-finalizar-pedido.component.css'
 })
 export class TelaClienteFinalizarPedidoComponent {
   enderecoSalvo: any = null;
   cpfSalvo: string = '';
+  isButtonEnabled: boolean = false;
 
-  constructor(private dialog: MatDialog,  private router: Router) {}
+  constructor(private dialog: MatDialog, private router: Router) {}
 
   abrirDialogCpf(): void {
     const dialogRef = this.dialog.open(InserirCpfComponent, {
@@ -26,6 +30,7 @@ export class TelaClienteFinalizarPedidoComponent {
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
         this.cpfSalvo = result;
+        this.verificarCampos();
       }
     });
   }
@@ -38,11 +43,23 @@ export class TelaClienteFinalizarPedidoComponent {
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
         this.enderecoSalvo = result;
+        this.verificarCampos();
       }
     });
   }
 
+  verificarCampos(): void {
+    // Verifica se ambos o CPF e o Endereço foram preenchidos
+    if (this.cpfSalvo && this.enderecoSalvo) {
+      this.isButtonEnabled = true;
+    } else {
+      this.isButtonEnabled = false;
+    }
+  }
+
   navegarParaOutroComponente() {
-    this.router.navigate(['/acompanhar']);
+    if (this.isButtonEnabled) {
+      this.router.navigate(['/acompanhar-pedido']);
+    }
   }
 }

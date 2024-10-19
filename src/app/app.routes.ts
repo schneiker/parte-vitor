@@ -4,11 +4,13 @@ import { TelaInicialDirecionamentoEntregaComponent } from './components/tela-ini
 import { TelaEscolherEntregadorComponent } from './components/tela-escolher-entregador/tela-escolher-entregador.component';
 import { TelaInicialEntregadorComponent } from './components/tela-inicial-entregador/tela-inicial-entregador.component';
 import { TelaClienteFinalizarPedidoComponent } from './components/tela-cliente-finalizar-pedido/tela-cliente-finalizar-pedido.component';
+import { AcompanharPedidoComponent } from './components/acompanhar-pedido/acompanhar-pedido.component';
 
 export const routes: Routes = [
     { path: 'tela-cozinha', component: TelaInicialCozinhaComponent},
     { path: 'tela-dir-entrega', component: TelaInicialDirecionamentoEntregaComponent},
     { path: 'tela-escolher-entregador', component: TelaEscolherEntregadorComponent},
     { path: 'tela-entregador', component: TelaInicialEntregadorComponent},
-    { path: 'tela-finalizar-pedido', component: TelaClienteFinalizarPedidoComponent}
+    { path: 'tela-finalizar-pedido', component: TelaClienteFinalizarPedidoComponent},
+    { path: 'acompanhar-pedido', component: AcompanharPedidoComponent}
 ];

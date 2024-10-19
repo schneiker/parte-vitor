@@ -1,0 +1,26 @@
+<section class="pedido-container">
+    <header>
+        <button id="botao-voltar"><mat-icon>arrow_back_ios</mat-icon></button>
+        <h1>Acompanhe o seu pedido</h1>
+    </header>
+
+    <div class="status-container">
+        <p>Status</p>
+        <div class="progress-bar">
+            <div class="circle" [class.completed]="statusAtual === 'Pedido sendo preparado' || statusAtual === 'Pedido enviado para entrega' || statusAtual === 'Pedido concluído'"></div>
+            <div class="line" [class.completed]="statusAtual === 'Pedido enviado para entrega' || statusAtual === 'Pedido concluído'"></div>
+            <div class="circle" [class.completed]="statusAtual === 'Pedido enviado para entrega' || statusAtual === 'Pedido concluído'"></div>
+            <div class="line" [class.completed]="statusAtual === 'Pedido concluído'"></div>
+            <div class="circle" [class.completed]="statusAtual === 'Pedido concluído'"></div>
+        </div>
+        <p class="status-text">{{ statusAtual }}</p>
+    </div>
+
+    <div class="codigo-confirmacao">
+        <p>Informe o código abaixo na entrega do pedido:</p>
+        <div class="codigo-pedido">5941</div>
+    </div>
+
+    <button class="botao-confirmar" (click)="pedidoConcluido()">Confirmar entrega</button>
+</section>
+    

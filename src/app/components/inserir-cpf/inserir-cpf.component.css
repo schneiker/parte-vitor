@@ -1,0 +1,57 @@
+mat-form-field {
+    width: 100%;
+  }
+  
+  button {
+    margin: 8px;
+    border-radius: 29.5px;
+    width: 100px;
+    height: 44px;
+    border: none;
+    font-size: 24px;
+  }
+
+  mat-dialog-content {
+    background-color: var(--cinza-texto-fundo);
+    color: white;
+  }
+
+  mat-dialog-title, h2 {
+    background-color: var(--cinza-texto-fundo);
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  mat-dialog-actions, form {
+    background-color: var(--cinza-texto-fundo);
+  }
+
+  ::ng-deep .mat-form-field-infix {
+    background-color: var(--cinza-texto-fundo); /* Cor do fundo do campo de entrada */
+}
+
+::ng-deep .mat-form-field-flex {
+    background-color: var(--cinza-texto-fundo); /* Cor da estrutura ao redor do campo */
+}
+
+::ng-deep .mat-form-field-wrapper {
+    background-color: var(--cinza-texto-fundo); /* Cor envolvendo o campo */
+}
+
+::ng-deep .mat-form-field-underline {
+    background-color: var(--cinza-texto-fundo); /* Cor da linha */
+}
+
+::ng-deep .mat-input-element {
+    background-color: var(--cinza-texto-fundo); /* Cor do próprio input */
+    color: white; /* Cor do texto */
+}
+
+::ng-deep .mat-form-field-label {
+    background-color: var(--cinza-texto-fundo); /* Cor do label (texto flutuante) */
+}
+
+::ng-deep .mat-hint {
+    background-color: var(--cinza-texto-fundo); /* Cor do hint (dica) */
+}
