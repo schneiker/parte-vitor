@@ -27,7 +27,7 @@ export class DishListComponent implements OnInit {
     });
   }
 
-  deleteDish(id: number) {
+  deleteDish(id: string) {
     this.dishService.deleteDish(id).subscribe(() => {
       this.loadDishes();
     });

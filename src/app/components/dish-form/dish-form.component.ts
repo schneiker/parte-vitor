@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class DishFormComponent implements OnInit {
   
-  dish: Dish = { id: 0, name: '', description: '', price: 0, image: '', category: '' };
+  dish: Dish = { id: "0", name: '', description: '', price: 0, image: '', category: '' };
   isEdit = false;
 
   constructor(private dishService: DishService, private router: Router) {}

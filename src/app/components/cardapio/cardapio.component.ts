@@ -33,6 +33,10 @@ export class CardapioComponent implements OnInit {
   irParaPorcoes(){
     this.router.navigate(['/cardapio/porcoes'])
   }
+
+  navegarParaPrato(id: string) {
+    this.router.navigate(['/prato', id]);
+  }
 }
 
 

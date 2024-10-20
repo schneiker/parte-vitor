@@ -3,9 +3,10 @@ header {
     max-width: 414px;
     padding: 16px 24px;
     display: flex;
-    justify-content: flex-end;
-}
+    justify-content: space-between;
+    align-items: center;
 
+}
 #ver-pedidos {
     border: none;
     justify-content: center;

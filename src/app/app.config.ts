@@ -8,6 +8,7 @@ import { DishListComponent } from './components/dish-list/dish-list.component';
 import { ExecutivosComponent } from './components/cardapio/executivos/executivos.component';
 import { BebidasComponent } from './components/cardapio/bebidas/bebidas.component';
 import { PorcoesComponent } from './components/cardapio/porcoes/porcoes.component';
+import { TestePedidoComponent } from './components/teste-pedido/teste-pedido.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'cardapio/executivos', component: ExecutivosComponent},
   { path: 'cardapio/bebidas', component: BebidasComponent},
   { path: 'cardapio/porcoes', component: PorcoesComponent},
+  { path: 'cardapio/fazer-pedido/:id', component: TestePedidoComponent}
   
 ];
 

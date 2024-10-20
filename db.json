@@ -1,203 +1,203 @@
 {
   "dishes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Caipirinha",
       "description": "Bebida tradicional brasileira feita com cachaça, limão e açúcar.",
       "price": 15.00,
-      "image": "https://example.com/images/caipirinha.jpg",
+      "image": "https://i.panelinha.com.br/i1/228-q-8730-blog-caipirinha-de-limao.webp",
       "category": "bebidas"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Pasta ao Pesto",
       "description": "Massa fresca com molho pesto caseiro e queijo parmesão.",
       "price": 35.00,
-      "image": "https://example.com/images/pasta_pesto.jpg",
+      "image": "https://img.cybercook.com.br/receitas/985/macarrao-ao-pesto-2.jpeg",
       "category": "executivos"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Frango à Parmegiana",
       "description": "Peito de frango empanado com queijo e molho de tomate.",
       "price": 40.00,
-      "image": "https://example.com/images/frango_parmegiana.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
       "category": "executivos"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Batata Frita",
       "description": "Porção de batatas fritas crocantes.",
       "price": 20.00,
-      "image": "https://example.com/images/batata_frita.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkqwehUioNabVzVEpglPPOENo7iWVUBIWXg&s",
       "category": "porcoes"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Cerveja Artesanal",
       "description": "Cerveja artesanal feita com ingredientes selecionados.",
       "price": 12.00,
-      "image": "https://example.com/images/cerveja_artesanal.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobh2ySv1Tb8IQ__Fgq1nt97xXljAWcc7Klg&s",
       "category": "bebidas"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Risoto de Camarão",
       "description": "Risoto cremoso com camarões grelhados e ervas.",
       "price": 45.00,
-      "image": "https://example.com/images/risoto_camarao.jpg",
+      "image": "https://www.receiteria.com.br/wp-content/uploads/risoto-de-camarao-14.jpg",
       "category": "executivos"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Espetinho de Frango",
       "description": "Espetinho grelhado de frango marinado.",
       "price": 25.00,
-      "image": "https://example.com/images/espetinho_frango.jpg",
+      "image": "https://i.panelinha.com.br/i1/228-q-2731-espetinho.webp",
       "category": "porcoes"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Margarita",
       "description": "Bebida refrescante à base de tequila, limão e licor de laranja.",
       "price": 18.00,
-      "image": "https://example.com/images/margarita.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmEfi-vrPt3mrLT_cnv0rm2QmncXErIjHifA&s",
       "category": "bebidas"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Salada Caesar",
       "description": "Salada com alface, croutons e molho Caesar.",
       "price": 30.00,
-      "image": "https://example.com/images/salada_caesar.jpg",
+      "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
       "category": "executivos"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Tacos",
       "description": "Tortilhas recheadas com carne, guacamole e salsa.",
       "price": 28.00,
-      "image": "https://example.com/images/tacos.jpg",
+      "image": "https://www.comidaereceitas.com.br/wp-content/uploads/2008/10/Tacos-de-carne-moida.jpg",
       "category": "porcoes"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Sangria",
       "description": "Bebida à base de vinho tinto, frutas e especiarias.",
       "price": 22.00,
-      "image": "https://example.com/images/sangria.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8hVpFM7P2XwyS9mgkG2-8wST16H00ET92A&s",
       "category": "bebidas"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Bife à Cavalo",
       "description": "Bife grelhado com ovo frito por cima.",
       "price": 50.00,
-      "image": "https://example.com/images/bife_cavalo.jpg",
+      "image": "https://espetinhodesucesso.com/wp-content/uploads/2022/06/qual-a-melhor-carne-para-bife-a-cavalo.jpg",
       "category": "executivos"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Bolinho de Bacalhau",
       "description": "Tradicional bolinho de bacalhau frito.",
       "price": 18.00,
-      "image": "https://example.com/images/bolinho_bacalhau.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBw9VXSjXX5wHejQ-OKMuT6qdCpYITyj3GPA&s",
       "category": "porcoes"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Café Expresso",
       "description": "Café expresso forte e aromático.",
       "price": 5.00,
-      "image": "https://example.com/images/cafe_expresso.jpg",
+      "image": "https://cdn.sistemawbuy.com.br/arquivos/f101ef5b9be464a6c8854310ae5f5327/produtos/65bb164199b0d/5fc4fca2a8cea2deb2743064358f7bee-65bb21d8524e1.jpg",
       "category": "bebidas"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Lasanha Bolonhesa",
       "description": "Lasanha recheada com carne moída e molho béchamel.",
       "price": 38.00,
-      "image": "https://example.com/images/lasanha_bolonhesa.jpg",
+      "image": "https://nextfoodcare.com.br/wp-content/uploads/2021/06/lasanha-3.jpg",
       "category": "executivos"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Anéis de Cebola",
       "description": "Porção de anéis de cebola empanados e fritos.",
       "price": 15.00,
-      "image": "https://example.com/images/aneis_cebola.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT2lVp8elfWg1tFjvsQqVmYPixLAGt46SMOA&s",
       "category": "porcoes"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Suco de Laranja",
       "description": "Suco natural de laranja espremido na hora.",
       "price": 8.00,
-      "image": "https://example.com/images/suco_laranja.jpg",
+      "image": "https://s3-sa-east-1.amazonaws.com/deliveryon-uploads/products/dorabela/16_5e8cf76d9a4b0.jpg",
       "category": "bebidas"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Frutos do Mar Grelhados",
       "description": "Seleção de frutos do mar grelhados com tempero especial.",
       "price": 55.00,
-      "image": "https://example.com/images/frutos_do_mar.jpg",
+      "image": "https://img.cybercook.com.br/imagens/receitas/556/macarrao-com-frutos-do-mar-1.jpeg",
       "category": "executivos"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Nachos",
       "description": "Tortilhas de milho com queijo e jalapeños.",
       "price": 20.00,
-      "image": "https://example.com/images/nachos.jpg",
+      "image": "https://content.paodeacucar.com/wp-content/uploads/2020/11/nachos-capa.jpg",
       "category": "porcoes"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Pina Colada",
       "description": "Bebida tropical à base de rum, abacaxi e creme de coco.",
       "price": 20.00,
-      "image": "https://example.com/images/pina_colada.jpg",
+      "image": "https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2022/09/23/1631063638-receita-pina-colada.jpg",
       "category": "bebidas"
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Peixe ao Molho de Alcaparras",
       "description": "Filé de peixe grelhado com molho de alcaparras.",
       "price": 48.00,
-      "image": "https://example.com/images/peixe_alcaparras.jpg",
+      "image": "https://www.comidaereceitas.com.br/wp-content/uploads/2008/05/File-de-peixe-a-belle-meuniere.jpg",
       "category": "executivos"
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Coxinha",
       "description": "Tradicional coxinha de frango, empanada e frita.",
       "price": 12.00,
-      "image": "https://example.com/images/coxinha.jpg",
+      "image": "https://swiftbr.vteximg.com.br/arquivos/ids/199645-768-768/617666-COXINHA-DE-FRANGO-COM-MANDIOCA-PRE-FRITA-SWIFT-300G.jpg?v=638557794060230000",
       "category": "porcoes"
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Refrigerante",
       "description": "Refrigerante gelado de diversos sabores.",
       "price": 7.00,
-      "image": "https://example.com/images/refrigerante.jpg",
+      "image": "https://preview.redd.it/todos-os-refrigerantes-est%C3%A3o-horr%C3%ADveis-v0-2a79uzexe09d1.jpg?width=600&format=pjpg&auto=webp&s=3a621c79bb00a80f4319ee439a4feb5cf2688fad",
       "category": "bebidas"
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Macarrão Al Pomodoro",
       "description": "Macarrão ao molho de tomate fresco e manjericão.",
       "price": 30.00,
-      "image": "https://example.com/images/macarrao_pomodoro.jpg",
+      "image": "https://static.soujusto.com.br/recipes/fly/Receitas%20site%20(1).jpg",
       "category": "executivos"
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Porção de Queijo Coalho",
       "description": "Queijo coalho grelhado, servido com mel.",
       "price": 22.00,
-      "image": "https://example.com/images/queijo_coalho.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlPvM8xzvmjnBD59vatQKTHqOUO90aJSuYdA&s",
       "category": "porcoes"
     }
   ]

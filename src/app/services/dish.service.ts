@@ -1,11 +1,9 @@
-// src/app/services/dish.service.ts
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface Dish {
-  id?: number;
+  id: string;
   name: string;
   description: string;
   price: number;
@@ -18,12 +16,11 @@ export interface Category  {
   dishes: Dish[];
 }
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class DishService {
-  private apiUrl = 'http://localhost:3000/dishes';
+  private apiUrl = 'http://10.0.0.104:3000/dishes';
 
   constructor(private http: HttpClient) {}
 
@@ -31,27 +28,25 @@ export class DishService {
     return this.http.get<Dish[]>(this.apiUrl);
   }
 
-  getDish(id: number): Observable<Dish> {
+
+  getDish(id: string): Observable<Dish> {
     return this.http.get<Dish>(`${this.apiUrl}/${id}`);
   }
 
   createDish(dish: Dish): Observable<Dish> {
-  
     return this.http.post<Dish>(this.apiUrl, dish);
   }
 
-  updateDish(id: number, dish: Dish): Observable<Dish> {
+
+  updateDish(id: string, dish: Dish): Observable<Dish> {
     return this.http.put<Dish>(`${this.apiUrl}/${id}`, dish);
   }
 
-  deleteDish(id: number): Observable<Dish> {
+  deleteDish(id: string): Observable<Dish> {
     return this.http.delete<Dish>(`${this.apiUrl}/${id}`);
   }
 
   getDishesByCategory(category: string): Observable<Dish[]> {
     return this.http.get<Dish[]>(`${this.apiUrl}?category=${category}`);
   }
-
 }
-
-

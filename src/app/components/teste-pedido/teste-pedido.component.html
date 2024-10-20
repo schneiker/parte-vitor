@@ -1,0 +1,9 @@
+<div *ngIf="loading">Carregando...</div>
+<div *ngIf="!loading && dish">
+    <h1>{{ dish.name }}</h1>
+    <p>{{ dish.description }}</p>
+    <p>{{ dish.price | currency:'BRL' }}</p>
+</div>
+<div *ngIf="!loading && !dish">
+    <p>Prato não encontrado.</p>
+</div>
