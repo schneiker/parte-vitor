@@ -16,8 +16,8 @@
     <td>R${{ dish.price }}</td>
     <td>
       <button (click)="deleteDish(dish.id!)">Delete</button>
-      <a [routerLink]="['/edit-dish', dish.id]">Edit</a>
+      <a [routerLink]="['/dish-list/edit-dish', dish.id]">Edit</a> 
     </td>
   </tr>
 </table>
-<a routerLink="/add-dish">Add New Dish</a>
+<a routerLink="/dish-form">Add New Dish</a> 

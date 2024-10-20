@@ -12,18 +12,18 @@ import { TestePedidoComponent } from './components/teste-pedido/teste-pedido.com
 
 
 const routes: Routes = [
-  { path: '', component: InicioComponent},
+  { path: '', component: InicioComponent },
   { path: 'cardapio', component: CardapioComponent },
-  { path: 'add-dish', component: DishFormComponent },
-  { path: 'dish-list/edit-dish/:id', component: DishFormComponent },
-  { path: 'dish-list', component: DishListComponent},
-  { path: 'dish-form', component: DishFormComponent},
-  { path: 'cardapio/executivos', component: ExecutivosComponent},
-  { path: 'cardapio/bebidas', component: BebidasComponent},
-  { path: 'cardapio/porcoes', component: PorcoesComponent},
-  { path: 'cardapio/fazer-pedido/:id', component: TestePedidoComponent}
-  
+  { path: 'dish-form', component: DishFormComponent }, 
+  { path: 'dish-form/:id', component: DishFormComponent }, 
+  { path: 'dish-list', component: DishListComponent },
+  { path: 'cardapio/executivos', component: ExecutivosComponent },
+  { path: 'cardapio/bebidas', component: BebidasComponent },
+  { path: 'cardapio/porcoes', component: PorcoesComponent },
+  { path: 'cardapio/fazer-pedido/:id', component: TestePedidoComponent },
+  { path: 'dish-list/edit-dish/:id', component: DishFormComponent }
 ];
+
 
 export const appConfig: ApplicationConfig = {
   providers: [

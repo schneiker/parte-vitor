@@ -34,6 +34,7 @@ export class DishService {
   }
 
   createDish(dish: Dish): Observable<Dish> {
+    dish.id = String(dish.id);
     return this.http.post<Dish>(this.apiUrl, dish);
   }
 

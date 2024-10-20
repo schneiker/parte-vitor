@@ -1,9 +1,7 @@
-// src/app/components/dish-list/dish-list.component.ts
-
 import { Component, OnInit } from '@angular/core';
 import { DishService, Dish } from '../../services/dish.service';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router'; 
 
 @Component({
   selector: 'app-dish-list',
@@ -15,7 +13,7 @@ import { RouterModule } from '@angular/router';
 export class DishListComponent implements OnInit {
   dishes: Dish[] = [];
 
-  constructor(private dishService: DishService) {}
+  constructor(private dishService: DishService, private router: Router) {}
 
   ngOnInit(): void {
     this.loadDishes();
@@ -31,5 +29,9 @@ export class DishListComponent implements OnInit {
     this.dishService.deleteDish(id).subscribe(() => {
       this.loadDishes();
     });
+  }
+
+  editDish(id: string) {
+    this.router.navigate(['/dish-form', id]);
   }
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DishService, Dish } from '../../services/dish.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -13,16 +13,28 @@ import { FormsModule } from '@angular/forms';
 })
 export class DishFormComponent implements OnInit {
   
-  dish: Dish = { id: "0", name: '', description: '', price: 0, image: '', category: '' };
+  dish: Dish = { id: "", name: '', description: '', price: 0, image: '', category: '' };
   isEdit = false;
 
-  constructor(private dishService: DishService, private router: Router) {}
+  constructor( 
+    private dishService: DishService,
+    private route: ActivatedRoute,
+    private router: Router) {}
 
   ngOnInit() {
-    const navigation = this.router.getCurrentNavigation();
-    if (navigation?.extras.state) {
+    const id = this.route.snapshot.paramMap.get('id');
+    if (id) {
       this.isEdit = true;
-      this.dish = navigation.extras.state as Dish; 
+      this.dishService.getDish(id).subscribe(
+        (data) => {
+          this.dish = data;
+        },
+        (error) => {
+          console.error('Erro ao carregar prato para edição', error);
+        }
+      );
+    } else {
+      this.isEdit = false;
     }
   }
 
