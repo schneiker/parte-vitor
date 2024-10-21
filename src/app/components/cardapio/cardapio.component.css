@@ -3,9 +3,10 @@ header {
     max-width: 414px;
     padding: 16px 24px;
     display: flex;
-    justify-content: flex-end;
-}
+    justify-content: space-between;
+    align-items: center;
 
+}
 
 body {
     max-width: 414px;
@@ -13,6 +14,23 @@ body {
     text-align: center;
     font-family: "Mulish", sans-serif;
     color: #ffff;
+}
+
+
+.voltar {
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    max-width: 134px;
+    width: 100%;
+    height: 32px;
+    color: #ffff;
+    background-color: #595E65;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 #ver-pedidos {
@@ -91,6 +109,7 @@ body {
 }
 
 .botao-item-cardapio {
+    height: auto;
     max-width: 100%;
     margin: 14px;
     justify-content: space-between;

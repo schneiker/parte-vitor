@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DishService, Dish } from '../../services/dish.service';
 import { CommonModule } from '@angular/common'; 
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 
 @Component({
@@ -15,7 +16,7 @@ export class CardapioComponent implements OnInit {
   dishes: Dish[] = [];
   loading = true;
 
-  constructor(private dishService: DishService, private router: Router) {}
+  constructor(private dishService: DishService, private router: Router, private location: Location) {}
 
   ngOnInit() {
     this.dishService.getDishesByCategory('porções').subscribe(data => {
@@ -37,6 +38,11 @@ export class CardapioComponent implements OnInit {
   navegarParaPrato(id: string) {
     this.router.navigate(['/prato', id]);
   }
+
+  voltar() {
+    this.location.back();
+  }
+
 }
 
 

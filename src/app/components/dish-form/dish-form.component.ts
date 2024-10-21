@@ -39,8 +39,8 @@ export class DishFormComponent implements OnInit {
   }
 
   saveDish() {
-    if (!this.dish.image) {
-      alert('Por favor, insira uma URL de imagem válida.');
+    if (!this.dish.image || !this.dish.id || !this.dish.description || !this.dish.price || !this.dish.name || !this.dish.category) {
+      alert('Preencha todos os campos!');
       return;
     }
   
