@@ -22,21 +22,20 @@
 
     <div id="valores">
         <h2>Resumo de valores</h2>
-        <hr>
+        <hr />
         <div class="resumo-de-valores">
-            <div>
-                <p>Subtotal</p>
-                <p>Taxa de entrega</p>
-                <p>Total</p>
-            </div>
-    
-            <div>
-                <p>R$00,00</p>
-                <p>R$00,00</p>
-                <p>R$00,00</p>
-            </div>
+          <div>
+            <p>Subtotal</p>
+            <p>Taxa de entrega</p>
+            <p>Total</p>
+          </div>
+          <div>
+            <p>{{ subtotal | currency:'BRL' }}</p>
+            <p>{{ taxaEntrega | currency:'BRL' }}</p>
+            <p>{{ total | currency:'BRL' }}</p>
+          </div>
         </div>
-    </div>
+      </div>
 
     <div id="pagamento">
         <h2>Pagamento</h2>
@@ -58,4 +57,5 @@
           (click)="navegarParaOutroComponente()"
           id="botao-fazer-pedido">Fazer o pedido</button>
     </div>
+
 </section>

@@ -7,6 +7,7 @@ import { TelaClienteFinalizarPedidoComponent } from './components/tela-cliente-f
 import { AcompanharPedidoComponent } from './components/acompanhar-pedido/acompanhar-pedido.component';
 
 export const routes: Routes = [
+    { path: '', component: TelaClienteFinalizarPedidoComponent},
     { path: 'tela-cozinha', component: TelaInicialCozinhaComponent},
     { path: 'tela-dir-entrega', component: TelaInicialDirecionamentoEntregaComponent},
     { path: 'tela-escolher-entregador', component: TelaEscolherEntregadorComponent},
