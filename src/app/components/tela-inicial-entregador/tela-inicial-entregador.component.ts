@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { EntregaRecebidaComponent } from '../entrega-recebida/entrega-recebida.component';
 import { NgIf } from '@angular/common';
+import { EntregaService } from '../../entrega.service';  // Importa o service
 
 @Component({
   selector: 'app-tela-inicial-entregador',
@@ -12,8 +13,12 @@ import { NgIf } from '@angular/common';
 export class TelaInicialEntregadorComponent {
   nome: boolean = true;  // Simula se há ou não pedidos
 
-  // Método chamado para finalizar a entrega
-  finalizarPedido(): void {
-    this.nome = false;  // Simula o fim da entrega
+  constructor(private entregaService: EntregaService) {}
+
+  ngOnInit(): void {
+    // Inscreve-se para monitorar o estado da entrega
+    this.entregaService.entregaAtiva$.subscribe(entregaAtiva => {
+      this.nome = entregaAtiva;  // Atualiza a variável "nome" com o estado da entrega
+    });
   }
 }

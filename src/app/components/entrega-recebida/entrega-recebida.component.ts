@@ -5,6 +5,8 @@ import { MatDialogModule, MatDialog } from '@angular/material/dialog';
 import { DialogConfirmeOPagamentoComponent } from '../dialog-confirme-o-pagamento/dialog-confirme-o-pagamento.component';
 import { InserirCodigoClienteComponent } from '../inserir-codigo-cliente/inserir-codigo-cliente.component';
 import { PrevisaoDeEntregaComponent } from '../previsao-de-entrega/previsao-de-entrega.component';
+import { FinalizarEntregaComponent } from '../finalizar-entrega/finalizar-entrega.component';  // Importação do novo diálogo
+import { EntregaService  } from '../../entrega.service';
 
 @Component({
   selector: 'app-entrega-recebida',
@@ -17,19 +19,24 @@ export class EntregaRecebidaComponent {
   mostrarPrevisaoEntrega: boolean = true;
   mostrarDiaPagamento: boolean = false;
   esconderH2: boolean = false;
+  pagamentoConfirmado: boolean = false;  // Nova variável para controle do estado do pagamento
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog,  private entregaService: EntregaService) {}
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(InserirCodigoClienteComponent, {
-      width: '396px'
-    });
+    if (!this.pagamentoConfirmado) {
+      const dialogRef = this.dialog.open(InserirCodigoClienteComponent, {
+        width: '396px'
+      });
 
-    dialogRef.afterClosed().subscribe(result => {
-      if (result === 'codigoConfirmado') {
-        this.abrirPagamentoDialog();
-      }
-    });
+      dialogRef.afterClosed().subscribe(result => {
+        if (result === 'codigoConfirmado') {
+          this.abrirPagamentoDialog();
+        }
+      });
+    } else {
+      this.abrirFinalizacaoDialog();
+    }
   }
 
   abrirPagamentoDialog(): void {
@@ -39,11 +46,31 @@ export class EntregaRecebidaComponent {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result === 'pagamentoConfirmado') {
+        this.pagamentoConfirmado = true;
         this.mostrarPrevisaoEntrega = false;
         this.mostrarDiaPagamento = true;
         this.esconderH2 = true;
       }
     });
+  }
+
+  abrirFinalizacaoDialog(): void {
+    const dialogRef = this.dialog.open(FinalizarEntregaComponent, {
+      width: '396px'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result === 'entregaFinalizada') {
+        this.entregaService.finalizarEntrega();
+      }
+    });
+  }
+
+  finalizarEntrega(): void {
+    // Aqui você pode fazer a lógica para limpar os dados da entrega
+    this.mostrarPrevisaoEntrega = false;
+    this.mostrarDiaPagamento = false;
+    this.esconderH2 = true;
   }
 
   abrirRota() {
