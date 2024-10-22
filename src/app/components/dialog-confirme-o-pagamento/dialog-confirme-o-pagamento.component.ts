@@ -12,6 +12,6 @@ export class DialogConfirmeOPagamentoComponent {
   constructor(public dialogRef: MatDialogRef<DialogConfirmeOPagamentoComponent>) {}
 
   fecharDialogo(): void {
-    this.dialogRef.close('pagamentoConfirmado');
+    this.dialogRef.close('pagamentoConfirmado'); // Confirma o pagamento
   }
 }

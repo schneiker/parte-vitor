@@ -9,12 +9,7 @@ import { PrevisaoDeEntregaComponent } from '../previsao-de-entrega/previsao-de-e
 @Component({
   selector: 'app-entrega-recebida',
   standalone: true,
-  imports: [NgIf,
-    RouterModule,
-    MatDialogModule, 
-    DialogConfirmeOPagamentoComponent,
-    PrevisaoDeEntregaComponent
-  ],
+  imports: [NgIf, RouterModule, MatDialogModule, DialogConfirmeOPagamentoComponent, PrevisaoDeEntregaComponent],
   templateUrl: './entrega-recebida.component.html',
   styleUrl: './entrega-recebida.component.css'
 })
@@ -31,11 +26,12 @@ export class EntregaRecebidaComponent {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      if (result === 'confirmado') {
+      if (result === 'codigoConfirmado') {
         this.abrirPagamentoDialog();
       }
     });
   }
+
   abrirPagamentoDialog(): void {
     const dialogRef = this.dialog.open(DialogConfirmeOPagamentoComponent, {
       width: '396px'

@@ -1,24 +1,20 @@
 import { Component } from '@angular/core';
-import { MatDialogModule, MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { DialogConfirmeOPagamentoComponent } from '../dialog-confirme-o-pagamento/dialog-confirme-o-pagamento.component';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-inserir-codigo-cliente',
   standalone: true,
-  imports: [MatDialogModule,
-    CommonModule
-  ],
+  imports: [MatDialogModule, CommonModule],
   templateUrl: './inserir-codigo-cliente.component.html',
   styleUrl: './inserir-codigo-cliente.component.css'
 })
 export class InserirCodigoClienteComponent {
   isButtonActive: boolean = false;
+  codigo: string = '';  // Para armazenar o código inserido pelo entregador
+  cpfDoCliente = '12345678901';  // Aqui o CPF completo do cliente seria armazenado.
 
-  constructor(
-    public dialogRef: MatDialogRef<InserirCodigoClienteComponent>,
-    public dialog: MatDialog
-  ) {}
+  constructor(public dialogRef: MatDialogRef<InserirCodigoClienteComponent>) {}
 
   limitDigits(event: any) {
     const input = event.target;
@@ -28,22 +24,24 @@ export class InserirCodigoClienteComponent {
   }
 
   onInputChange(event: any): void {
-    const inputValue = event.target.value;
+    this.codigo = event.target.value;
+    this.isButtonActive = this.codigo.length === 5; // Ativa o botão com 5 dígitos
+  }
 
-    this.isButtonActive = inputValue.length > 4;
+  validarCodigo(): boolean {
+    // Pega os 5 primeiros dígitos do CPF armazenado e compara com o código inserido
+    return this.codigo === this.cpfDoCliente.slice(0, 5);
   }
 
   abrirDiaPagCon(): void {
-    const dialogRef = this.dialog.open(DialogConfirmeOPagamentoComponent, {
-      width: '396px'
-    })
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    })
+    if (this.validarCodigo()) {
+      this.dialogRef.close('codigoConfirmado'); // Código correto, fecha o diálogo com 'codigoConfirmado'
+    } else {
+      alert('Código incorreto, tente novamente.');
+    }
   }
 
   fecharDialogo(): void {
-    this.dialogRef.close('confirmado');
+    this.dialogRef.close();
   }
 }
