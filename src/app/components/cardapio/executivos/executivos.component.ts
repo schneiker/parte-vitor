@@ -32,7 +32,7 @@ export class ExecutivosComponent implements OnInit {
 
  verDetalhes(id: number | undefined) {
   if (id !== undefined) {
-      this.router.navigate(['/cardapio/fazer-pedido', id.toString()]); // Converte para string
+      this.router.navigate(['/cardapio/fazer-pedido', id.toString()]); 
   } else {
       console.error('ID do prato não encontrado');
   }
@@ -41,7 +41,5 @@ export class ExecutivosComponent implements OnInit {
  voltar() {
   this.location.back();
  }
-
-  
   
 }
