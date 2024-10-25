@@ -104,3 +104,19 @@
     font-weight: 700;
     background-color: var(--branco-figma);
 }
+
+.pedido-nao-aceito {
+    background-color: var(--pedido-nao-aceito);
+  }
+  
+.b-finalizar.pedido-nao-aceito {
+    background-color: var(--pedido-nao-aceito);
+    color: white;
+}
+
+.pedido-nao-aceito .info-pedido-pai,
+.pedido-nao-aceito .info-pedido,
+.pedido-nao-aceito .b-finalizar,
+.pedido-nao-aceito .texto-branco {
+  background-color: var(--pedido-nao-aceito);
+}

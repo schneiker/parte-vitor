@@ -22,7 +22,7 @@ export class TelaInicialCozinhaComponent implements OnInit {
   getPedidos(): void {
     this.pedidoService.getPedidos().subscribe((data) => {
       this.pedidos = data
-        .filter(pedido => pedido.status === 'em preparo')
+        .filter(pedido => pedido.status === 'não aceito' || pedido.status === 'em preparo')
         .map((pedido, index) => {
           const horario = new Date(pedido.horario);
           return {
@@ -31,6 +31,18 @@ export class TelaInicialCozinhaComponent implements OnInit {
             horario: horario,
             tempo: this.calcularTempo(horario)
           };
+        })
+        .sort((a, b) => {
+          // Ordena os pedidos "em preparo" por horário (ordem crescente)
+          if (a.status === 'em preparo' && b.status === 'em preparo') {
+            return new Date(a.horario).getTime() - new Date(b.horario).getTime();
+          }
+          // Move pedidos "em preparo" acima dos "não aceito"
+          if (a.status === 'em preparo') return -1;
+          if (b.status === 'em preparo') return 1;
+  
+          // Para os "não aceito", preserva a ordem de horário
+          return new Date(a.horario).getTime() - new Date(b.horario).getTime();
         });
     });
   }

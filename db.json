@@ -26,10 +26,10 @@
         }
       ],
       "preco": 69.98,
-      "horario": "2024-10-24T18:50:00.000Z",
-      "status": "em preparo",
+      "horario": "2024-10-24T18:40:00.000Z",
+      "status": "aguardando entrega",
       "numeroPedido": 1,
-      "tempo": "1318 min"
+      "tempo": "1428 min"
     },
     {
       "id": "2",
@@ -44,8 +44,8 @@
       "preco": 29.99,
       "horario": "2024-10-24T18:45:00.000Z",
       "status": "em preparo",
-      "numeroPedido": 2,
-      "tempo": "166 min"
+      "numeroPedido": 1,
+      "tempo": "1398 min"
     },
     {
       "id": "3",
@@ -65,8 +65,8 @@
       "preco": 29.99,
       "horario": "2024-10-24T18:45:00.000Z",
       "status": "em preparo",
-      "numeroPedido": 3,
-      "tempo": "166 min"
+      "numeroPedido": 1,
+      "tempo": "1398 min"
     },
     {
       "id": "4",
@@ -84,7 +84,7 @@
         }
       ],
       "preco": 29.99,
-      "horario": "2024-10-24T18:45:00.000Z",
+      "horario": "2024-10-24T18:25:00.000Z",
       "status": "em preparo",
       "numeroPedido": 4,
       "tempo": "166 min"
@@ -126,9 +126,51 @@
         }
       ],
       "preco": 29.99,
-      "horario": "2024-10-24T18:45:00.000Z",
-      "status": "em preparo",
+      "horario": "2024-10-25T18:52:15.454Z",
+      "status": "não aceito",
       "numeroPedido": 6,
+      "tempo": "166 min"
+    },
+    {
+      "id": "7",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-24T18:58:57.905Z",
+      "status": "em preparo",
+      "numeroPedido": 7,
+      "tempo": "166 min"
+    },
+    {
+      "id": "8",
+      "nomeCliente": "ana",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-25T19:17:29.212Z",
+      "status": "em preparo",
+      "numeroPedido": 8,
       "tempo": "166 min"
     }
   ]

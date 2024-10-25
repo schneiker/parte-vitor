@@ -1,11 +1,11 @@
 <section class="pedido">
-  <div class="info-pedido-pai">
+  <div class="info-pedido-pai" [ngClass]="{ 'pedido-nao-aceito': pedido.status === 'não aceito' }">
     <div class="info-pedido">
       <div class="texto-branco">{{ pedido.tempo }}</div>
       <div class="texto-branco">{{ pedido.nomeCliente }}</div>
     </div>
     <div class="info-pedido">
-      <div class="texto-branco">{{ pedido.horario | date: 'HH:mm' }}</div>
+      <div class="texto-branco">{{ pedido.horario ? (pedido.horario | date: 'HH:mm') : 'Horário indefinido' }}</div>
       <div class="texto-branco">nº {{ pedido.numeroPedido }}</div>
     </div>
   </div>
@@ -17,6 +17,12 @@
     </div>
   </div>
   <div id="botao">
-    <button class="b-finalizar" (click)="finalizarPedido(pedido.id)">Finalizar</button>
+    <button
+      class="b-finalizar"
+      [ngClass]="{ 'pedido-nao-aceito': pedido.status === 'não aceito' }"
+      (click)="pedido.status === 'não aceito' ? aceitarPedido(pedido.id) : finalizarPedido(pedido.id)"
+    >
+      {{ pedido.status === 'não aceito' ? 'Iniciar Pedido' : 'Finalizar' }}
+    </button>
   </div>
 </section>

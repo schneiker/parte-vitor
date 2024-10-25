@@ -15,6 +15,13 @@ export class CozinhaPedidoComponent {
 
   constructor(private pedidoService: PedidoService) {}
 
+  aceitarPedido(id: number): void {
+    this.pedidoService.aceitarPedido(id).subscribe(() => {
+      this.pedido.status = 'em preparo';
+      console.log('Pedido aceito com sucesso:', this.pedido);
+    });
+  }
+
   finalizarPedido(id: number): void {
     if (this.pedido && this.pedido.id === id) {
       this.pedido.status = 'aguardando entrega';

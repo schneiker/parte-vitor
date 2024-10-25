@@ -20,6 +20,7 @@ body {
     --cinza-texto-fundo: #474F5A;
     --cinza-botao-inativo: #818D9F;
     --fundo-telas: #25262D;
+    --pedido-nao-aceito: #455A64;
 }
 
 html, body { height: 100%; }

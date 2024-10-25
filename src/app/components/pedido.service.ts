@@ -20,6 +20,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { map, switchMap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -61,6 +62,25 @@ export class PedidoService {
 
   updatePedido(id: number, pedidoAtualizado: any): Observable<any> {
     return this.http.put(`${this.apiUrl}/${id}`, pedidoAtualizado);
+  }
+  
+  aceitarPedido(id: number): Observable<any> {
+    const horarioAtual = new Date().toISOString(); // Captura a data atual
+    
+    // Busca o pedido completo antes de atualizar
+    return this.getPedidoById(id).pipe(
+      map(pedido => ({
+        ...pedido, // Mantém os dados do pedido
+        status: 'em preparo',
+        horario: horarioAtual // Atualiza o horário
+      })),
+      switchMap(pedidoAtualizado => this.updatePedido(id, pedidoAtualizado))
+    );
+  }
+  
+  // Função auxiliar para buscar o pedido pelo ID
+  getPedidoById(id: number): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${id}`);
   }
 
   deletePedido(id: number): Observable<any> {
