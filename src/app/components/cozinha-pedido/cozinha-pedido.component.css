@@ -11,7 +11,7 @@
 
 .info-pedido-pai {
     background-color: var(--amarelo-figma);
-    height: 76px; /* Altura fixa da seção superior */
+    min-height: 76px; /* Altura fixa da seção superior */
     width: 100%;
     display: flex;
     flex-direction: column;

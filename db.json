@@ -27,7 +27,7 @@
       ],
       "preco": 69.98,
       "horario": "2024-10-24T18:50:00.000Z",
-      "status": "aguardando entrega",
+      "status": "em preparo",
       "numeroPedido": 1,
       "tempo": "1318 min"
     },
@@ -65,7 +65,70 @@
       "preco": 29.99,
       "horario": "2024-10-24T18:45:00.000Z",
       "status": "em preparo",
-      "numeroPedido": 2,
+      "numeroPedido": 3,
+      "tempo": "166 min"
+    },
+    {
+      "id": "4",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-24T18:45:00.000Z",
+      "status": "em preparo",
+      "numeroPedido": 4,
+      "tempo": "166 min"
+    },
+    {
+      "id": "5",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-24T18:45:00.000Z",
+      "status": "em preparo",
+      "numeroPedido": 5,
+      "tempo": "166 min"
+    },
+    {
+      "id": "6",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-24T18:45:00.000Z",
+      "status": "em preparo",
+      "numeroPedido": 6,
       "tempo": "166 min"
     }
   ]
