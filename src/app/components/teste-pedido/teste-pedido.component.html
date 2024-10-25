@@ -3,6 +3,7 @@
     <h1>{{ dish.name }}</h1>
     <p>{{ dish.description }}</p>
     <p>{{ dish.price | currency:'BRL' }}</p>
+    <button (click)="addToCart()">Adicionar</button>
 </div>
 <div *ngIf="!loading && !dish">
     <h1>ERRO</h1>

@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-executivos',
   standalone: true, 
@@ -30,6 +31,7 @@ export class ExecutivosComponent implements OnInit {
 
  }
 
+
  verDetalhes(id: number | undefined) {
   if (id !== undefined) {
       this.router.navigate(['/cardapio/fazer-pedido', id.toString()]); 
@@ -41,5 +43,7 @@ export class ExecutivosComponent implements OnInit {
  voltar() {
   this.location.back();
  }
+
+ 
   
 }

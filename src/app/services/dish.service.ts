@@ -20,7 +20,7 @@ export interface Category  {
   providedIn: 'root'
 })
 export class DishService {
-  private apiUrl = 'http://192.168.5.106:3000/dishes';
+  private apiUrl = 'http://localhost:3000/dishes';
 
   constructor(private http: HttpClient) {}
 

@@ -1,5 +1,30 @@
 {
-  "cart": [],
+  "cart": [
+    {
+      "id": "2",
+      "name": "Pasta ao Pesto",
+      "description": "Massa fresca com molho pesto caseiro e queijo parmesão.",
+      "price": 35,
+      "image": "https://img.cybercook.com.br/receitas/985/macarrao-ao-pesto-2.jpeg",
+      "category": "executivos"
+    },
+    {
+      "id": "3",
+      "name": "Frango à Parmegiana",
+      "description": "Peito de frango empanado com queijo e molho de tomate.",
+      "price": 40,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
+      "category": "executivos"
+    },
+    {
+      "id": "3",
+      "name": "Frango à Parmegiana",
+      "description": "Peito de frango empanado com queijo e molho de tomate.",
+      "price": 40,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
+      "category": "executivos"
+    }
+  ],
   "dishes": [
     {
       "id": "1",

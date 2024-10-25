@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DishService, Dish } from '../../services/dish.service'; 
 import { ActivatedRoute } from '@angular/router'; 
 import { CommonModule } from '@angular/common';
+import { PedidosService } from '../../services/pedidos.service';
 
 @Component({
   selector: 'app-teste-pedido',
@@ -17,7 +18,8 @@ export class TestePedidoComponent implements OnInit {
 
   constructor(
     private dishService: DishService,
-    private route: ActivatedRoute
+    private pedidosService: PedidosService, // Adiciona o serviço de pedidos
+    private route: ActivatedRoute, 
   ) {}
 
   ngOnInit() {
@@ -37,6 +39,21 @@ export class TestePedidoComponent implements OnInit {
     } else {
       console.error('ID não fornecido na rota');
       this.loading = false;
+    }
+  }
+
+  addToCart(): void {
+    if (this.dish) {
+      this.pedidosService.addToCart(this.dish).subscribe(
+        (response) => {
+          console.log('Prato adicionado ao carrinho:', response);
+        },
+        (error) => {
+          console.error('Erro ao adicionar prato ao carrinho:', error);
+        }
+      );
+    } else {
+      console.error('Prato não encontrado para adicionar ao carrinho');
     }
   }
 }
