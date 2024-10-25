@@ -85,6 +85,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: auto;
+    
 
 }
 
@@ -97,10 +98,14 @@ body {
 
 .menu div  {
     align-items: flex-start;
+    
+    
 }
 
 .cardapio div {
     align-items: flex-start;
+    
+    
 }
 
 .mulish-fonte {
@@ -115,7 +120,6 @@ body {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    background-color: #dad9d90e; 
     color: white;
     font-size: 40px;
     border: none;
@@ -124,4 +128,27 @@ body {
     border-radius:10px;
     gap: 20px;
   
+  }
+
+  .cabecalho {
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: auto;
+  }
+
+  .carrinho-button {
+    background-color: #595E65;
+    height: auto;
+    max-width: 100%;
+    margin: 14px;
+    display: block;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    gap: 20px;
   }

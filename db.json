@@ -1,8 +1,5 @@
 {
-  "cart": [
-
-  ],
-
+  "cart": [],
   "dishes": [
     {
       "id": "1",
@@ -187,14 +184,6 @@
       "price": 7,
       "image": "https://preview.redd.it/todos-os-refrigerantes-est%C3%A3o-horr%C3%ADveis-v0-2a79uzexe09d1.jpg?width=600&format=pjpg&auto=webp&s=3a621c79bb00a80f4319ee439a4feb5cf2688fad",
       "category": "bebidas"
-    },
-    {
-      "id": "24",
-      "name": "Macarrão Al Pomodoro",
-      "description": "Macarrão ao molho de tomate fresco e manjericão.",
-      "price": 30,
-      "image": "https://static.soujusto.com.br/recipes/fly/Receitas%20site%20(1).jpg",
-      "category": "executivos"
     }
   ]
 }
