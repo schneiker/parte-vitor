@@ -17,8 +17,9 @@
     </div>
     
     <app-previsao-de-entrega *ngIf="mostrarPrevisaoEntrega"></app-previsao-de-entrega>
-    <app-dialog-confirme-o-pagamento *ngIf="mostrarDiaPagamento"></app-dialog-confirme-o-pagamento>          
-
+    <!-- <app-dialog-confirme-o-pagamento *ngIf="mostrarDiaPagamento"></app-dialog-confirme-o-pagamento>           -->
+    <app-entregador-info-cliente-e-pedido *ngIf="codigoClienteConfirmado"></app-entregador-info-cliente-e-pedido>
+ 
     <div>
         <button id="botao-c-entrega" (click)="openDialog()">
           {{ pagamentoConfirmado ? 'Confirmar o pagamento' : 'Cheguei na entrega' }}

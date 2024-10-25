@@ -7,11 +7,19 @@ import { InserirCodigoClienteComponent } from '../inserir-codigo-cliente/inserir
 import { PrevisaoDeEntregaComponent } from '../previsao-de-entrega/previsao-de-entrega.component';
 import { FinalizarEntregaComponent } from '../finalizar-entrega/finalizar-entrega.component';  // Importação do novo diálogo
 import { EntregaService  } from '../../entrega.service';
+import { EntregadorInfoClienteEPedidoComponent } from '../entregador-info-cliente-e-pedido/entregador-info-cliente-e-pedido.component';
 
 @Component({
   selector: 'app-entrega-recebida',
   standalone: true,
-  imports: [NgIf, RouterModule, MatDialogModule, DialogConfirmeOPagamentoComponent, PrevisaoDeEntregaComponent],
+  imports: [NgIf, 
+    RouterModule, 
+    MatDialogModule, 
+    DialogConfirmeOPagamentoComponent, 
+    PrevisaoDeEntregaComponent,
+    FinalizarEntregaComponent,
+    EntregadorInfoClienteEPedidoComponent
+  ],
   templateUrl: './entrega-recebida.component.html',
   styleUrl: './entrega-recebida.component.css'
 })
@@ -20,6 +28,7 @@ export class EntregaRecebidaComponent {
   mostrarDiaPagamento: boolean = false;
   esconderH2: boolean = false;
   pagamentoConfirmado: boolean = false;  // Nova variável para controle do estado do pagamento
+  codigoClienteConfirmado: boolean = false;  // Nova variável para controlar a visibilidade
 
   constructor(public dialog: MatDialog,  private entregaService: EntregaService) {}
 
@@ -31,6 +40,7 @@ export class EntregaRecebidaComponent {
 
       dialogRef.afterClosed().subscribe(result => {
         if (result === 'codigoConfirmado') {
+          this.codigoClienteConfirmado = true;
           this.abrirPagamentoDialog();
         }
       });
@@ -41,7 +51,8 @@ export class EntregaRecebidaComponent {
 
   abrirPagamentoDialog(): void {
     const dialogRef = this.dialog.open(DialogConfirmeOPagamentoComponent, {
-      width: '396px'
+      width: '396px',
+      disableClose: true 
     });
 
     dialogRef.afterClosed().subscribe(result => {
