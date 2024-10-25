@@ -2,14 +2,16 @@
     box-sizing: border-box;
     background-color: var(--branco-figma);
     width: 180px;
-    min-height: 256px;
+    height: 256px; /* Define a altura fixa para o componente */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Garante que nada ultrapasse o limite */
 }
 
 .info-pedido-pai {
     background-color: var(--amarelo-figma);
-    height: 76px;
+    height: 76px; /* Altura fixa da seção superior */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,31 +27,44 @@
     background-color: var(--amarelo-figma);
 }
 
+#todos-os-pedidos {
+    flex-grow: 1; /* Faz com que essa div cresça para ocupar o espaço disponível */
+    max-height: 131px; /* Define a altura máxima */
+    overflow-y: auto; /* Adiciona a barra de rolagem vertical se necessário */
+    width: 100%;
+    box-sizing: border-box; /* Garante que padding seja incluído na largura e altura */
+    margin-bottom: 10px; /* Adiciona espaço antes do botão */
+}
+
 .detalhes-pedido {
     background-color: var(--branco-figma);
     box-sizing: border-box;
     width: 100%;
-    height: 131px;
+    padding: 5px 0;
+    margin: 0;
 }
+
 .detalhes-pedido p {
     padding-left: 15px;
     margin-top: 0;
-    margin-bottom: 0px;
+    margin-bottom: 4px; /* Espaçamento mínimo entre os parágrafos */
     font-size: 12px;
 }
 
 .detalhes-pedido h3 {
     padding-left: 12px;
-    margin-bottom: 0px;
+    margin-bottom: 4px; /* Espaçamento entre o título e a descrição */
 }
 
 #botao {
     box-sizing: border-box;
     display: flex;
     width: 100%;
-    height: 49px;
+    height: 49px; /* Altura fixa do botão */
     justify-content: center;
     background-color: var(--branco-figma);
+    align-items: flex-end; /* Garante que o botão fique na parte inferior */
+    margin-bottom: 12px; /* Adiciona a distância de 12px entre o botão e o final */
 }
 
 .b-finalizar {
@@ -59,14 +74,12 @@
     width: 168px;
     height: 37px;
     font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
 }
 
 .texto-branco {
     color: var(--branco-texto);
     font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     background-color: var(--amarelo-figma);
 }
@@ -74,7 +87,6 @@
 .texto-preto {
     color: var(--preto-texto);
     font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     background-color: var(--branco-figma);
 }
@@ -82,7 +94,6 @@
 .texto-cinza {
     color: var(--cinza-texto);
     font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     background-color: var(--branco-figma);
 }
@@ -90,7 +101,6 @@
 #titulo-h3 {
     font-size: 14px;
     font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     background-color: var(--branco-figma);
 }

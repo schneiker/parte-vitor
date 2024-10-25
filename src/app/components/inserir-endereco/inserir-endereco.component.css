@@ -6,6 +6,11 @@ button {
     border: none;
     color: white;
     background-color: var(--cinza-botao-inativo);
+    font-size: 20px;
+}
+
+mat-dialog-content {
+    min-height: 575px;
 }
 
 mat-dialog-content, mat-dialog-actions {

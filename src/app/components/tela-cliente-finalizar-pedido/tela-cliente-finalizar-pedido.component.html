@@ -44,10 +44,10 @@
     </div>
 
     <div id="observacao">
-        <h3>Observação no pedido?</h3>
-        <form>
-            <input type="text" class="forms-observacao" placeholder="Digite aqui">
-        </form>
+      <h3>Observação no pedido?</h3>
+      <form>
+        <textarea class="forms-observacao" placeholder="Digite aqui" [(ngModel)]="observacao" name="observacao" (input)="ajustarAltura($event)"></textarea>
+      </form>
     </div>
 
     <div class="container">

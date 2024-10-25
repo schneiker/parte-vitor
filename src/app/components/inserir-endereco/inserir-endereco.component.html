@@ -42,6 +42,6 @@
     </form>
     <mat-dialog-actions class="botoes">
       <button mat-button (click)="onCancel()">Cancelar</button>
-      <button mat-button [mat-dialog-close]="{cep, logradouro, numero, complemento, bairro, cidade, estado}">OK</button>
-    </mat-dialog-actions>  
+      <button mat-button [mat-dialog-close]="{cep, logradouro, numero, complemento, bairro, cidade, estado}"[disabled]="!isEnderecoCompleto()">OK</button>
+    </mat-dialog-actions>   
   </mat-dialog-content>

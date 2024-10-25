@@ -1,0 +1,56 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.codigo-confirmacao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.codigo-confirmacao p {
+    font-size: 16px;
+}
+
+.botao-confirmar {
+    background-color: #e8bb2d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    font-size: 24px;
+    font-weight: 600;
+    height: 50px;
+    position: fixed;
+    bottom: 20px; /* Fixa o botão 20px acima da parte inferior da tela */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+    width: 90%; /* Ajusta a largura do botão */
+    max-width: 340px; /* Limita a largura máxima do botão */
+}
+
+.codigo-pedido {
+    background-color: #e8bb2d;
+    color: #fff;
+    font-size: 36px;
+    padding: 10px;
+    border-radius: 8px;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:host {
+    display: block;
+    margin-top: 100px;
+}

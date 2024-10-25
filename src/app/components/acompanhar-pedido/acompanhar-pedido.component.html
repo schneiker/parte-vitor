@@ -14,13 +14,7 @@
             <div class="circle" [class.completed]="statusAtual === 'Pedido concluído'"></div>
         </div>
         <p class="status-text">{{ statusAtual }}</p>
+        <app-cliente-confirmar-entrega *ngIf="!entregaConfirmada"></app-cliente-confirmar-entrega>
     </div>
-
-    <div class="codigo-confirmacao">
-        <p>Informe o código abaixo na entrega do pedido:</p>
-        <div class="codigo-pedido">5941</div>
-    </div>
-
-    <button class="botao-confirmar" (click)="pedidoConcluido()">Confirmar entrega</button>
 </section>
     

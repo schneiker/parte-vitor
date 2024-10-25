@@ -1,11 +1,12 @@
 .pedido-container {
     background-color: #1f2027;
     padding: 20px;
-    padding-bottom: 502px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh; /* Ocupa toda a altura da tela */
+    box-sizing: border-box; /* Garante que o padding seja incluído na altura */
 }
 
 header {
@@ -63,27 +64,4 @@ h1 {
     color: red;
     font-size: 14px;
     margin-top: 10px;
-}
-
-.codigo-confirmacao {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.codigo-pedido {
-    background-color: #e8bb2d;
-    color: #fff;
-    font-size: 36px;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.botao-confirmar {
-    background-color: #e8bb2d;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
 }

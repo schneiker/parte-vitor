@@ -6,11 +6,12 @@ import { InserirCpfComponent } from '../inserir-cpf/inserir-cpf.component';
 import { InserirEnderecoComponent } from '../inserir-endereco/inserir-endereco.component';
 import { PedidoService } from '../pedido.service';
 import { NgClass, CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-tela-cliente-finalizar-pedido',
   standalone: true,
-  imports: [MatIcon, NgClass, CommonModule],
+  imports: [MatIcon, NgClass, CommonModule, FormsModule],
   templateUrl: './tela-cliente-finalizar-pedido.component.html',
   styleUrl: './tela-cliente-finalizar-pedido.component.css'
 })
@@ -21,6 +22,7 @@ export class TelaClienteFinalizarPedidoComponent implements OnInit {
   subtotal: number = 0;
   taxaEntrega: number = 15;
   total: number = 0;
+  observacao: string = '';
 
   constructor(
     private dialog: MatDialog,
@@ -76,5 +78,11 @@ export class TelaClienteFinalizarPedidoComponent implements OnInit {
     if (this.isButtonEnabled) {
       this.router.navigate(['/acompanhar-pedido']);
     }
+  }
+
+  ajustarAltura(event: Event): void {
+    const textarea = event.target as HTMLTextAreaElement;
+    textarea.style.height = 'auto'; // Reseta a altura para calcular o scrollHeight
+    textarea.style.height = `${textarea.scrollHeight}px`; // Define a altura conforme o conteúdo
   }
 }

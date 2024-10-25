@@ -1,20 +1,23 @@
-<section class="pedido">
+<section *ngFor="let pedido of pedidos" class="pedido">
     <div class="info-pedido-pai">
-        <div class="info-pedido">
-            <div class="texto-branco">tempo</div>
-            <div class="texto-branco">nome</div>
-        </div>
-        <div class="info-pedido">
-            <div class="texto-branco">horário</div>
-            <div class="texto-branco">nº pedido</div>
-        </div>
+      <div class="info-pedido">
+        <div class="texto-branco">{{ pedido.tempo }}</div> <!-- Tempo de espera -->
+        <div class="texto-branco">{{ pedido.nomeCliente }}</div> <!-- Nome do cliente -->
+      </div>
+      <div class="info-pedido">
+        <div class="texto-branco">{{ pedido.horario | date: 'HH:mm' }}</div> <!-- Exibe o horário no formato 24 horas -->
+        <div class="texto-branco">nº {{ pedido.numeroPedido }}</div> <!-- Número do pedido -->
+      </div>
     </div>
-    <div class="detalhes-pedido">
-        <h3 class="texto-preto" id="titulo-h3">1 Salmão Grelhado</h3>
-        <p class="texto-cinza">· 1 aspargo ao vapor</p>
-        <p class="texto-cinza">· Sem molho de manteiga</p>
+    <div id="todos-os-pedidos">
+        <div class="detalhes-pedido" *ngFor="let item of pedido.itens">
+            <h3 class="texto-preto" id="titulo-h3">{{ item.nomePrato }}</h3> <!-- Nome do prato -->
+            <p class="texto-cinza">{{ item.descricao }}</p> <!-- Descrição do prato -->
+            <p class="texto-cinza">{{ item.observacao || 'Sem observações' }}</p> <!-- Observações -->
+          </div>
     </div>
+    
     <div id="botao">
-        <button class="b-finalizar" >Finalizar</button>
+      <button class="b-finalizar" (click)="finalizarPedido(pedido.id)">Finalizar</button>
     </div>
 </section>

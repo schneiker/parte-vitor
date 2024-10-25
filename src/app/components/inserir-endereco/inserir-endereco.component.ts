@@ -67,4 +67,9 @@ export class InserirEnderecoComponent {
         );
     }
   }
+
+  isEnderecoCompleto(): boolean {
+    // Verifica se todos os campos essenciais, incluindo o número, estão preenchidos
+    return this.cep !== '' && this.logradouro !== '' && this.numero !== '' && this.bairro !== '' && this.cidade !== '' && this.estado !== '';
+  }
 }
