@@ -1,70 +1,72 @@
 {
-    "pedidos": [
-      {
-        "id": 1,
-        "nomeCliente": "mário",
-        "itens": [
-          {
-            "nomePrato": "lasanha",
-            "descricao": "· carne com queijo",
-            "observacao": "· sem ervilha"
-          },
-          {
-            "nomePrato": "salmão grelhado",
-            "descricao": "· aspargo ao vapor",
-            "observacao": "· sem molho de manteiga"
-          },
-          {
-            "nomePrato": "salmão frito",
-            "descricao": "· aspargo com molho",
-            "observacao": "· sem molho de amendoim"
-          },
-          {
-            "nomePrato": "salmão frito",
-            "descricao": "· aspargo com molho",
-            "observacao": "· sem molho de amendoim"
-          }
-        ],
-        "preco": 69.98,
-        "horario": "2024-10-24T18:50:00.000Z",
-        "status": "em preparo"
-      },
-      {
-        "id": 2,
-        "nomeCliente": "joão",
-        "itens": [
-          {
-            "nomePrato": "tilápia com limão",
-            "descricao": "· peixe sem espinhas",
-            "observacao": "· sem espinhas"
-          }
-        ],
-        "preco": 29.99,
-        "horario": "2024-10-24T18:45:00.000Z",
-        "status": "em preparo",
-        "numeroPedido": 2,
-        "tempo": "166 min"
-      },
-      {
-        "id": 3,
-        "nomeCliente": "joão",
-        "itens": [
-          {
-            "nomePrato": "tilápia com limão",
-            "descricao": "· peixe sem espinhas",
-            "observacao": "· sem espinhas"
-          },
-          {
-            "nomePrato": "salmão frito",
-            "descricao": "· aspargo com molho",
-            "observacao": "· sem molho de amendoim"
-          }
-        ],
-        "preco": 29.99,
-        "horario": "2024-10-24T18:45:00.000Z",
-        "status": "em preparo",
-        "numeroPedido": 2,
-        "tempo": "166 min"
-      }
-    ]
-  }
+  "pedidos": [
+    {
+      "id": "1",
+      "nomeCliente": "mário",
+      "itens": [
+        {
+          "nomePrato": "lasanha",
+          "descricao": "· carne com queijo",
+          "observacao": "· sem ervilha"
+        },
+        {
+          "nomePrato": "salmão grelhado",
+          "descricao": "· aspargo ao vapor",
+          "observacao": "· sem molho de manteiga"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 69.98,
+      "horario": "2024-10-24T18:50:00.000Z",
+      "status": "aguardando entrega",
+      "numeroPedido": 1,
+      "tempo": "1318 min"
+    },
+    {
+      "id": "2",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-24T18:45:00.000Z",
+      "status": "em preparo",
+      "numeroPedido": 2,
+      "tempo": "166 min"
+    },
+    {
+      "id": "3",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-24T18:45:00.000Z",
+      "status": "em preparo",
+      "numeroPedido": 2,
+      "tempo": "166 min"
+    }
+  ]
+}

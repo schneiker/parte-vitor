@@ -1,6 +1,10 @@
 mat-form-field {
     width: 100%;
   }
+
+  ::ng-deep .mat-dialog-title h2 {
+    color: white;
+  }
   
   button {
     margin: 8px;
@@ -9,6 +13,8 @@ mat-form-field {
     height: 44px;
     border: none;
     font-size: 24px;
+    background-color: var(--cinza-botao-inativo);
+    color: white;
   }
 
   mat-dialog-content {
