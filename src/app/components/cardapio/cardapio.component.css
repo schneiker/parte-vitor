@@ -146,9 +146,10 @@ body {
     display: block;
     align-items: center;
     color: white;
-    font-size: 40px;
+    font-size: 25px;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     gap: 20px;
+    text-transform: capitalize;
   }
