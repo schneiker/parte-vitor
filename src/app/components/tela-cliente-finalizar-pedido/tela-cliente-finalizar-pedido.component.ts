@@ -91,7 +91,18 @@ export class TelaClienteFinalizarPedidoComponent implements OnInit {
 
   navegarParaOutroComponente() {
     if (this.isButtonEnabled) {
-      this.router.navigate(['/acompanhar-pedido']);
+      const novoPedido = {
+        nomeCliente: this.nomeSalvo,
+        itens: [],
+        preco: this.total,
+        endereco: `${this.enderecoSalvo.logradouro}, ${this.enderecoSalvo.numero} - ${this.enderecoSalvo.bairro}`,
+        cpf: this.cpfSalvo,
+        observacao: this.observacao
+      };
+
+      this.pedidoService.fazerPedido(novoPedido).subscribe(() => {
+        this.router.navigate(['/acompanhar-pedido']);
+      });
     }
   }
 

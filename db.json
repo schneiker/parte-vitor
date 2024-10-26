@@ -45,7 +45,7 @@
       "preco": 29.99,
       "horario": "2024-10-24T18:45:00.000Z",
       "status": "em preparo",
-      "numeroPedido": 1,
+      "numeroPedido": 2,
       "tempo": "1398 min"
     },
     {
@@ -65,9 +65,10 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-24T18:45:00.000Z",
-      "status": "em preparo",
-      "numeroPedido": 1,
-      "tempo": "1398 min"
+      "status": "pedido enviado para entrega",
+      "numeroPedido": 3,
+      "tempo": "1398 min",
+      "entregador": "Hugo Prado"
     },
     {
       "id": "4",
@@ -86,9 +87,10 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-24T18:25:00.000Z",
-      "status": "aguardando entrega",
-      "numeroPedido": 3,
-      "tempo": "1492 min"
+      "status": "pedido enviado para entrega",
+      "numeroPedido": 4,
+      "tempo": "1492 min",
+      "entregador": "Hugo Prado"
     },
     {
       "id": "5",
@@ -128,9 +130,9 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-25T18:52:15.454Z",
-      "status": "não aceito",
+      "status": "aguardando entrega",
       "numeroPedido": 6,
-      "tempo": "166 min"
+      "tempo": "1628 min"
     },
     {
       "id": "7",
@@ -149,9 +151,9 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-24T18:58:57.905Z",
-      "status": "em preparo",
+      "status": "aguardando entrega",
       "numeroPedido": 7,
-      "tempo": "166 min"
+      "tempo": "3062 min"
     },
     {
       "id": "8",
@@ -170,9 +172,72 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-25T19:17:29.212Z",
-      "status": "em preparo",
+      "status": "pedido enviado para entrega",
       "numeroPedido": 8,
-      "tempo": "166 min"
+      "tempo": "166 min",
+      "entregador": "Claudinei Santos"
+    },
+    {
+      "id": "9",
+      "nomeCliente": "Kauan Batista",
+      "itens": [
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13",
+      "observacao": "sem maionese",
+      "numeroPedido": 9,
+      "horario": "2024-10-26T21:59:40.709Z",
+      "status": "aguardando entrega",
+      "tempo": "5 min",
+      "entregador": ""
+    },
+    {
+      "id": "10",
+      "nomeCliente": "Gustavo Sobrinho",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "258.189.438-52",
+      "observacao": "sem batatinha",
+      "numeroPedido": 10,
+      "horario": "2024-10-26T22:30:59.298Z",
+      "status": "pedido enviado para entrega",
+      "tempo": "0 min",
+      "entregador": "Hugo Prado"
+    },
+    {
+      "id": "11",
+      "nomeCliente": "Kayque",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13",
+      "observacao": "",
+      "numeroPedido": 11,
+      "horario": "2024-10-26T22:22:11.927Z",
+      "status": "aguardando entrega",
+      "tempo": "0 min",
+      "entregador": ""
+    },
+    {
+      "id": "12",
+      "nomeCliente": "Mariana",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13",
+      "observacao": "",
+      "numeroPedido": 12,
+      "horario": "2024-10-26T22:24:50.692Z",
+      "status": "aguardando entrega",
+      "tempo": "0 min",
+      "entregador": ""
     }
   ],
   "entregadores": [

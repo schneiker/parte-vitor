@@ -23,11 +23,10 @@ export class TelaInicialCozinhaComponent implements OnInit {
     this.pedidoService.getPedidos().subscribe((data) => {
       this.pedidos = data
         .filter(pedido => pedido.status === 'não aceito' || pedido.status === 'em preparo')
-        .map((pedido, index) => {
+        .map((pedido) => {
           const horario = new Date(pedido.horario);
           return {
             ...pedido,
-            numeroPedido: index + 1,
             horario: horario,
             tempo: this.calcularTempo(horario)
           };

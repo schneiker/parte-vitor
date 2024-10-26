@@ -71,4 +71,26 @@ export class PedidoService {
     };
     return this.http.patch(`${this.apiUrl}/${id}`, pedidoAtualizado);
   }
+
+  fazerPedido(pedido: any): Observable<any> {
+    return this.getPedidos().pipe(
+      map((pedidos) => {
+        const ultimoPedido = pedidos.length ? pedidos[pedidos.length - 1] : null;
+        const novoId = ultimoPedido ? +ultimoPedido.id + 1 : 1;
+        const numeroPedido = ultimoPedido ? ultimoPedido.numeroPedido + 1 : 1;
+        const horarioAtual = new Date().toISOString();
+
+        return {
+          ...pedido,
+          id: novoId,
+          numeroPedido: numeroPedido,
+          horario: horarioAtual,
+          status: 'não aceito',
+          tempo: '',
+          entregador: ''
+        };
+      }),
+      switchMap((novoPedido) => this.http.post<any>(this.apiUrl, novoPedido))
+    );
+  }
 }
