@@ -13,5 +13,6 @@ export const routes: Routes = [
     { path: 'tela-escolher-entregador', component: TelaEscolherEntregadorComponent},
     { path: 'tela-entregador', component: TelaInicialEntregadorComponent},
     { path: 'tela-finalizar-pedido', component: TelaClienteFinalizarPedidoComponent},
-    { path: 'acompanhar-pedido', component: AcompanharPedidoComponent}
+    { path: 'acompanhar-pedido', component: AcompanharPedidoComponent},
+    { path: 'tela-escolher-entregador/:numeroPedido', component: TelaEscolherEntregadorComponent}
 ];

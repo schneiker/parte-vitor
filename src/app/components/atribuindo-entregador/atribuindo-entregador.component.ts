@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -22,5 +23,11 @@ import { MatDialogModule } from '@angular/material/dialog';
   styleUrl: './atribuindo-entregador.component.css'
 })
 export class AtribuindoEntregadorComponent {
+  entregador: any;
+  numeroPedido: number;
 
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
+    this.entregador = data.entregador;
+    this.numeroPedido = data.numeroPedido;
+  }
 }

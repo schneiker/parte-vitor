@@ -14,13 +14,14 @@ import { NgFor } from '@angular/common';
 })
 export class EntregadoresComponent {
   @Input() entregador: any;
+  @Input() numeroPedido: number | null = null;
 
   constructor(private matDialog: MatDialog) {}
 
   openDialog(entregador: any): void {
     this.matDialog.open(AtribuindoEntregadorComponent, {
       width: '350px',
-      data: { entregador }
+      data: { entregador, numeroPedido: this.numeroPedido }
     });
   }
 }

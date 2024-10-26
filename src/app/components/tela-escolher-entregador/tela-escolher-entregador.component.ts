@@ -9,6 +9,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NgFor } from '@angular/common';
 import { EntregadorService } from '../entregador.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-tela-escolher-entregador',
@@ -28,10 +29,12 @@ import { EntregadorService } from '../entregador.service';
 })
 export class TelaEscolherEntregadorComponent implements OnInit {
   entregadores: any[] = [];
+  numeroPedido: number | null = null;
 
-  constructor(private entregadorService: EntregadorService) {}
+  constructor(private entregadorService: EntregadorService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
+    this.numeroPedido = +this.route.snapshot.paramMap.get('numeroPedido')!;
     this.loadEntregadoresDisponiveis();
   }
 
