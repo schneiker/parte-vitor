@@ -185,6 +185,11 @@
       "id": 2,
       "nome": "Geraldo Cruz",
       "status": "disponível"
+    },
+    {
+      "id": 3,
+      "nome": "Claudinei Santos",
+      "status": "disponível"
     }
   ]
 }

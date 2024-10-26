@@ -20,13 +20,16 @@
     background-color: var(--branco-figma);
 }
 
-#entregador-status h2{
+#entregador-status h2 {
     font-size: 16px;
     margin-top: 5px;
     background-color: var(--branco-figma);
     font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
 }
 
 #entregador {
