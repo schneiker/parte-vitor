@@ -173,5 +173,18 @@
       "numeroPedido": 8,
       "tempo": "166 min"
     }
+  ],
+
+  "entregadores": [
+    {
+      "id": 1,
+      "nome": "Hugo Prado",
+      "status": "disponível"
+    },
+    {
+      "id": 2,
+      "nome": "Geraldo Cruz",
+      "status": "disponível"
+    }
   ]
 }

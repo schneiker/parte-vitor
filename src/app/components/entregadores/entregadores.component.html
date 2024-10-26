@@ -1,11 +1,12 @@
 <section id="entregador">
     <div id="entregador-status">
-        <div id="circulo-disponibilidade-entregador"></div>
-        <h2>Hugo Prado</h2>
+      <div id="circulo-disponibilidade-entregador"></div>
+      <h2>{{ entregador.nome }}</h2>
     </div>
     <div class="css-botao">
-        <mat-dialog-actions>
-            <button mat-raised-button id="botao" (click)="openDialog()">Atribuir</button>
-        </mat-dialog-actions>
+      <mat-dialog-actions>
+        <button mat-raised-button id="botao" (click)="openDialog(entregador)">Atribuir</button>
+      </mat-dialog-actions>
     </div>
 </section>
+  
