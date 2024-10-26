@@ -3,9 +3,8 @@
         <h1>Pedidos</h1>
     </header>
     <div class="pedidos">
-        <app-entrega-pedido></app-entrega-pedido>
-        <app-entrega-pedido></app-entrega-pedido>
-        <app-entrega-pedido></app-entrega-pedido>
-        <app-entrega-pedido></app-entrega-pedido>
+        <div *ngFor="let pedido of pedidos">
+            <app-entrega-pedido [pedido]="pedido"></app-entrega-pedido>
+        </div>
     </div>
 </section>

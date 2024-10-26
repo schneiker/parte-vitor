@@ -85,9 +85,9 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-24T18:25:00.000Z",
-      "status": "em preparo",
-      "numeroPedido": 4,
-      "tempo": "166 min"
+      "status": "aguardando entrega",
+      "numeroPedido": 3,
+      "tempo": "1492 min"
     },
     {
       "id": "5",
