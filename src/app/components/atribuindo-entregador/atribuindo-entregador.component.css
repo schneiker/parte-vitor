@@ -19,11 +19,15 @@ h1 {
     font-size: 24px;
 }
 
-mat-dialog-actions {
+.atribuir {
     justify-content: center;
 }
 
 #fechar {
     border: none;
     cursor: pointer;
+}
+
+.fechar {
+    justify-content: right;
 }

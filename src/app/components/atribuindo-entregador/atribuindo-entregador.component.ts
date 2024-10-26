@@ -1,12 +1,12 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormField } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
+import { PedidoService } from '../pedido.service';
 
 @Component({
   selector: 'app-atribuindo-entregador',
@@ -26,8 +26,22 @@ export class AtribuindoEntregadorComponent {
   entregador: any;
   numeroPedido: number;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any,
+  private dialogRef: MatDialogRef<AtribuindoEntregadorComponent>,
+  private pedidoService: PedidoService) {
     this.entregador = data.entregador;
     this.numeroPedido = data.numeroPedido;
+  }
+
+  confirmarAtribuicao(): void {
+    this.pedidoService.atribuirEntregadorAoPedido(this.numeroPedido, this.entregador.nome).subscribe({
+      next: () => {
+        console.log(`Pedido ${this.numeroPedido} atribuído ao entregador ${this.entregador.nome}`);
+        this.dialogRef.close();
+      },
+      error: (err) => {
+        console.error('Erro ao atribuir entregador ao pedido:', err);
+      }
+    });
   }
 }

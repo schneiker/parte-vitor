@@ -1,12 +1,15 @@
-<button id="fechar">
-    <mat-icon>close</mat-icon>
-</button>
+<mat-dialog-actions class="fechar">
+    <button id="fechar">
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-dialog-actions>
+
 <mat-dialog-content>
     <header>
         <h1>Atribuir pedido nº {{ numeroPedido }} a {{ entregador.nome }}?</h1>
     </header>
 </mat-dialog-content>
 
-<mat-dialog-actions>
-    <button mat-raised-button id="confirmar">Confirmar </button>
+<mat-dialog-actions class="atribuir">
+    <button mat-raised-button id="confirmar" (click)="confirmarAtribuicao()">Confirmar</button>
 </mat-dialog-actions>
