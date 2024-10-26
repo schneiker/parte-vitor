@@ -5,6 +5,12 @@
     </header>
 
     <div class="forms">
+      <form>
+        <input type="text" class="forms-pessoais"
+               placeholder="Inserir Nome"
+               [value]="nomeSalvo || ''"
+               (click)="abrirDialogoInserirNome()" readonly>
+      </form>
         <form>
           <input type="text" class="forms-pessoais"
                  placeholder="Inserir CPF"

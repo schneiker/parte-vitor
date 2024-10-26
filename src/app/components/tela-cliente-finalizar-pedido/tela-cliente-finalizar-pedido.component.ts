@@ -7,6 +7,7 @@ import { InserirEnderecoComponent } from '../inserir-endereco/inserir-endereco.c
 import { PedidoService } from '../pedido.service';
 import { NgClass, CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { InserirNomeComponent } from '../inserir-nome/inserir-nome.component';
 
 @Component({
   selector: 'app-tela-cliente-finalizar-pedido',
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 export class TelaClienteFinalizarPedidoComponent implements OnInit {
   enderecoSalvo: any = null;
   cpfSalvo: string = '';
+  nomeSalvo: string = '';
   isButtonEnabled: boolean = false;
   subtotal: number = 0;
   taxaEntrega: number = 15;
@@ -34,6 +36,19 @@ export class TelaClienteFinalizarPedidoComponent implements OnInit {
     this.subtotal = this.pedidoService.getSubtotal();
     console.log('Subtotal obtido:', this.subtotal);
     this.calcularTotal();
+  }
+
+  abrirDialogoInserirNome(): void {
+    const dialogRef = this.dialog.open(InserirNomeComponent, {
+      width: '300px'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.nomeSalvo = result;
+        this.verificarCampos();
+      }
+    });
   }
 
   abrirDialogCpf(): void {
@@ -63,7 +78,7 @@ export class TelaClienteFinalizarPedidoComponent implements OnInit {
   }
 
   verificarCampos(): void {
-    if (this.cpfSalvo && this.enderecoSalvo) {
+    if (this.cpfSalvo && this.enderecoSalvo && this.nomeSalvo) {
       this.isButtonEnabled = true;
     } else {
       this.isButtonEnabled = false;
