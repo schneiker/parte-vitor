@@ -30,7 +30,7 @@
       "status": "pedido enviado para entrega",
       "numeroPedido": 1,
       "tempo": "1428 min",
-      "entregador": "Hugo Prado"
+      "entregador": ""
     },
     {
       "id": "2",
@@ -68,7 +68,7 @@
       "status": "pedido enviado para entrega",
       "numeroPedido": 3,
       "tempo": "1398 min",
-      "entregador": "Hugo Prado"
+      "entregador": ""
     },
     {
       "id": "4",
@@ -90,7 +90,7 @@
       "status": "pedido enviado para entrega",
       "numeroPedido": 4,
       "tempo": "1492 min",
-      "entregador": "Hugo Prado"
+      "entregador": ""
     },
     {
       "id": "5",
@@ -109,9 +109,10 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-24T18:45:00.000Z",
-      "status": "em preparo",
+      "status": "pedido enviado para entrega",
       "numeroPedido": 5,
-      "tempo": "166 min"
+      "tempo": "3187 min",
+      "entregador": "Geraldo Cruz"
     },
     {
       "id": "6",
@@ -130,9 +131,10 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-25T18:52:15.454Z",
-      "status": "aguardando entrega",
+      "status": "pedido enviado para entrega",
       "numeroPedido": 6,
-      "tempo": "1628 min"
+      "tempo": "1628 min",
+      "entregador": "Claudinei Santos"
     },
     {
       "id": "7",
@@ -151,9 +153,10 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-24T18:58:57.905Z",
-      "status": "aguardando entrega",
+      "status": "pedido enviado para entrega",
       "numeroPedido": 7,
-      "tempo": "3062 min"
+      "tempo": "3062 min",
+      "entregador": "Hugo Prado"
     },
     {
       "id": "8",
@@ -193,9 +196,9 @@
       "observacao": "sem maionese",
       "numeroPedido": 9,
       "horario": "2024-10-26T21:59:40.709Z",
-      "status": "aguardando entrega",
+      "status": "pedido enviado para entrega",
       "tempo": "5 min",
-      "entregador": ""
+      "entregador": "Hugo Prado"
     },
     {
       "id": "10",
@@ -207,9 +210,9 @@
       "observacao": "sem batatinha",
       "numeroPedido": 10,
       "horario": "2024-10-26T22:30:59.298Z",
-      "status": "pedido enviado para entrega",
+      "status": "aguardando entrega",
       "tempo": "0 min",
-      "entregador": "Hugo Prado"
+      "entregador": ""
     },
     {
       "id": "11",
@@ -235,9 +238,9 @@
       "observacao": "",
       "numeroPedido": 12,
       "horario": "2024-10-26T22:24:50.692Z",
-      "status": "aguardando entrega",
+      "status": "pedido enviado para entrega",
       "tempo": "0 min",
-      "entregador": ""
+      "entregador": "Hugo Prado"
     }
   ],
   "entregadores": [

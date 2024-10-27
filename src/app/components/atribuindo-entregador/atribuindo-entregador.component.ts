@@ -7,6 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PedidoService } from '../pedido.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-atribuindo-entregador',
@@ -28,7 +29,8 @@ export class AtribuindoEntregadorComponent {
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any,
   private dialogRef: MatDialogRef<AtribuindoEntregadorComponent>,
-  private pedidoService: PedidoService) {
+  private pedidoService: PedidoService,
+  private router: Router) {
     this.entregador = data.entregador;
     this.numeroPedido = data.numeroPedido;
   }
@@ -38,6 +40,9 @@ export class AtribuindoEntregadorComponent {
       next: () => {
         console.log(`Pedido ${this.numeroPedido} atribuído ao entregador ${this.entregador.nome}`);
         this.dialogRef.close();
+        setTimeout(() => {
+          this.router.navigate(['/tela-dir-entrega']);
+        }, 100);
       },
       error: (err) => {
         console.error('Erro ao atribuir entregador ao pedido:', err);
