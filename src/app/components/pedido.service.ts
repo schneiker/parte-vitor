@@ -104,4 +104,9 @@ export class PedidoService {
       map(pedidosOrdenados => pedidosOrdenados.length ? pedidosOrdenados[0] : null) // Retorna o mais antigo ou null se não houver
     );
   }
+
+  finalizarPedido(id: number): Observable<any> {
+    return this.http.patch(`${this.apiUrl}/${id}`, { status: 'pedido finalizado' });
+  }
+  
 }

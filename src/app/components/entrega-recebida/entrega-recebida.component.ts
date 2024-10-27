@@ -8,6 +8,7 @@ import { PrevisaoDeEntregaComponent } from '../previsao-de-entrega/previsao-de-e
 import { FinalizarEntregaComponent } from '../finalizar-entrega/finalizar-entrega.component';  // Importação do novo diálogo
 import { EntregaService  } from '../../entrega.service';
 import { EntregadorInfoClienteEPedidoComponent } from '../entregador-info-cliente-e-pedido/entregador-info-cliente-e-pedido.component';
+import { PedidoService } from '../pedido.service';
 
 @Component({
   selector: 'app-entrega-recebida',
@@ -32,7 +33,7 @@ export class EntregaRecebidaComponent {
   pagamentoConfirmado: boolean = false;  // Nova variável para controle do estado do pagamento
   codigoClienteConfirmado: boolean = false;  // Nova variável para controlar a visibilidade
 
-  constructor(public dialog: MatDialog,  private entregaService: EntregaService) {}
+  constructor(public dialog: MatDialog,  private entregaService: EntregaService,  private pedidoService: PedidoService) {}
 
   openDialog(): void {
     if (!this.pagamentoConfirmado) {
@@ -70,12 +71,13 @@ export class EntregaRecebidaComponent {
 
   abrirFinalizacaoDialog(): void {
     const dialogRef = this.dialog.open(FinalizarEntregaComponent, {
-      width: '396px'
+      width: '396px',
+      disableClose: true
     });
 
     dialogRef.afterClosed().subscribe(result => {
       if (result === 'entregaFinalizada') {
-        this.entregaService.finalizarEntrega();
+        this.finalizarEntrega();
       }
     });
   }
@@ -85,6 +87,17 @@ export class EntregaRecebidaComponent {
     this.mostrarPrevisaoEntrega = false;
     this.mostrarDiaPagamento = false;
     this.esconderH2 = true;
+
+    this.atualizarStatusPedidoFinalizado();
+  }
+
+  atualizarStatusPedidoFinalizado(): void {
+    if (this.pedido && this.pedido.id) {
+      this.pedidoService.finalizarPedido(this.pedido.id).subscribe({
+        next: () => console.log('Status do pedido atualizado para "pedido finalizado"'),
+        error: (err) => console.error('Erro ao atualizar o status do pedido:', err)
+      });
+    }
   }
 
   abrirRota() {
