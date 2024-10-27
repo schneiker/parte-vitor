@@ -37,7 +37,8 @@ export class EntregaRecebidaComponent {
   openDialog(): void {
     if (!this.pagamentoConfirmado) {
       const dialogRef = this.dialog.open(InserirCodigoClienteComponent, {
-        width: '396px'
+        width: '396px',
+        data: { cpf: this.pedido?.cpf, nomeCliente: this.pedido?.nomeCliente, numeroPedido: this.pedido?.numeroPedido }
       });
 
       dialogRef.afterClosed().subscribe(result => {

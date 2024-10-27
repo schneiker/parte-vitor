@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input  } from '@angular/core';
 
 @Component({
   selector: 'app-entregador-info-cliente-e-pedido',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './entregador-info-cliente-e-pedido.component.css'
 })
 export class EntregadorInfoClienteEPedidoComponent {
-
+  @Input()
+  nomeCliente!: string;
+  @Input()
+  numeroPedido!: number;
 }

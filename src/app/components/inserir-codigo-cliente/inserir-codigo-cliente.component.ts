@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-inserir-codigo-cliente',
@@ -12,9 +13,18 @@ import { CommonModule } from '@angular/common';
 export class InserirCodigoClienteComponent {
   isButtonActive: boolean = false;
   codigo: string = '';  // Para armazenar o código inserido pelo entregador
-  cpfDoCliente = '12345678901';  // Aqui o CPF completo do cliente seria armazenado.
 
-  constructor(public dialogRef: MatDialogRef<InserirCodigoClienteComponent>) {}
+  nomeCliente: string;
+  numeroPedido: number;
+  cpfDoCliente: string;
+
+  constructor(public dialogRef: MatDialogRef<InserirCodigoClienteComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: { cpf: string, nomeCliente: string, numeroPedido: number }) 
+    {
+      this.nomeCliente = data.nomeCliente;
+      this.numeroPedido = data.numeroPedido;
+      this.cpfDoCliente = data.cpf;
+    }
 
   limitDigits(event: any) {
     const input = event.target;
@@ -29,8 +39,8 @@ export class InserirCodigoClienteComponent {
   }
 
   validarCodigo(): boolean {
-    // Pega os 5 primeiros dígitos do CPF armazenado e compara com o código inserido
-    return this.codigo === this.cpfDoCliente.slice(0, 5);
+    const cpfNumerico = this.cpfDoCliente.replace(/\D/g, ''); // Remove pontos e traços
+    return this.codigo === cpfNumerico.slice(0, 5); // Compara só os números
   }
 
   abrirDiaPagCon(): void {
