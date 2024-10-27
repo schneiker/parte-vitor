@@ -30,8 +30,8 @@ export class EntregaRecebidaComponent {
   mostrarPrevisaoEntrega: boolean = true;
   mostrarDiaPagamento: boolean = false;
   esconderH2: boolean = false;
-  pagamentoConfirmado: boolean = false;  // Nova variável para controle do estado do pagamento
-  codigoClienteConfirmado: boolean = false;  // Nova variável para controlar a visibilidade
+  pagamentoConfirmado: boolean = false;
+  codigoClienteConfirmado: boolean = false;
 
   constructor(public dialog: MatDialog,  private entregaService: EntregaService,  private pedidoService: PedidoService) {}
 
@@ -83,7 +83,6 @@ export class EntregaRecebidaComponent {
   }
 
   finalizarEntrega(): void {
-    // Aqui você pode fazer a lógica para limpar os dados da entrega
     this.mostrarPrevisaoEntrega = false;
     this.mostrarDiaPagamento = false;
     this.esconderH2 = true;
@@ -94,7 +93,15 @@ export class EntregaRecebidaComponent {
   atualizarStatusPedidoFinalizado(): void {
     if (this.pedido && this.pedido.id) {
       this.pedidoService.finalizarPedido(this.pedido.id).subscribe({
-        next: () => console.log('Status do pedido atualizado para "pedido finalizado"'),
+        next: () => {
+          console.log('Status do pedido atualizado para "pedido finalizado"');
+          // Verifica se há mais pedidos pendentes para o entregador atual
+          this.pedidoService.getPedidoMaisAntigoParaEntregador(this.pedido.entregador).subscribe(pedidoMaisAntigo => {
+            if (!pedidoMaisAntigo) {
+              this.entregaService.finalizarEntrega(); // Atualiza o estado para "sem entrega"
+            }
+          });
+        },
         error: (err) => console.error('Erro ao atualizar o status do pedido:', err)
       });
     }
