@@ -27,7 +27,7 @@
       ],
       "preco": 69.98,
       "horario": "2024-10-24T18:40:00.000Z",
-      "status": "pedido enviado para entrega",
+      "status": "não aceito",
       "numeroPedido": 1,
       "tempo": "1428 min",
       "entregador": ""
@@ -109,7 +109,7 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-24T18:45:00.000Z",
-      "status": "pedido enviado para entrega",
+      "status": "aguardando entrega",
       "numeroPedido": 5,
       "tempo": "3187 min",
       "entregador": "Geraldo Cruz"
@@ -131,7 +131,7 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-25T18:52:15.454Z",
-      "status": "pedido enviado para entrega",
+      "status": "aguardando entrega",
       "numeroPedido": 6,
       "tempo": "1628 min",
       "entregador": "Claudinei Santos"
@@ -153,10 +153,10 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-24T18:58:57.905Z",
-      "status": "pedido enviado para entrega",
+      "status": "aguardando entrega",
       "numeroPedido": 7,
       "tempo": "3062 min",
-      "entregador": "Hugo Prado"
+      "entregador": ""
     },
     {
       "id": "8",
@@ -175,7 +175,7 @@
       ],
       "preco": 29.99,
       "horario": "2024-10-25T19:17:29.212Z",
-      "status": "pedido enviado para entrega",
+      "status": "aguardando entrega",
       "numeroPedido": 8,
       "tempo": "166 min",
       "entregador": "Claudinei Santos"
@@ -196,9 +196,9 @@
       "observacao": "sem maionese",
       "numeroPedido": 9,
       "horario": "2024-10-26T21:59:40.709Z",
-      "status": "pedido enviado para entrega",
+      "status": "aguardando entrega",
       "tempo": "5 min",
-      "entregador": "Hugo Prado"
+      "entregador": ""
     },
     {
       "id": "10",
@@ -238,6 +238,20 @@
       "observacao": "",
       "numeroPedido": 12,
       "horario": "2024-10-26T22:24:50.692Z",
+      "status": "aguardando entrega",
+      "tempo": "0 min",
+      "entregador": ""
+    },
+    {
+      "id": "13",
+      "nomeCliente": "Vitor",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua José Martins de Araújo, 13 - Jardim Marmarita",
+      "cpf": "479.765.218-70",
+      "observacao": "bfsdhbvgdsbkjvdfbdfbfd gnkjn jkaeb j befwd nfkjebwkj bnwb wkb whjb b wbk wbk bkjb kjb kb kjb jb jb kjb k bkb jb kb kb k bkb ",
+      "numeroPedido": 13,
+      "horario": "2024-10-27T18:50:05.022Z",
       "status": "pedido enviado para entrega",
       "tempo": "0 min",
       "entregador": "Hugo Prado"

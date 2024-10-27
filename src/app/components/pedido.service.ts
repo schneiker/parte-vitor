@@ -93,4 +93,15 @@ export class PedidoService {
       switchMap((novoPedido) => this.http.post<any>(this.apiUrl, novoPedido))
     );
   }
+
+  getPedidoMaisAntigoParaEntregador(entregador: string): Observable<any | null> {
+    return this.getPedidos().pipe(
+      map(pedidos => 
+        pedidos
+          .filter(pedido => pedido.entregador === entregador && pedido.status === 'pedido enviado para entrega')
+          .sort((a, b) => new Date(a.horario).getTime() - new Date(b.horario).getTime()) // Ordena por data
+      ),
+      map(pedidosOrdenados => pedidosOrdenados.length ? pedidosOrdenados[0] : null) // Retorna o mais antigo ou null se não houver
+    );
+  }
 }

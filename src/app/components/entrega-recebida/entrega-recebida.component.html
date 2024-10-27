@@ -1,9 +1,9 @@
 <section>
     <div id="endereco">
         <div id="dados">
-            <h2 *ngIf="!esconderH2">Nome</h2>
+            <h2 *ngIf="!esconderH2">{{ pedido?.nomeCliente }}</h2>
             <p>Endereço de Entrega</p>
-            <p>Endereço</p>
+            <p>{{ pedido?.endereco }}</p>
         </div>
         <div class="botao">
             <button id="botao-da-rota" (click)="abrirRota()">

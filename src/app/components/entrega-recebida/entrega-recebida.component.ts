@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgIf } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatDialogModule, MatDialog } from '@angular/material/dialog';
@@ -24,6 +24,8 @@ import { EntregadorInfoClienteEPedidoComponent } from '../entregador-info-client
   styleUrl: './entrega-recebida.component.css'
 })
 export class EntregaRecebidaComponent {
+  @Input() pedido: any;
+  
   mostrarPrevisaoEntrega: boolean = true;
   mostrarDiaPagamento: boolean = false;
   esconderH2: boolean = false;
