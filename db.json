@@ -261,7 +261,8 @@
     {
       "id": 1,
       "nome": "Hugo Prado",
-      "status": "disponível"
+      "status": "disponível",
+      "cpf": "494.785.860-50"
     },
     {
       "id": 2,

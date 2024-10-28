@@ -1,0 +1,8 @@
+<section>
+    <div id="cpf-entregador">
+      <h1>Insira o seu CPF</h1>
+      <input type="text" [(ngModel)]="cpf" placeholder="Digite o CPF" />
+      <button (click)="verificarCpf()">Entrar</button>
+      <p *ngIf="erro">{{ erro }}</p>
+    </div>
+  </section>

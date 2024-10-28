@@ -27,20 +27,18 @@ export class InserirCpfComponent {
   }
 
   formatarCpf(): void {
-    let cpfApenasNumeros = this.cpf.replace(/\D/g, ''); // Remove tudo que não for número
+    let cpfApenasNumeros = this.cpf.replace(/\D/g, '');
     if (cpfApenasNumeros.length > 11) {
-      cpfApenasNumeros = cpfApenasNumeros.slice(0, 11); // Limita a 11 dígitos
+      cpfApenasNumeros = cpfApenasNumeros.slice(0, 11);
     }
 
-    // Aplica a máscara de CPF: 123.456.789-09
     this.cpf = cpfApenasNumeros.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4')
       .replace(/(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3')
       .replace(/(\d{3})(\d{1,3})/, '$1.$2');
   }
 
   validarCpf(cpf: string): boolean {
-    // Validação simples de CPF
-    cpf = cpf.replace(/\D/g, ''); // Remove pontos e traços
+    cpf = cpf.replace(/\D/g, '');
     if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) {
       return false;
     }
@@ -58,9 +56,9 @@ export class InserirCpfComponent {
   }
 
   confirmar(): void {
-    const cpfSemFormatacao = this.cpf.replace(/\D/g, ''); // Remove a formatação para validação
+    const cpfSemFormatacao = this.cpf.replace(/\D/g, '');
     if (this.validarCpf(cpfSemFormatacao)) {
-      this.dialogRef.close(this.cpf); // Fecha o diálogo e passa o CPF como resultado
+      this.dialogRef.close(this.cpf);
     } else {
       alert('CPF inválido! Tente novamente.');
     }
