@@ -196,9 +196,9 @@
       "observacao": "sem maionese",
       "numeroPedido": 9,
       "horario": "2024-10-26T21:59:40.709Z",
-      "status": "aguardando entrega",
+      "status": "pedido finalizado",
       "tempo": "5 min",
-      "entregador": ""
+      "entregador": "Claudinei Santos"
     },
     {
       "id": "10",
@@ -238,9 +238,9 @@
       "observacao": "",
       "numeroPedido": 12,
       "horario": "2024-10-26T22:24:50.692Z",
-      "status": "aguardando entrega",
+      "status": "pedido enviado para entrega",
       "tempo": "0 min",
-      "entregador": ""
+      "entregador": "Geraldo Cruz"
     },
     {
       "id": "13",
@@ -252,7 +252,7 @@
       "observacao": "bfsdhbvgdsbkjvdfbdfbfd gnkjn jkaeb j befwd nfkjebwkj bnwb wkb whjb b wbk wbk bkjb kjb kb kjb jb jb kjb k bkb jb kb kb k bkb ",
       "numeroPedido": 13,
       "horario": "2024-10-27T18:50:05.022Z",
-      "status": "pedido finalizado",
+      "status": "pedido enviado para entrega",
       "tempo": "0 min",
       "entregador": "Hugo Prado"
     }
@@ -267,12 +267,14 @@
     {
       "id": 2,
       "nome": "Geraldo Cruz",
-      "status": "disponível"
+      "status": "disponível",
+      "cpf": "077.459.370-94"
     },
     {
       "id": 3,
       "nome": "Claudinei Santos",
-      "status": "disponível"
+      "status": "disponível",
+      "cpf": "290.664.810-80"
     }
   ]
 }
