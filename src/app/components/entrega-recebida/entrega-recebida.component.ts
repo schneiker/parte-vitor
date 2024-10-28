@@ -108,6 +108,12 @@ export class EntregaRecebidaComponent {
   }
 
   abrirRota() {
-    window.open('https://www.google.com/maps/dir///@-23.6517833,-46.7962328,15z/data=!4m4!4m3!1m1!4e2!1m0?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D', '_blank');
+    if (this.pedido?.endereco) {
+      const enderecoFormatado = encodeURIComponent(this.pedido.endereco);
+      const url = `https://www.google.com/maps/dir/?api=1&destination=${enderecoFormatado}`;
+      window.open(url, '_blank');
+    } else {
+      console.error('Endereço não disponível para o pedido.');
+    }
   }
 }
