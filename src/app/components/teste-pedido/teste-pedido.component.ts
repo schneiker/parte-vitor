@@ -3,6 +3,8 @@ import { DishService, Dish } from '../../services/dish.service';
 import { ActivatedRoute } from '@angular/router'; 
 import { CommonModule } from '@angular/common';
 import { PedidosService } from '../../services/pedidos.service';
+import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-teste-pedido',
@@ -18,8 +20,10 @@ export class TestePedidoComponent implements OnInit {
 
   constructor(
     private dishService: DishService,
-    private pedidosService: PedidosService, // Adiciona o serviço de pedidos
+    private pedidosService: PedidosService,
     private route: ActivatedRoute, 
+    private location: Location,
+    private router: Router,
   ) {}
 
   ngOnInit() {
@@ -56,4 +60,8 @@ export class TestePedidoComponent implements OnInit {
       console.error('Prato não encontrado para adicionar ao carrinho');
     }
   }
+
+  voltar() {
+    this.location.back();
+   }
 }

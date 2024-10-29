@@ -23,6 +23,62 @@
       "price": 40,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
       "category": "executivos"
+    },
+    {
+      "id": "2",
+      "name": "Pasta ao Pesto",
+      "description": "Massa fresca com molho pesto caseiro e queijo parmesão.",
+      "price": 35,
+      "image": "https://img.cybercook.com.br/receitas/985/macarrao-ao-pesto-2.jpeg",
+      "category": "executivos"
+    },
+    {
+      "id": "3",
+      "name": "Frango à Parmegiana",
+      "description": "Peito de frango empanado com queijo e molho de tomate.",
+      "price": 40,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
+      "category": "executivos"
+    },
+    {
+      "id": "3",
+      "name": "Frango à Parmegiana",
+      "description": "Peito de frango empanado com queijo e molho de tomate.",
+      "price": 40,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
+      "category": "executivos"
+    },
+    {
+      "id": "3",
+      "name": "Frango à Parmegiana",
+      "description": "Peito de frango empanado com queijo e molho de tomate.",
+      "price": 40,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
+      "category": "executivos"
+    },
+    {
+      "id": "3",
+      "name": "Frango à Parmegiana",
+      "description": "Peito de frango empanado com queijo e molho de tomate.",
+      "price": 40,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
+      "category": "executivos"
+    },
+    {
+      "id": "18",
+      "name": "Frutos do Mar Grelhados",
+      "description": "Seleção de frutos do mar grelhados com tempero especial.",
+      "price": 55,
+      "image": "https://img.cybercook.com.br/imagens/receitas/556/macarrao-com-frutos-do-mar-1.jpeg",
+      "category": "executivos"
+    },
+    {
+      "id": "11",
+      "name": "Sangria",
+      "description": "Bebida à base de vinho tinto, frutas e especiarias.",
+      "price": 22,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8hVpFM7P2XwyS9mgkG2-8wST16H00ET92A&s",
+      "category": "bebidas"
     }
   ],
   "dishes": [
@@ -52,11 +108,11 @@
     },
     {
       "id": "4",
-      "name": "Batata Frita",
-      "description": "Porção de batatas fritas crocantes.",
-      "price": 20,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkqwehUioNabVzVEpglPPOENo7iWVUBIWXg&s",
-      "category": "porcoes"
+      "name": "Cerveja Artesanal",
+      "description": "Cerveja artesanal feita com ingredientes selecionados.",
+      "price": 12,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobh2ySv1Tb8IQ__Fgq1nt97xXljAWcc7Klg&s",
+      "category": "bebidas"
     },
     {
       "id": "5",
@@ -64,7 +120,7 @@
       "description": "Cerveja artesanal feita com ingredientes selecionados.",
       "price": 12,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobh2ySv1Tb8IQ__Fgq1nt97xXljAWcc7Klg&s",
-      "category": "bebidas"
+      "category": "porcoes"
     },
     {
       "id": "6",

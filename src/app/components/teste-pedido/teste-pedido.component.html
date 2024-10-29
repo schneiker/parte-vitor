@@ -1,11 +1,31 @@
-<div *ngIf="loading">Carregando...</div>
-<div *ngIf="!loading && dish">
-    <h1>{{ dish.name }}</h1>
-    <p>{{ dish.description }}</p>
-    <p>{{ dish.price | currency:'BRL' }}</p>
-    <button (click)="addToCart()">Adicionar</button>
-</div>
-<div *ngIf="!loading && !dish">
-    <h1>ERRO</h1>
-    <p>Prato não encontrado.</p>
-</div>
+
+<link rel="stylesheet" href="teste-pedido.component.css">
+
+<body class="mulish-fonte">
+    <header>
+        <svg (click)="voltar()" class="botao-voltar" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+        <h2>EXECUTIVOS</h2>
+
+    </header>
+
+    <main>
+
+        <div *ngIf="loading">Carregando...</div>
+        <div *ngIf="!loading && !dish">
+            <h1>ERRO</h1>
+            <p>Prato não encontrado.</p>
+        </div>
+
+        <div *ngIf="!loading && dish">
+            <img src={{dish.image}} alt="icone-cardapio">
+            <h1 class="nome">{{dish.name}}</h1>
+            <p class="descricao">{{dish.description}}</p>
+            <p class="preco">{{ dish.price | currency:'BRL' }}</p>
+        </div>
+
+        <button (click)="addToCart()">Adicionar</button>
+
+
+    </main>
+    
+</body>

@@ -14,6 +14,7 @@ body {
     text-align: center;
     font-family: "Mulish", sans-serif;
     color: #ffff;
+    
 }
 
 
@@ -98,6 +99,7 @@ body {
 
 .menu div  {
     align-items: flex-start;
+
     
     
 }
@@ -127,7 +129,6 @@ body {
     cursor: pointer;
     border-radius:10px;
     gap: 20px;
-  
   }
 
   .cabecalho {
@@ -152,4 +153,5 @@ body {
     cursor: pointer;
     gap: 20px;
     text-transform: capitalize;
+    
   }
