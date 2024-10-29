@@ -1,16 +1,219 @@
-h2 {
-    color: white;
+header {
+   
+    margin: auto;
+    max-width: 414px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-table {
-    color: white;
+#adicionar {
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    max-width: 134px;
+    width: 100%;
+    height: 32px;
+    color: #ffff;
+    background-color:#ff9900;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
 }
 
-button {
-    color: white;
+body {
+  
+    max-width: 414px;
+    margin: auto;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    color: #ffff;
+}
+#editar{
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    max-width: 45px;
+    width: 100%;
+    height: 24px;
+    color: #ffff;
+    background-color:#ff9900;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
 }
 
-a {
-    color: aliceblue;
-    border: white;
+.container{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+ a{
+    padding: 0 ;
+    margin: 0; 
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.nome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.nome-dish{
+    font-size: 20px;
+    display: flex;
+    font-weight: bold;
+}
+main{
+    max-width: 414px;
+    height: 113px;
+    align-items: center;
+}
+
+.toggle-switch {
+    width: 50px;
+    height: 24px;
+    position: relative;
+    gap: 10px;
+    align-items: center;
+    margin-right: 50px;
+    text-align: center;
+
+    margin: 10px auto; 
+    
+  }
+  .toggle-switch span{
+    display: flex;
+    
+  }
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin-left: 10px;
+    top: 30px;
+    padding: 10px;
+  }
+  
+  .slider {
+    margin-right: 5px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 8px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+
+input:checked + .slider {
+    background-color: #ff9900;
+}
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+.adicionar{
+    background-color: #FF9A00;
+    color: #ffff;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+   
+    align-items: center;
+    justify-content: center;
+    line-height: 16px;
+    position: absolute;
+    top: 52px;
+    left: 300px;
+}
+.menu  {
+
+    /* align-items: flex-start;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 20px;
+    max-width: 414px;
+    max-height: auto;
+    display: flex; */
+}
+
+.menu  {
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    padding-bottom: 20px;
+    max-width: 414px;
+    max-height: 113px;
+    line-height: 80px;
+    font-size: 20px;
+    width: 414px;
+    height: 113px;
+}
+.id{
+    font-size: 19px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.deletar {
+    border: none;
+    content: "🗑️";
+    font-size: 24px;
+    margin-right: 10px;
+    line-height: 60px;
+    width: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* .id .nome {
+    text-align: left;
+    flex-grow: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+.linha-separadora {
+    height: 1px;
+    background-color: #ccc;
+    margin: auto;
+    width: 80%;
 }

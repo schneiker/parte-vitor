@@ -1,30 +1,50 @@
 <!-- src/app/components/dish-form/dish-form.component.html -->
 
-<h2>{{ isEdit ? 'Editar Prato' : 'Adicionar um Prato' }}</h2>
-<form (ngSubmit)="saveDish()">
-  <label for="id">ID:</label>
-  <input type="number" id="id" [(ngModel)]="dish.id" name="id" required>
+<body>
+  <h2>{{ isEdit ? 'Editar Prato' : 'Adicionar um Prato' }}</h2>
+<div class="item">
+  <form (ngSubmit)="saveDish()">
+    <div class="id">
+      <label for="id">ID:</label>
+      <div class="input-id"><input type="number" id="id" [(ngModel)]="dish.id" name="id" required></div>
+    </div>
+  
+    <div class="nome">
+      <label for="name">Nome:</label>
+      <div class="input-name"><input type="text" id="name" [(ngModel)]="dish.name" name="name" required></div>
+    </div>
+  
+    <div class="descricao">
+      <label for="description">Descrição:</label>
+      <div class="input-decricao"><input type="text" id="description" [(ngModel)]="dish.description" name="description" required></div>
+    </div>
+  
+    <div class="preco">
+      <label for="price">Preço:</label>
+      <div class="input-preco"><input type="number" id="price" [(ngModel)]="dish.price" name="price" required></div>
+    </div>
+  
+    <div class="categoria">
+      <label for="categoria">Categoria:</label>
+      <div class="categoria-opcao">
+        <select id="categoria" [(ngModel)]="dish.category" name="categoria" required>
+          <option value="">Selecione uma categoria</option>
+          <option value="executivos">Executivos</option>
+          <option value="porções">Porções</option>
+          <option value="bebidas">Bebidas</option>
+        </select>
+      </div>
+    </div>
 
-  <label for="name">Nome:</label>
-  <input type="text" id="name" [(ngModel)]="dish.name" name="name" required>
+    <div class="img">
+      <label for="image">Imagem URL:</label>
+      <div class="input-img"><input type="text" id="image" [(ngModel)]="dish.image" name="image" placeholder="Insira a URL da imagem" required></div>
+    </div>
+  
+      <button class="adicionar" type="submit">{{ isEdit ? 'Atualizar' : 'Adicionar' }}</button>
+  </form>
+</div>
 
-  <label for="description">Descrição:</label>
-  <input type="text" id="description" [(ngModel)]="dish.description" name="description" required>
-
-  <label for="price">Preço:</label>
-  <input type="number" id="price" [(ngModel)]="dish.price" name="price" required>
-
-  <label for="image">Imagem URL:</label>
-  <input type="text" id="image" [(ngModel)]="dish.image" name="image" placeholder="Insira a URL da imagem" required>
-
-  <label for="category">Categoria:</label>
-  <select id="category" [(ngModel)]="dish.category" name="category" required>
-    <option value="">Selecione uma categoria</option>
-    <option value="executivos">Executivos</option>
-    <option value="porcoes">Porções</option>
-    <option value="bebidas">Bebidas</option>
-  </select>
-
-  <button type="submit">{{ isEdit ? 'Atualizar' : 'Adicionar' }}</button>
-</form>
+  
+</body>
 

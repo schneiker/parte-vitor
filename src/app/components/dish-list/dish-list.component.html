@@ -1,23 +1,53 @@
 <!-- src/app/components/dish-list/dish-list.component.html -->
 
-<h2>Dish List</h2>
-<table>
-  <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Price</th>
-    <th>Actions</th>
-  </tr>
-  <tr *ngFor="let dish of dishes">
-    <td>{{ dish.id }}</td>
-    <td>{{ dish.name }}</td>
-    <td>{{ dish.description }}</td>
-    <td>R${{ dish.price }}</td>
-    <td>
-      <button (click)="deleteDish(dish.id!)">Delete</button>
-      <a [routerLink]="['/dish-list/edit-dish', dish.id]">Edit</a> 
-    </td>
-  </tr>
-</table>
-<a routerLink="/dish-form">Add New Dish</a> 
+<link rel="stylesheet" href="dish-list.component.css">
+
+
+
+<body>
+
+  <header>
+    <svg (click)="voltar()" class="botao-voltar" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+    <h2>Adicionar Item</h2>
+    <button id="adicionar">Adicionar</button>
+  </header>
+  <div *ngFor="let dish of dishes; let last = last" class="Item">
+        <div class="id">
+          <h2>#{{dish.id}}</h2>
+          <button (click)="deleteDish(dish.id!)" class="deletar">🗑️</button>
+        </div>
+        <div class="nome">
+          <div class="nome-dish">{{dish.name}}</div>
+          <div class="container">
+            <span >Ativo:</span>
+            <label class="toggle-switch"> 
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+           
+        </div>
+        
+          <button id="editar">
+            <a [routerLink]="['/dish-list/edit-dish', dish.id]">Edit</a> 
+          </button>
+          
+        </div>
+    <div *ngIf="!last" class="linha-separadora"></div>
+</div>      
+
+
+</body>
+
+<!-- <div *ngFor="let dish of dishes" class="menu">
+        <div>{{ dish.id }}</div>
+        <button (click)="deleteDish(dish.id!)">🗑️</button>
+        <label class="toggle-switch">
+          ATIVO:
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+        </label>
+        <div class="nome">{{ dish.name }}</div>
+            
+            <a [routerLink]="['/dish-list/edit-dish', dish.id]">Editar</a> 
+              
+      </div> -->

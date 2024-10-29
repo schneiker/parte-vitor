@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DishService, Dish } from '../../services/dish.service';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router'; 
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-dish-list',
@@ -13,7 +14,7 @@ import { Router, RouterModule } from '@angular/router';
 export class DishListComponent implements OnInit {
   dishes: Dish[] = [];
 
-  constructor(private dishService: DishService, private router: Router) {}
+  constructor(private dishService: DishService, private router: Router, private location:Location) {}
 
   ngOnInit(): void {
     this.loadDishes();
@@ -33,5 +34,9 @@ export class DishListComponent implements OnInit {
 
   editDish(id: string) {
     this.router.navigate(['/dish-form', id]);
+  }
+
+  voltar() {
+    this.location.back()
   }
 }

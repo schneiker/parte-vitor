@@ -1,15 +1,204 @@
-
 h2 { 
     color: white;
+    text-align: center;
+    width: 378px;
+    height: 103px;
+    font-size: 24px;
+    
 }
+header {
+   
+    margin: auto;
+    max-width: 414px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
 
 form {
     color: white;
 }
-button {
-    color: white;
-}
+
 
 input {
     color: white;
+    width: 378px;
+    height: 44px;
+    background-color: #474F5A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+body {
+    max-width: 414px;
+    margin: auto;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    color: #ffff;
+}
+
+label{
+    display: flex ;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+    
+.item{
+    max-width: 380px ;
+    height:auto ;
+    font-size: 20px;
+    
+    padding: 10px;
+    align-items: center;
+    line-height: 20px;
+    margin: 10px;
+}
+
+
+.categoria{
+    line-height: 35px;
+ 
+}
+.categoria-opcao{
+    display: flex;
+}
+
+.img{
+    line-height: 35px;
+}
+
+.categoria option{
+    background-color: #23232C;
+    font-size: 22px;
+}
+
+.id input{
+    width: 378px;
+    height: 44px;
+    font-size: 20px;
+    
+    
+   
+}
+
+
+.nome input{
+    width: 378px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: none ;
+    
+
+}
+.descricao input{
+    width: 378px;
+    height: 74px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+   
+}
+.preco input{
+    width: 175px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+    
+
+}
+.img input{
+    width: 378px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+    
+
+}
+.categoria input{
+    width: 175px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+    
+}
+.adicionar {
+    color: white;
+    background-color: #FF9A00;
+    width: 144px;
+    height: 42px;
+    position: 130px 786px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.botao-categoria{
+    background-color: #474F5A;
+    color: white;
+    width: 175px;
+    height: 44px;
+    font-size: 22px;
+    position: 130px 786px;
+    line-height: 20px;
+
+}
+
+.selecionar select{
+    background-color: #474F5A;
+    color: white;
+    width: 175px;
+    height: 46px;
+    font-size: 22px;
+    border-radius: 4px;
+    margin: 5px 5px 10px 5px;
+}
+select{
+    font-size: 22px;
+    color: white;
+
+}
+
+.input-nome{
+    width: 378px;
+    height: 44px;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.input-id{
+    width: 378px;
+    height: 73px;
+    margin-top: 5px;
+
+}
+
+.input-descricao{
+    width: 378px;
+    height: 73px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+.input-preco{
+    width: 175px;
+    height:44px ;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.input-img{
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
