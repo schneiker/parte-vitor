@@ -238,7 +238,7 @@
       "observacao": "",
       "numeroPedido": 12,
       "horario": "2024-10-26T22:24:50.692Z",
-      "status": "pedido enviado para entrega",
+      "status": "pedido finalizado",
       "tempo": "0 min",
       "entregador": "Geraldo Cruz"
     },
@@ -252,26 +252,54 @@
       "observacao": "bfsdhbvgdsbkjvdfbdfbfd gnkjn jkaeb j befwd nfkjebwkj bnwb wkb whjb b wbk wbk bkjb kjb kb kjb jb jb kjb k bkb jb kb kb k bkb ",
       "numeroPedido": 13,
       "horario": "2024-10-27T18:50:05.022Z",
-      "status": "pedido enviado para entrega",
+      "status": "pedido finalizado",
       "tempo": "0 min",
       "entregador": "Hugo Prado"
+    },
+    {
+      "id": "14",
+      "nomeCliente": "Thayna",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "471.711.778-66",
+      "observacao": "sem maionese",
+      "numeroPedido": 14,
+      "horario": "2024-10-29T00:29:19.597Z",
+      "status": "pedido finalizado",
+      "tempo": "11 min",
+      "entregador": "Hugo Prado"
+    },
+    {
+      "id": "15",
+      "nomeCliente": "Gustavo",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13",
+      "observacao": "sem maionese",
+      "numeroPedido": 15,
+      "horario": "2024-10-29T00:47:07.853Z",
+      "status": "pedido finalizado",
+      "tempo": "0 min",
+      "entregador": "Geraldo Cruz"
     }
   ],
   "entregadores": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Hugo Prado",
       "status": "disponível",
       "cpf": "494.785.860-50"
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Geraldo Cruz",
       "status": "disponível",
       "cpf": "077.459.370-94"
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "Claudinei Santos",
       "status": "disponível",
       "cpf": "290.664.810-80"

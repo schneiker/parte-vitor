@@ -82,7 +82,7 @@ export class PedidoService {
 
         return {
           ...pedido,
-          id: novoId,
+          id: String(novoId),
           numeroPedido: numeroPedido,
           horario: horarioAtual,
           status: 'não aceito',
