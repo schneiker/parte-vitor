@@ -29,4 +29,5 @@ export class PedidosService {
   clearCart(): Observable<void> {
     return this.http.delete<void>(this.cartUrl);
   }
+
 }

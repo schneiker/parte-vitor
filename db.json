@@ -1,103 +1,39 @@
 {
   "cart": [
     {
-      "id": "2",
-      "name": "Pasta ao Pesto",
-      "description": "Massa fresca com molho pesto caseiro e queijo parmesão.",
-      "price": 35,
-      "image": "https://img.cybercook.com.br/receitas/985/macarrao-ao-pesto-2.jpeg",
+      "id": "21",
+      "name": "Peixe ao Molho de Alcaparras",
+      "description": "Filé de peixe grelhado com molho de alcaparras.",
+      "price": 48,
+      "image": "https://www.comidaereceitas.com.br/wp-content/uploads/2008/05/File-de-peixe-a-belle-meuniere.jpg",
       "category": "executivos"
     },
     {
-      "id": "3",
-      "name": "Frango à Parmegiana",
-      "description": "Peito de frango empanado com queijo e molho de tomate.",
-      "price": 40,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
+      "id": "800",
+      "name": "amondega",
+      "description": "prato de amondegas",
+      "price": 30,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdemp57aT-TAwNYZUcgjULmzpIe6wtAFtAUw&s",
       "category": "executivos"
     },
     {
-      "id": "3",
-      "name": "Frango à Parmegiana",
-      "description": "Peito de frango empanado com queijo e molho de tomate.",
-      "price": 40,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
+      "id": "800",
+      "name": "amondega",
+      "description": "prato de amondegas",
+      "price": 30,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdemp57aT-TAwNYZUcgjULmzpIe6wtAFtAUw&s",
       "category": "executivos"
     },
     {
-      "id": "2",
-      "name": "Pasta ao Pesto",
-      "description": "Massa fresca com molho pesto caseiro e queijo parmesão.",
-      "price": 35,
-      "image": "https://img.cybercook.com.br/receitas/985/macarrao-ao-pesto-2.jpeg",
+      "id": "9",
+      "name": "Salada Caesar",
+      "description": "Salada com alface, croutons e molho Caesar.",
+      "price": 30,
+      "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
       "category": "executivos"
-    },
-    {
-      "id": "3",
-      "name": "Frango à Parmegiana",
-      "description": "Peito de frango empanado com queijo e molho de tomate.",
-      "price": 40,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
-      "category": "executivos"
-    },
-    {
-      "id": "3",
-      "name": "Frango à Parmegiana",
-      "description": "Peito de frango empanado com queijo e molho de tomate.",
-      "price": 40,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
-      "category": "executivos"
-    },
-    {
-      "id": "3",
-      "name": "Frango à Parmegiana",
-      "description": "Peito de frango empanado com queijo e molho de tomate.",
-      "price": 40,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
-      "category": "executivos"
-    },
-    {
-      "id": "3",
-      "name": "Frango à Parmegiana",
-      "description": "Peito de frango empanado com queijo e molho de tomate.",
-      "price": 40,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
-      "category": "executivos"
-    },
-    {
-      "id": "18",
-      "name": "Frutos do Mar Grelhados",
-      "description": "Seleção de frutos do mar grelhados com tempero especial.",
-      "price": 55,
-      "image": "https://img.cybercook.com.br/imagens/receitas/556/macarrao-com-frutos-do-mar-1.jpeg",
-      "category": "executivos"
-    },
-    {
-      "id": "11",
-      "name": "Sangria",
-      "description": "Bebida à base de vinho tinto, frutas e especiarias.",
-      "price": 22,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8hVpFM7P2XwyS9mgkG2-8wST16H00ET92A&s",
-      "category": "bebidas"
     }
   ],
   "dishes": [
-    {
-      "id": "1",
-      "name": "Caipirinha",
-      "description": "Bebida tradicional brasileira feita com cachaça, limão e açúcar.",
-      "price": 15,
-      "image": "https://i.panelinha.com.br/i1/228-q-8730-blog-caipirinha-de-limao.webp",
-      "category": "bebidas"
-    },
-    {
-      "id": "3",
-      "name": "Frango à Parmegiana",
-      "description": "Peito de frango empanado com queijo e molho de tomate.",
-      "price": 40,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW7MyfahWECit7IQfL_mixUfkoBl7b192Mg&s",
-      "category": "executivos"
-    },
     {
       "id": "4",
       "name": "Cerveja Artesanal",
@@ -167,7 +103,7 @@
       "name": "Bife à Cavalo",
       "description": "Bife grelhado com ovo frito por cima.",
       "price": 50,
-      "image": "https://espetinhodesucesso.com/wp-content/uploads/2022/06/qual-a-melhor-carne-para-bife-a-cavalo.jpg",
+      "image": "https://s2-receitas.glbimg.com/tHeJvrKQVeIin3PTeGf6AaUcbag=/0x0:1280x805/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/9/E/l4TseUQAqVp32qAFW2AQ/bife-a-cavalo.jpeg",
       "category": "executivos"
     },
     {
@@ -257,6 +193,14 @@
       "price": 7,
       "image": "https://preview.redd.it/todos-os-refrigerantes-est%C3%A3o-horr%C3%ADveis-v0-2a79uzexe09d1.jpg?width=600&format=pjpg&auto=webp&s=3a621c79bb00a80f4319ee439a4feb5cf2688fad",
       "category": "bebidas"
+    },
+    {
+      "id": "800",
+      "name": "amondega",
+      "description": "prato de amondegas",
+      "price": 30,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdemp57aT-TAwNYZUcgjULmzpIe6wtAFtAUw&s",
+      "category": "executivos"
     }
   ]
 }

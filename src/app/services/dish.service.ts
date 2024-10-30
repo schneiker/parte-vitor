@@ -38,7 +38,6 @@ export class DishService {
     return this.http.post<Dish>(this.apiUrl, dish);
   }
 
-
   updateDish(id: string, dish: Dish): Observable<Dish> {
     return this.http.put<Dish>(`${this.apiUrl}/${id}`, dish);
   }
@@ -50,4 +49,5 @@ export class DishService {
   getDishesByCategory(category: string): Observable<Dish[]> {
     return this.http.get<Dish[]>(`${this.apiUrl}?category=${category}`);
   }
+  
 }

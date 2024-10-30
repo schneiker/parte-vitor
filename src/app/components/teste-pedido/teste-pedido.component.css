@@ -47,6 +47,7 @@ img {
 }
 
 button{
+    cursor: pointer;
     background-color: #FF9A00;
     color: #fff;
     width: 144px;
