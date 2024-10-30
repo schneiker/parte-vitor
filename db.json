@@ -27,10 +27,12 @@
       ],
       "preco": 69.98,
       "horario": "2024-10-24T18:40:00.000Z",
-      "status": "não aceito",
+      "status": "pedido finalizado",
       "numeroPedido": 1,
-      "tempo": "1428 min",
-      "entregador": ""
+      "tempo": "7515 min",
+      "entregador": "Hugo Prado",
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13"
     },
     {
       "id": "2",
