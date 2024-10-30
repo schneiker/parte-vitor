@@ -10,6 +10,7 @@ import { BebidasComponent } from './components/cardapio/bebidas/bebidas.componen
 import { PorcoesComponent } from './components/cardapio/porcoes/porcoes.component';
 import { TestePedidoComponent } from './components/teste-pedido/teste-pedido.component';
 import { CarrinhoComponent } from './components/carrinho/carrinho.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 const routes: Routes = [
@@ -29,7 +30,7 @@ const routes: Routes = [
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    importProvidersFrom(HttpClientModule)
+    importProvidersFrom(HttpClientModule), provideAnimationsAsync()
   ]
 };
 
