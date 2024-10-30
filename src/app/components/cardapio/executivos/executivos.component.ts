@@ -43,7 +43,10 @@ export class ExecutivosComponent implements OnInit {
  voltar() {
   this.location.back();
  }
-
+ 
+ irParaCarrinho(){
+  this.router.navigate(['meus-pedidos']);
+ }
  
   
 }

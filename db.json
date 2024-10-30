@@ -1,38 +1,5 @@
 {
-  "cart": [
-    {
-      "id": "21",
-      "name": "Peixe ao Molho de Alcaparras",
-      "description": "Filé de peixe grelhado com molho de alcaparras.",
-      "price": 48,
-      "image": "https://www.comidaereceitas.com.br/wp-content/uploads/2008/05/File-de-peixe-a-belle-meuniere.jpg",
-      "category": "executivos"
-    },
-    {
-      "id": "800",
-      "name": "amondega",
-      "description": "prato de amondegas",
-      "price": 30,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdemp57aT-TAwNYZUcgjULmzpIe6wtAFtAUw&s",
-      "category": "executivos"
-    },
-    {
-      "id": "800",
-      "name": "amondega",
-      "description": "prato de amondegas",
-      "price": 30,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdemp57aT-TAwNYZUcgjULmzpIe6wtAFtAUw&s",
-      "category": "executivos"
-    },
-    {
-      "id": "9",
-      "name": "Salada Caesar",
-      "description": "Salada com alface, croutons e molho Caesar.",
-      "price": 30,
-      "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
-      "category": "executivos"
-    }
-  ],
+  "cart": [],
   "dishes": [
     {
       "id": "4",

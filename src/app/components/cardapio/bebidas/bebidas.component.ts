@@ -31,7 +31,7 @@ export class BebidasComponent implements OnInit {
   
   verDetalhes(id: number | undefined) {
     if (id !== undefined) {
-        this.router.navigate(['/cardapio/fazer-pedido', id.toString()]); // Converte para string
+        this.router.navigate(['/cardapio/fazer-pedido', id.toString()]);
     } else {
         console.error('ID do prato não encontrado');
     }
@@ -40,5 +40,9 @@ export class BebidasComponent implements OnInit {
   voltar() {
     this.location.back();
   }
+
+  irParaCarrinho(){
+    this.router.navigate(['meus-pedidos']);
+   }
 
 }

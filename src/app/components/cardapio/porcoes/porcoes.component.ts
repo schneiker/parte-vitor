@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DishService } from '../../../services/dish.service';
 import { Dish } from '../../../services/dish.service';
-import { CommonModule } from '@angular/common';
+import { CommonModule, CurrencyPipe } from '@angular/common';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   standalone: true, 
   templateUrl: './porcoes.component.html',
   styleUrls: ['./porcoes.component.css'],
-  imports: [CommonModule]
+  imports: [CommonModule, CurrencyPipe]
 
 })
 export class PorcoesComponent implements OnInit {
@@ -31,7 +31,7 @@ export class PorcoesComponent implements OnInit {
   
   verDetalhes(id: number | undefined) {
     if (id !== undefined) {
-        this.router.navigate(['/cardapio/fazer-pedido', id.toString()]); // Converte para string
+        this.router.navigate(['/cardapio/fazer-pedido', id.toString()]);
     } else {
         console.error('ID do prato não encontrado');
     }
@@ -40,5 +40,9 @@ export class PorcoesComponent implements OnInit {
   voltar() {
     this.location.back();
   }
+
+  irParaCarrinho(){
+    this.router.navigate(['/meus-pedidos']);
+   }
 
 }

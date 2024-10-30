@@ -1,4 +1,4 @@
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { ApplicationConfig, Component, importProvidersFrom } from '@angular/core';
 import { provideRouter, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { DishFormComponent } from './components/dish-form/dish-form.component';
@@ -9,6 +9,7 @@ import { ExecutivosComponent } from './components/cardapio/executivos/executivos
 import { BebidasComponent } from './components/cardapio/bebidas/bebidas.component';
 import { PorcoesComponent } from './components/cardapio/porcoes/porcoes.component';
 import { TestePedidoComponent } from './components/teste-pedido/teste-pedido.component';
+import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'cardapio/bebidas', component: BebidasComponent },
   { path: 'cardapio/porcoes', component: PorcoesComponent },
   { path: 'cardapio/fazer-pedido/:id', component: TestePedidoComponent },
-  { path: 'dish-list/edit-dish/:id', component: DishFormComponent }
+  { path: 'dish-list/edit-dish/:id', component: DishFormComponent },
+  { path: 'meus-pedidos', component: CarrinhoComponent } 
 ];
 
 
