@@ -212,9 +212,9 @@
       "observacao": "sem batatinha",
       "numeroPedido": 10,
       "horario": "2024-10-26T22:30:59.298Z",
-      "status": "aguardando entrega",
+      "status": "pedido enviado para entrega",
       "tempo": "0 min",
-      "entregador": ""
+      "entregador": "Hugo Prado"
     },
     {
       "id": "11",
@@ -285,6 +285,20 @@
       "status": "pedido finalizado",
       "tempo": "0 min",
       "entregador": "Geraldo Cruz"
+    },
+    {
+      "id": "16",
+      "nomeCliente": "julia",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13",
+      "observacao": "sem maionese",
+      "numeroPedido": 16,
+      "horario": "2024-10-30T00:33:02.321Z",
+      "status": "pedido enviado para entrega",
+      "tempo": "0 min",
+      "entregador": "Claudinei Santos"
     }
   ],
   "entregadores": [

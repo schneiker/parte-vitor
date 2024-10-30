@@ -17,13 +17,14 @@
 #dados p{
     margin-bottom: 5px;
     font-size: 18px;
+    padding-right: 5px;
 }
 
 #dados h2 {
     margin-bottom: 5px;
     font-size: 24px;
     font-weight: 800;
-    color: black;
+    color: var(--amarelo-figma);
 }
 
 #botao {
