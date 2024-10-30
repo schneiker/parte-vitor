@@ -65,7 +65,4 @@ export class TestePedidoComponent implements OnInit {
     this.location.back();
    }
 
-   irParaCarrinho(){
-    this.router.navigate(['cardapio/meus-pedidos']);
-   }
 }

@@ -10,17 +10,19 @@
     <main>
         <h1>CARRINHO</h1>
         <div *ngFor="let dish of cart; let last = last" class="cardapio">
-            <button (click)="removeFromCart(dish.id)" class="botao-item-cardapio">
+            <div class="botao-item-cardapio">
                 <div class="dish-nome">
                     <h2>{{ dish.name }}</h2>
+                    
                     <div class="dish-info">
                         <p class="dish-descricao">{{ dish.description }}</p>
                         <p class="dish-preco">{{ dish.price | currency:'BRL' }}</p>
                     </div>
                 </div>
-                <img [src]="dish.image" alt="{{ dish.name }}" class="dish-image" />
-            </button>
+                <button (click)="removeFromCart(dish.id)" class="deletar">🗑️</button>
+            </div>
             <div *ngIf="!last" class="linha-separadora"></div>
         </div>
+        <h3>Total: {{ total | currency:'BRL' }}</h3>
     </main>
 </body>

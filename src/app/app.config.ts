@@ -23,9 +23,8 @@ const routes: Routes = [
   { path: 'cardapio/porcoes', component: PorcoesComponent },
   { path: 'cardapio/fazer-pedido/:id', component: TestePedidoComponent },
   { path: 'dish-list/edit-dish/:id', component: DishFormComponent },
-  { path: 'meus-pedidos', component: CarrinhoComponent } 
+  { path: 'carrinho', component: CarrinhoComponent } 
 ];
-
 
 export const appConfig: ApplicationConfig = {
   providers: [

@@ -23,16 +23,31 @@ export class CarrinhoComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.pedidosService.getCartItems().subscribe(data => {
-      this.cart = data;
-      this.loading = false; 
-    });
+    this.pedidosService.getCartItems().subscribe(
+      data => {
+        this.cart = data;
+        this.loading = false; 
+      },
+      (error) => {
+        console.error('Erro ao carregar os itens do carrinho', error);
+        this.loading = false; 
+      }
+    );
   }
 
   removeFromCart(id: string) {
-    this.pedidosService.removeFromCart(id).subscribe(() => {
-      this.cart = this.cart.filter(dish => dish.id !== id);
-    });
+    this.pedidosService.removeFromCart(id).subscribe(
+      () => {
+        this.cart = this.cart.filter(dish => dish.id !== id);
+      },
+      (error) => {
+        console.error('Erro ao remover o item do carrinho', error);
+      }
+    );
+  }
+
+  get total(): number {
+    return this.cart.reduce((sum, dish) => sum + (dish.price || 0), 0);
   }
 
   voltar() {

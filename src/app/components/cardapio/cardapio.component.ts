@@ -44,6 +44,10 @@ export class CardapioComponent implements OnInit {
     this.location.back();
   }
 
+  irParaCarrinho(){
+    this.router.navigate(['carrinho']);
+   }
+
 }
 
 

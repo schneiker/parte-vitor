@@ -41,8 +41,6 @@ export class BebidasComponent implements OnInit {
     this.location.back();
   }
 
-  irParaCarrinho(){
-    this.router.navigate(['meus-pedidos']);
-   }
+
 
 }

@@ -1,5 +1,27 @@
 {
-  "cart": [],
+
+  "finalizados": [
+    
+  ],
+
+  "cart": [
+    {
+      "id": "12",
+      "name": "Bife à Cavalo",
+      "description": "Bife grelhado com ovo frito por cima.",
+      "price": 50,
+      "image": "https://s2-receitas.glbimg.com/tHeJvrKQVeIin3PTeGf6AaUcbag=/0x0:1280x805/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/9/E/l4TseUQAqVp32qAFW2AQ/bife-a-cavalo.jpeg",
+      "category": "executivos"
+    },
+    {
+      "id": "12",
+      "name": "Bife à Cavalo",
+      "description": "Bife grelhado com ovo frito por cima.",
+      "price": 50,
+      "image": "https://s2-receitas.glbimg.com/tHeJvrKQVeIin3PTeGf6AaUcbag=/0x0:1280x805/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/9/E/l4TseUQAqVp32qAFW2AQ/bife-a-cavalo.jpeg",
+      "category": "executivos"
+    }
+  ],
   "dishes": [
     {
       "id": "4",
