@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { ApplicationConfig, Component, importProvidersFrom } from '@angular/core';
 import { provideRouter, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -11,6 +10,13 @@ import { BebidasComponent } from './components/cardapio/bebidas/bebidas.componen
 import { PorcoesComponent } from './components/cardapio/porcoes/porcoes.component';
 import { TestePedidoComponent } from './components/teste-pedido/teste-pedido.component';
 import { CarrinhoComponent } from './components/carrinho/carrinho.component';
+import { TelaClienteFinalizarPedidoComponent } from './components/tela-cliente-finalizar-pedido/tela-cliente-finalizar-pedido.component';
+import { TelaInicialCozinhaComponent } from './components/tela-inicial-cozinha/tela-inicial-cozinha.component';
+import { TelaInicialDirecionamentoEntregaComponent } from './components/tela-inicial-direcionamento-entrega/tela-inicial-direcionamento-entrega.component';
+import { TelaEscolherEntregadorComponent } from './components/tela-escolher-entregador/tela-escolher-entregador.component';
+import { TelaInicialEntregadorComponent } from './components/tela-inicial-entregador/tela-inicial-entregador.component';
+import { AcompanharPedidoComponent } from './components/acompanhar-pedido/acompanhar-pedido.component';
+import { PainelEntregadorComponent } from './components/painel-entregador/painel-entregador.component';
 
 
 const routes: Routes = [
@@ -24,7 +30,17 @@ const routes: Routes = [
   { path: 'cardapio/porcoes', component: PorcoesComponent },
   { path: 'cardapio/fazer-pedido/:id', component: TestePedidoComponent },
   { path: 'dish-list/edit-dish/:id', component: DishFormComponent },
-  { path: 'carrinho', component: CarrinhoComponent } 
+  { path: 'carrinho', component: CarrinhoComponent },
+  { path: 'finalizar-pedido', component: TelaClienteFinalizarPedidoComponent},
+    { path: 'tela-cozinha', component: TelaInicialCozinhaComponent},
+    { path: 'tela-dir-entrega', component: TelaInicialDirecionamentoEntregaComponent},
+    { path: 'tela-escolher-entregador', component: TelaEscolherEntregadorComponent},
+    { path: 'tela-entregador', component: TelaInicialEntregadorComponent},
+    { path: 'tela-finalizar-pedido', component: TelaClienteFinalizarPedidoComponent},
+    { path: 'acompanhar-pedido', component: AcompanharPedidoComponent},
+    { path: 'tela-escolher-entregador/:numeroPedido', component: TelaEscolherEntregadorComponent},
+    { path: 'painel-entregadores', component: PainelEntregadorComponent},
+    { path: 'tela-inicial-entregador/:nome', component: TelaInicialEntregadorComponent }
 ];
 
 export const appConfig: ApplicationConfig = {
@@ -34,16 +50,3 @@ export const appConfig: ApplicationConfig = {
   ]
 };
 
-=======
-import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
-
-import { routes } from './app.routes';
-import { provideClientHydration } from '@angular/platform-browser';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { provideHttpClient, withFetch } from '@angular/common/http';
-
-export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration(), provideAnimationsAsync(), provideAnimationsAsync(), provideHttpClient(withFetch()), provideAnimationsAsync()]
-};
->>>>>>> colega/main

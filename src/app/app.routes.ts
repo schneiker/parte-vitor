@@ -1,8 +1,4 @@
 import { Routes } from '@angular/router';
-<<<<<<< HEAD
-
-export const routes: Routes = [];
-=======
 import { TelaInicialCozinhaComponent } from './components/tela-inicial-cozinha/tela-inicial-cozinha.component';
 import { TelaInicialDirecionamentoEntregaComponent } from './components/tela-inicial-direcionamento-entrega/tela-inicial-direcionamento-entrega.component';
 import { TelaEscolherEntregadorComponent } from './components/tela-escolher-entregador/tela-escolher-entregador.component';
@@ -12,7 +8,7 @@ import { AcompanharPedidoComponent } from './components/acompanhar-pedido/acompa
 import { PainelEntregadorComponent } from './components/painel-entregador/painel-entregador.component';
 
 export const routes: Routes = [
-    { path: '', component: TelaClienteFinalizarPedidoComponent},
+    { path: 'finalizar-pedido', component: TelaClienteFinalizarPedidoComponent},
     { path: 'tela-cozinha', component: TelaInicialCozinhaComponent},
     { path: 'tela-dir-entrega', component: TelaInicialDirecionamentoEntregaComponent},
     { path: 'tela-escolher-entregador', component: TelaEscolherEntregadorComponent},
@@ -23,4 +19,3 @@ export const routes: Routes = [
     { path: 'painel-entregadores', component: PainelEntregadorComponent},
     { path: 'tela-inicial-entregador/:nome', component: TelaInicialEntregadorComponent }
 ];
->>>>>>> colega/main

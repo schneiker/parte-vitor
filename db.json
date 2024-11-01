@@ -1,10 +1,5 @@
 {
-<<<<<<< HEAD
-
-  "finalizados": [
-    
-  ],
-
+  "finalizados": [],
   "cart": [
     {
       "id": "12",
@@ -21,25 +16,25 @@
       "price": 50,
       "image": "https://s2-receitas.glbimg.com/tHeJvrKQVeIin3PTeGf6AaUcbag=/0x0:1280x805/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/9/E/l4TseUQAqVp32qAFW2AQ/bife-a-cavalo.jpeg",
       "category": "executivos"
+    },
+    {
+      "id": "9",
+      "name": "Salada Caesar",
+      "description": "Salada com alface, croutons e molho Caesar.",
+      "price": 30,
+      "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
+      "category": "executivos"
+    },
+    {
+      "id": "9",
+      "name": "Salada Caesar",
+      "description": "Salada com alface, croutons e molho Caesar.",
+      "price": 30,
+      "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
+      "category": "executivos"
     }
   ],
   "dishes": [
-    {
-      "id": "4",
-      "name": "Cerveja Artesanal",
-      "description": "Cerveja artesanal feita com ingredientes selecionados.",
-      "price": 12,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobh2ySv1Tb8IQ__Fgq1nt97xXljAWcc7Klg&s",
-      "category": "bebidas"
-    },
-    {
-      "id": "5",
-      "name": "Cerveja Artesanal",
-      "description": "Cerveja artesanal feita com ingredientes selecionados.",
-      "price": 12,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobh2ySv1Tb8IQ__Fgq1nt97xXljAWcc7Klg&s",
-      "category": "porcoes"
-    },
     {
       "id": "6",
       "name": "Risoto de Camarão",
@@ -191,7 +186,16 @@
       "price": 30,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdemp57aT-TAwNYZUcgjULmzpIe6wtAFtAUw&s",
       "category": "executivos"
-=======
+    },
+    {
+      "id": "45353",
+      "name": "teste",
+      "description": "rtyr",
+      "price": 35,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz_fVou6yoSlq9Djxe9pNq-21LWCQe_coc6Q&s",
+      "category": "executivos"
+    }
+  ],
   "pedidos": [
     {
       "id": "1",
@@ -492,6 +496,20 @@
       "status": "pedido enviado para entrega",
       "tempo": "0 min",
       "entregador": "Claudinei Santos"
+    },
+    {
+      "id": "17",
+      "nomeCliente": "teste-vitor",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua José Martins de Araújo, 13 - Jardim Marmarita",
+      "cpf": "479.765.218-70",
+      "observacao": "",
+      "numeroPedido": 17,
+      "horario": "2024-11-01T18:07:51.808Z",
+      "status": "em preparo",
+      "tempo": "",
+      "entregador": ""
     }
   ],
   "entregadores": [
@@ -512,7 +530,6 @@
       "nome": "Claudinei Santos",
       "status": "disponível",
       "cpf": "290.664.810-80"
->>>>>>> colega/main
     }
   ]
 }
