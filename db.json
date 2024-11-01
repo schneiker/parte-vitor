@@ -1,5 +1,9 @@
 {
-  "finalizados": [],
+
+  "finalizados": [
+    
+  ],
+
   "cart": [
     {
       "id": "12",
@@ -10,76 +14,12 @@
       "category": "executivos"
     },
     {
-      "id": "14",
-      "name": "Café Expresso",
-      "description": "Café expresso forte e aromático.",
-      "price": 5,
-      "image": "https://cdn.sistemawbuy.com.br/arquivos/f101ef5b9be464a6c8854310ae5f5327/produtos/65bb164199b0d/5fc4fca2a8cea2deb2743064358f7bee-65bb21d8524e1.jpg",
-      "category": "bebidas"
-    },
-    {
-      "id": "14",
-      "name": "Café Expresso",
-      "description": "Café expresso forte e aromático.",
-      "price": 5,
-      "image": "https://cdn.sistemawbuy.com.br/arquivos/f101ef5b9be464a6c8854310ae5f5327/produtos/65bb164199b0d/5fc4fca2a8cea2deb2743064358f7bee-65bb21d8524e1.jpg",
-      "category": "bebidas"
-    },
-    {
-      "id": "14",
-      "name": "Café Expresso",
-      "description": "Café expresso forte e aromático.",
-      "price": 5,
-      "image": "https://cdn.sistemawbuy.com.br/arquivos/f101ef5b9be464a6c8854310ae5f5327/produtos/65bb164199b0d/5fc4fca2a8cea2deb2743064358f7bee-65bb21d8524e1.jpg",
-      "category": "bebidas"
-    },
-    {
-      "id": "14",
-      "name": "Café Expresso",
-      "description": "Café expresso forte e aromático.",
-      "price": 5,
-      "image": "https://cdn.sistemawbuy.com.br/arquivos/f101ef5b9be464a6c8854310ae5f5327/produtos/65bb164199b0d/5fc4fca2a8cea2deb2743064358f7bee-65bb21d8524e1.jpg",
-      "category": "bebidas"
-    },
-    {
-      "id": "14",
-      "name": "Café Expresso",
-      "description": "Café expresso forte e aromático.",
-      "price": 5,
-      "image": "https://cdn.sistemawbuy.com.br/arquivos/f101ef5b9be464a6c8854310ae5f5327/produtos/65bb164199b0d/5fc4fca2a8cea2deb2743064358f7bee-65bb21d8524e1.jpg",
-      "category": "bebidas"
-    },
-    {
-      "id": "14",
-      "name": "Café Expresso",
-      "description": "Café expresso forte e aromático.",
-      "price": 5,
-      "image": "https://cdn.sistemawbuy.com.br/arquivos/f101ef5b9be464a6c8854310ae5f5327/produtos/65bb164199b0d/5fc4fca2a8cea2deb2743064358f7bee-65bb21d8524e1.jpg",
-      "category": "bebidas"
-    },
-    {
-      "id": "14",
-      "name": "Café Expresso",
-      "description": "Café expresso forte e aromático.",
-      "price": 5,
-      "image": "https://cdn.sistemawbuy.com.br/arquivos/f101ef5b9be464a6c8854310ae5f5327/produtos/65bb164199b0d/5fc4fca2a8cea2deb2743064358f7bee-65bb21d8524e1.jpg",
-      "category": "bebidas"
-    },
-    {
-      "id": "20",
-      "name": "Pina Colada",
-      "description": "Bebida tropical à base de rum, abacaxi e creme de coco.",
-      "price": 20,
-      "image": "https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2022/09/23/1631063638-receita-pina-colada.jpg",
-      "category": "bebidas"
-    },
-    {
-      "id": "20",
-      "name": "Pina Colada",
-      "description": "Bebida tropical à base de rum, abacaxi e creme de coco.",
-      "price": 20,
-      "image": "https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2022/09/23/1631063638-receita-pina-colada.jpg",
-      "category": "bebidas"
+      "id": "12",
+      "name": "Bife à Cavalo",
+      "description": "Bife grelhado com ovo frito por cima.",
+      "price": 50,
+      "image": "https://s2-receitas.glbimg.com/tHeJvrKQVeIin3PTeGf6AaUcbag=/0x0:1280x805/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/9/E/l4TseUQAqVp32qAFW2AQ/bife-a-cavalo.jpeg",
+      "category": "executivos"
     }
   ],
   "dishes": [
