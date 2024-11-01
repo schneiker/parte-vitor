@@ -1,0 +1,6 @@
+<section>
+    <header>Entrega</header>
+    <p *ngIf="!nome">Sem entregas no momento</p>
+    <app-entrega-recebida [pedido]="pedidoSelecionado" *ngIf="nome"></app-entrega-recebida>
+  </section>
+  

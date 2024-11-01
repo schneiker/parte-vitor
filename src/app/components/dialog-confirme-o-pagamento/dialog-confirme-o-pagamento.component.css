@@ -1,0 +1,31 @@
+section {
+    height: 240px;
+    background-color: var(--cinza-texto-fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    background-color: var(--cinza-texto-fundo);
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+button {
+    position: absolute;
+    bottom: 20px;
+    background-color: var(--verde-entregador-disponivel);
+    border: none;
+    padding: 8px 22px 8px 22px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 800;
+}

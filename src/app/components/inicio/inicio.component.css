@@ -1,3 +1,10 @@
+*  {
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1D2126;
+}
+
+
 body  {
     max-width: 878px;
     align-items: center;

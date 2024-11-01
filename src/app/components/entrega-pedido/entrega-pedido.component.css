@@ -1,0 +1,111 @@
+.pedido {
+    box-sizing: border-box;
+    background-color: var(--branco-figma);
+    width: 180px;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.info-pedido-pai {
+    background-color: var(--verde-figma);
+    min-height: 76px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.info-pedido {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: var(--verde-figma);
+}
+
+.detalhes-pedido {
+    background-color: var(--branco-figma);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.detalhes-pedido p {
+    padding-left: 15px;
+    margin-top: 0;
+    margin-bottom: 4px; /* Espaçamento mínimo entre os parágrafos */
+    font-size: 12px;
+}
+
+.detalhes-pedido h3 {
+    padding-left: 12px;
+    margin-bottom: 4px; /* Espaçamento entre o título e a descrição */
+}
+
+#botao {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 49px; /* Altura fixa do botão */
+    justify-content: center;
+    background-color: var(--branco-figma);
+    align-items: flex-end; /* Garante que o botão fique na parte inferior */
+    margin-bottom: 12px; /* Adiciona a distância de 12px entre o botão e o final */
+}
+
+.b-finalizar {
+    color: var(--branco-figma);
+    background-color: var(--verde-figma);
+    border: none;
+    width: 168px;
+    height: 37px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+.texto-branco {
+    color: var(--branco-texto);
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    background-color: var(--verde-figma);
+}
+
+.texto-preto {
+    color: var(--preto-texto);
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    background-color: var(--branco-figma);
+}
+
+.texto-cinza {
+    color: var(--cinza-texto);
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    background-color: var(--branco-figma);
+}
+
+#titulo-h3 {
+    font-size: 14px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    background-color: var(--branco-figma);
+}
+
+#todos-os-pedidos {
+    flex-grow: 1;
+    max-height: 131px;
+    overflow-y: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}

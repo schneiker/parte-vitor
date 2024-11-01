@@ -6,7 +6,7 @@
     "dish-app": {
       "projectType": "application",
       "schematics": {},
-      "root": "",
+      "root": "src",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
@@ -15,7 +15,6 @@
           "options": {
             "outputPath": "dist/dish-app",
             "index": "src/index.html",
-            "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -23,13 +22,16 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
-              }
+                "input": "src/assets",
+                "output": "assets"
+              },
+              "src/favicon.ico"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "browser": "src/main.ts" 
           },
           "configurations": {
             "production": {
@@ -81,8 +83,10 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
-              }
+                "input": "src/assets",
+                "output": "assets"
+              },
+              "src/favicon.ico"
             ],
             "styles": [
               "src/styles.css"

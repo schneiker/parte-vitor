@@ -1,0 +1,134 @@
+* {
+    color: white;
+}
+
+h2 {
+    margin-bottom: 3px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px; /* Espaçamento de 20px da borda direita */
+    box-sizing: border-box; /* Garante que o padding seja incluído no tamanho total da seção */  
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 45px;
+    background-color: var(--cinza-texto-fundo);
+    border: none;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 17px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+}
+
+header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 31px 0 15px 0px;
+}
+
+#botao-seta-voltar {
+    position: absolute;
+    left: 28px;
+    background-color: var(--fundo-telas);
+    border: none;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 40px 20px;
+    row-gap: 15px;
+}
+
+#valores {
+    margin-left: 20px;
+}
+
+.resumo-de-valores {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumo-de-valores div>p {
+    margin-bottom: 3px;
+}
+
+#pagamento {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+#texto {
+    margin: 0 0 65px 0;
+}
+
+#observacao {
+    margin-left: 20px;
+}
+
+.forms-observacao {
+    min-height: 45px; /* Altura mínima */
+    max-height: 200px; /* Altura máxima opcional para limitar o crescimento */
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo exceder a altura máxima */
+    width: 100%;
+    resize: none; /* Impede que o usuário redimensione o textarea manualmente */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 17px; /* Espaçamento interno */
+    background-color: var(--cinza-texto-fundo);
+    font-size: 20px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.forms-observacao::placeholder {
+    text-align: left; /* Alinha o placeholder à esquerda */
+    vertical-align: top; /* Alinha o placeholder na parte superior */
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-end; /* Posiciona no final da tela */
+}  
+
+#botao-fazer-pedido {
+    font-size: 24px;
+    font-weight: 600;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    z-index: 1000;
+    border: none;
+    width: 340px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.active-button {
+    background-color: var(--laranja-figma); /* Cor verde quando os campos estiverem preenchidos */
+    cursor: pointer;
+}
+  
+.inactive-button {
+    background-color: var(--cinza-botao-inativo); /* Cor cinza para indicar que está desativado */
+    cursor: not-allowed;
+}
+
+@media (max-height: 750px) {
+    section {
+        padding-bottom: 100px; /* Adiciona espaço extra apenas em telas pequenas */
+    }
+}

@@ -1,0 +1,20 @@
+#a-caminho-da-entrega {
+    background-color: var(--cinza-texto-fundo);
+    margin-bottom: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 10px;
+}
+
+#a-caminho-da-entrega h2 {
+    background-color: var(--cinza-texto-fundo);
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#a-caminho-da-entrega p {
+    background-color: var(--cinza-texto-fundo);
+    font-size: 18px;
+}

@@ -20,6 +20,14 @@ export class InicioComponent {
     this.router.navigate(['dish-list']);
   }
 
+  irParaCozinha() {
+    this.router.navigate(['tela-cozinha']);
+  }
+
+  irParaEntregador() {
+    this.router.navigate(['tela-entregador']);
+  }
+
 }
 
 

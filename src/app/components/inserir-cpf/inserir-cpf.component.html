@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="inserir-cpf.component.css">
+
+<mat-dialog-content>
+  <h2 mat-dialog-title>Digite o CPF</h2>
+  <form>
+    <mat-form-field appearance="fill">
+      <mat-label>CPF</mat-label>
+      <input matInput placeholder="CPF" [(ngModel)]="cpf" name="cpf" (ngModelChange)="formatarCpf()">
+    </mat-form-field>
+  </form>
+  <mat-dialog-actions>
+    <button mat-button (click)="onCancel()">Sair</button>
+    <button mat-button (click)="confirmar()">Ok</button>
+  </mat-dialog-actions>
+</mat-dialog-content>

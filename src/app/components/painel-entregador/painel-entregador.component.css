@@ -1,0 +1,57 @@
+#cpf-entregador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--laranja-figma);
+    padding: 20px 60px 20px 60px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+button {
+    margin-top: 15px;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: gray; /* Cor para o botão desabilitado */
+    color: white;
+    cursor: not-allowed; /* Cursor indicando que o botão está desabilitado */
+    transition: background-color 0.3s;
+}
+
+button.clicavel {
+    background-color: var(--verde-figma); /* Cor para o botão quando clicável */
+    cursor: pointer;
+}
+
+.erro {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#campo-cpf {
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

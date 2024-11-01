@@ -1,0 +1,23 @@
+<section class="pedido">
+    <div class="info-pedido-pai">
+      <div class="info-pedido">
+        <div class="texto-branco">{{ pedido.tempo || 'Tempo indefinido' }}</div>
+        <div class="texto-branco">{{ pedido.nomeCliente || 'Cliente indefinido' }}</div>
+      </div>
+      <div class="info-pedido">
+        <div class="texto-branco">{{ pedido.horario ? (pedido.horario | date: 'HH:mm') : 'Horário indefinido' }}</div>
+        <div class="texto-branco">nº {{ pedido.numeroPedido || 'N/A' }}</div>
+      </div>
+    </div>
+    <div id="todos-os-pedidos">
+      <div class="detalhes-pedido" *ngFor="let item of pedido.itens">
+        <h3 class="texto-preto" id="titulo-h3">{{ item.nomePrato }}</h3>
+        <p class="texto-cinza">{{ item.descricao }}</p>
+        <p class="texto-cinza">{{ item.observacao || 'Sem observações' }}</p>
+      </div>
+    </div>
+    <div id="botao">
+      <button [routerLink]="['/tela-escolher-entregador', pedido.numeroPedido]" class="b-finalizar">Retirada</button>
+    </div>
+  </section>
+  
