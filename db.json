@@ -92,14 +92,6 @@
       "category": "bebidas"
     },
     {
-      "id": "5",
-      "name": "Cerveja Artesanal",
-      "description": "Cerveja artesanal feita com ingredientes selecionados.",
-      "price": 12,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobh2ySv1Tb8IQ__Fgq1nt97xXljAWcc7Klg&s",
-      "category": "porcoes"
-    },
-    {
       "id": "6",
       "name": "Risoto de Camarão",
       "description": "Risoto cremoso com camarões grelhados e ervas.",

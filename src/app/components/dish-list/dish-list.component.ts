@@ -3,14 +3,14 @@ import { DishService, Dish } from '../../services/dish.service';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router'; 
 import { Location } from '@angular/common';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
 
 @Component({
   selector: 'app-dish-list',
   templateUrl: './dish-list.component.html',
   styleUrls: ['./dish-list.component.css'],
   standalone: true,
-  imports: [CommonModule, RouterModule, MatSlideToggleModule]
+  imports: [CommonModule, RouterModule]
 })
 export class DishListComponent implements OnInit {
   dishes: Dish[] = [];
