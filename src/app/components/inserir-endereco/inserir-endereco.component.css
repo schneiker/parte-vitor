@@ -1,0 +1,61 @@
+button {
+    margin: 8px;
+    border-radius: 29.5px;
+    width: 115px;
+    height: 44px;
+    border: none;
+    color: white;
+    background-color: var(--cinza-botao-inativo);
+    font-size: 20px;
+}
+
+mat-dialog-content {
+    min-height: 575px;
+}
+
+mat-dialog-content, mat-dialog-actions {
+    background-color: var(--cinza-texto-fundo);
+}
+
+.nec-group {
+    display: flex;
+}
+
+.num {
+    width: 95px;
+    margin-right: 15px;
+}
+
+.cies-group {
+    display: flex;
+}
+
+.cidade {
+    width: 350px;
+    margin-right: 15px;
+}
+
+mat-form-field {
+    background-color: var(--cinza-texto-fundo);
+}
+
+h2, mat-dialog-title {
+    background-color: var(--cinza-texto-fundo);
+    padding: 0;
+}
+
+half-width {
+    width: 100%;
+}
+
+.fixo {
+    width: 285px;
+}
+
+.botoes {
+    display: flex;
+}
+
+/* mat-label, input, ::placeholder {
+    background-color: var(--cinza-botao-inativo);
+} */

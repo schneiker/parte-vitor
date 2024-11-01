@@ -1,0 +1,47 @@
+<mat-dialog-content>
+    <h2 mat-dialog-title>Digite o CEP</h2>
+    <form>
+      <mat-form-field class="fixo" appearance="fill">
+        <mat-label>CEP:</mat-label>
+        <input matInput placeholder="CEP" [(ngModel)]="cep" (ngModelChange)="buscarCep()" name="cep">
+      </mat-form-field>
+  
+      <mat-form-field class="fixo" appearance="fill">
+        <mat-label>Logradouro</mat-label>
+        <input matInput placeholder="Logradouro" [(ngModel)]="logradouro" name="logradouro">
+      </mat-form-field>
+  
+      <div class="nec-group">
+        <mat-form-field class="num" appearance="fill">
+          <mat-label>Nº</mat-label>
+          <input matInput placeholder="Número" [(ngModel)]="numero" name="numero">
+        </mat-form-field>
+  
+        <mat-form-field class="half-width" appearance="fill">
+          <mat-label>Complemento</mat-label>
+          <input matInput placeholder="Complemento" [(ngModel)]="complemento" name="complemento">
+        </mat-form-field>
+      </div>
+  
+      <mat-form-field class="fixo" appearance="fill">
+        <mat-label>Bairro</mat-label>
+        <input matInput placeholder="Bairro" [(ngModel)]="bairro" name="bairro">
+      </mat-form-field>
+  
+      <div class="cies-group">
+        <mat-form-field class="cidade" appearance="fill">
+          <mat-label>Cidade</mat-label>
+          <input matInput placeholder="Cidade" [(ngModel)]="cidade" name="cidade">
+        </mat-form-field>
+  
+        <mat-form-field class="half-width" appearance="fill">
+          <mat-label>Estado</mat-label>
+          <input matInput placeholder="Estado" [(ngModel)]="estado" name="estado">
+        </mat-form-field>
+      </div>
+    </form>
+    <mat-dialog-actions class="botoes">
+      <button mat-button (click)="onCancel()">Cancelar</button>
+      <button mat-button [mat-dialog-close]="{cep, logradouro, numero, complemento, bairro, cidade, estado}"[disabled]="!isEnderecoCompleto()">OK</button>
+    </mat-dialog-actions>   
+  </mat-dialog-content>

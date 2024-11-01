@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "dish-app": {
+=======
+    "front-dish-app": {
+>>>>>>> upstream/main
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/dish-app",
+=======
+            "outputPath": "dist/front-dish-app",
+>>>>>>> upstream/main
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -21,6 +29,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+<<<<<<< HEAD
               {
                 "glob": "**/*",
                 "input": "public"
@@ -30,12 +39,28 @@
               "src/styles.css"
             ],
             "scripts": []
+=======
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css"
+            ],
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "server.ts"
+            }
+>>>>>>> upstream/main
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
+<<<<<<< HEAD
                   "maximumWarning": "500kB",
                   "maximumError": "1MB"
                 },
@@ -43,6 +68,15 @@
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kB",
                   "maximumError": "4kB"
+=======
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+>>>>>>> upstream/main
                 }
               ],
               "outputHashing": "all"
@@ -59,16 +93,30 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "dish-app:build:production"
             },
             "development": {
               "buildTarget": "dish-app:build:development"
+=======
+              "buildTarget": "front-dish-app:build:production"
+            },
+            "development": {
+              "buildTarget": "front-dish-app:build:development"
+>>>>>>> upstream/main
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
+<<<<<<< HEAD
           "builder": "@angular-devkit/build-angular:extract-i18n"
+=======
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "front-dish-app:build"
+          }
+>>>>>>> upstream/main
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -79,12 +127,20 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
+<<<<<<< HEAD
               {
                 "glob": "**/*",
                 "input": "public"
               }
             ],
             "styles": [
+=======
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+>>>>>>> upstream/main
               "src/styles.css"
             ],
             "scripts": []
@@ -94,6 +150,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "af085341-c59f-4dd0-a7f1-8c2e4747608d"
+=======
+    "analytics": "2c82c6de-2ded-46de-b19c-fbfabc7b59fb"
+>>>>>>> upstream/main
   }
 }
