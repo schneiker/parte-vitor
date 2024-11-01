@@ -9,5 +9,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+<<<<<<< HEAD
   title = 'dish-app';
+=======
+  title = 'front-dish-app';
+>>>>>>> colega/main
 }

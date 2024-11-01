@@ -1,0 +1,33 @@
+* {
+    color: white;
+    background-color: var(--fundo-telas);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+#confirmar {
+    background-color: var(--verde-entregador-disponivel);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.atribuir {
+    justify-content: center;
+}
+
+#fechar {
+    border: none;
+    cursor: pointer;
+}
+
+.fechar {
+    justify-content: right;
+}
