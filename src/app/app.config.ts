@@ -17,6 +17,7 @@ import { TelaEscolherEntregadorComponent } from './components/tela-escolher-entr
 import { TelaInicialEntregadorComponent } from './components/tela-inicial-entregador/tela-inicial-entregador.component';
 import { AcompanharPedidoComponent } from './components/acompanhar-pedido/acompanhar-pedido.component';
 import { PainelEntregadorComponent } from './components/painel-entregador/painel-entregador.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 const routes: Routes = [
@@ -46,7 +47,7 @@ const routes: Routes = [
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    importProvidersFrom(HttpClientModule)
+    importProvidersFrom(HttpClientModule), provideAnimationsAsync()
   ]
 };
 

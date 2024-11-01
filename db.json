@@ -32,6 +32,22 @@
       "price": 30,
       "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
       "category": "executivos"
+    },
+    {
+      "id": "9",
+      "name": "Salada Caesar",
+      "description": "Salada com alface, croutons e molho Caesar.",
+      "price": 30,
+      "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
+      "category": "executivos"
+    },
+    {
+      "id": "9",
+      "name": "Salada Caesar",
+      "description": "Salada com alface, croutons e molho Caesar.",
+      "price": 30,
+      "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
+      "category": "executivos"
     }
   ],
   "dishes": [
@@ -507,8 +523,36 @@
       "observacao": "",
       "numeroPedido": 17,
       "horario": "2024-11-01T18:07:51.808Z",
-      "status": "em preparo",
-      "tempo": "",
+      "status": "aguardando entrega",
+      "tempo": "100 min",
+      "entregador": ""
+    },
+    {
+      "id": "18",
+      "nomeCliente": "NDA ITALIAN COFFEE",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua dos Buritis, 2 - Vila Parque Jabaquara",
+      "cpf": "479.765.218-70",
+      "observacao": "tirar cebola",
+      "numeroPedido": 18,
+      "horario": "2024-11-01T19:16:39.234Z",
+      "status": "aguardando entrega",
+      "tempo": "32 min",
+      "entregador": ""
+    },
+    {
+      "id": "19",
+      "nomeCliente": "sniper",
+      "itens": [],
+      "preco": 235,
+      "endereco": "Rua dos Buritis, 13 - Vila Parque Jabaquara",
+      "cpf": "479.765.218-70",
+      "observacao": "uma observação do meu pedido",
+      "numeroPedido": 19,
+      "horario": "2024-11-01T19:47:37.958Z",
+      "status": "aguardando entrega",
+      "tempo": "0 min",
       "entregador": ""
     }
   ],

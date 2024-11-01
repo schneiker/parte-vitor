@@ -8,13 +8,16 @@ import { PedidoService } from '../pedido.service';
 import { NgClass, CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { InserirNomeComponent } from '../inserir-nome/inserir-nome.component';
+import { Location } from '@angular/common';
+import { PedidosService } from '../../services/pedidos.service';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-tela-cliente-finalizar-pedido',
   standalone: true,
-  imports: [MatIcon, NgClass, CommonModule, FormsModule],
+  imports: [MatIcon, NgClass, CommonModule, FormsModule, CurrencyPipe],
   templateUrl: './tela-cliente-finalizar-pedido.component.html',
-  styleUrl: './tela-cliente-finalizar-pedido.component.css'
+  styleUrls: ['./tela-cliente-finalizar-pedido.component.css']
 })
 export class TelaClienteFinalizarPedidoComponent implements OnInit {
   enderecoSalvo: any = null;
@@ -29,14 +32,18 @@ export class TelaClienteFinalizarPedidoComponent implements OnInit {
   constructor(
     private dialog: MatDialog,
     private router: Router,
-    private pedidoService: PedidoService
+    private pedidoService: PedidoService,
+    private location: Location,
+    private pedidosService: PedidosService
   ) {}
 
   ngOnInit(): void {
-    this.subtotal = this.pedidoService.getSubtotal();
+    this.pedidoService.atualizarSubtotal(); 
+    this.subtotal = this.pedidoService.getSubtotal(); 
     console.log('Subtotal obtido:', this.subtotal);
     this.calcularTotal();
   }
+  
 
   abrirDialogoInserirNome(): void {
     const dialogRef = this.dialog.open(InserirNomeComponent, {
@@ -78,11 +85,7 @@ export class TelaClienteFinalizarPedidoComponent implements OnInit {
   }
 
   verificarCampos(): void {
-    if (this.cpfSalvo && this.enderecoSalvo && this.nomeSalvo) {
-      this.isButtonEnabled = true;
-    } else {
-      this.isButtonEnabled = false;
-    }
+    this.isButtonEnabled = !!(this.cpfSalvo && this.enderecoSalvo && this.nomeSalvo);
   }
 
   calcularTotal(): void {
@@ -93,11 +96,11 @@ export class TelaClienteFinalizarPedidoComponent implements OnInit {
     if (this.isButtonEnabled) {
       const novoPedido = {
         nomeCliente: this.nomeSalvo,
-        itens: [],
+        itens: [], 
         preco: this.total,
         endereco: `${this.enderecoSalvo.logradouro}, ${this.enderecoSalvo.numero} - ${this.enderecoSalvo.bairro}`,
         cpf: this.cpfSalvo,
-        observacao: this.observacao
+        observacao: this.observacao,
       };
 
       this.pedidoService.fazerPedido(novoPedido).subscribe(() => {
@@ -108,7 +111,11 @@ export class TelaClienteFinalizarPedidoComponent implements OnInit {
 
   ajustarAltura(event: Event): void {
     const textarea = event.target as HTMLTextAreaElement;
-    textarea.style.height = 'auto'; // Reseta a altura para calcular o scrollHeight
-    textarea.style.height = `${textarea.scrollHeight}px`; // Define a altura conforme o conteúdo
+    textarea.style.height = 'auto';
+    textarea.style.height = `${textarea.scrollHeight}px`;
+  }
+
+  voltar() {
+    this.location.back();
   }
 }

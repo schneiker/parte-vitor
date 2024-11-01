@@ -2,16 +2,17 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
+import { PedidosService } from '../services/pedidos.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PedidoService {
   private apiUrl = 'http://localhost:3000/pedidos';
-  private subtotal: number = 100;
+  private subtotal: number = 0;
 
-  constructor(private http: HttpClient) {
-    this.simularPedidoFicticio();
+  constructor(private http: HttpClient, private pedidosService: PedidosService) {
+    this.atualizarSubtotal();
   }
 
   setSubtotal(subtotal: number): void {
@@ -21,6 +22,13 @@ export class PedidoService {
 
   getSubtotal(): number {
     return this.subtotal;
+  }
+
+  atualizarSubtotal(): void {
+    this.pedidosService.getCartItems().subscribe(items => {
+      const subtotalCalculado = items.reduce((sum, item) => sum + (item.price || 0), 0);
+      this.setSubtotal(subtotalCalculado);
+    });
   }
 
   simularPedidoFicticio(): void {
