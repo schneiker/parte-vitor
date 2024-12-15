@@ -1,0 +1,67 @@
+.pedido-container {
+    background-color: #1f2027;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ocupa toda a altura da tela */
+    box-sizing: border-box; /* Garante que o padding seja incluído na altura */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#botao-voltar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    flex: 1;
+}
+
+.status-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+}
+
+.line {
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.completed {
+    background-color: #00ff1e; /* Verde para indicar completado */
+}
+
+.status-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

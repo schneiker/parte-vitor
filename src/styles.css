@@ -1,6 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
-*  {
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #1D2126;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: var(--fundo-telas);
 }
+
+:root {
+    --fundo: #1F2027;
+    --vermelho-figma: #D32E2E;
+    --branco-figma: #fff;
+    --amarelo-figma: #E8BB2D;
+    --laranja-figma: #FF9A00;
+    --verde-figma: #4CB24A;
+    --cinza-figma: #455A64;
+    --cinza-texto: #4D4D4D;
+    --preto-texto: #000;
+    --branco-texto: #fff;
+    --verde-entregador-disponivel: #00FF1E;
+    --cinza-texto-fundo: #474F5A;
+    --cinza-botao-inativo: #818D9F;
+    --fundo-telas: #25262D;
+    --pedido-nao-aceito: #455A64;
+}
+
+html, body { height: 100%; }
+body { margin: 0; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -53,4 +53,12 @@ export class CarrinhoComponent implements OnInit {
   voltar() {
     this.location.back();
   }
+
+  finalizarPedido() {
+    this.router.navigate(['finalizar-pedido']);
+  }
+
+  getSubtotal(): number {
+    return this.pedidosService.getSubtotal(); 
+  }
 }

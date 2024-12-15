@@ -1,0 +1,67 @@
+<section>
+  <header>
+      <button (click)="voltar()" id="botao-seta-voltar">
+          <mat-icon>arrow_back_ios</mat-icon>
+      </button>
+      <h1>Finalize seu pedido</h1>
+  </header>
+
+  <div class="forms">
+      <form>
+          <input type="text" class="forms-pessoais"
+                 placeholder="Inserir Nome"
+                 [value]="nomeSalvo || ''"
+                 (click)="abrirDialogoInserirNome()" readonly>
+      </form>
+      <form>
+          <input type="text" class="forms-pessoais"
+                 placeholder="Inserir CPF"
+                 [value]="cpfSalvo || ''"
+                 (click)="abrirDialogCpf()" readonly>
+      </form>
+      <form>
+          <input type="text" class="forms-pessoais"
+                 placeholder="Inserir Endereço"
+                 [value]="enderecoSalvo ? enderecoSalvo.logradouro + ', ' + enderecoSalvo.numero + ' - ' + enderecoSalvo.bairro : ''"
+                 (click)="abrirDialogoInserirEndereco()" readonly>
+      </form>
+  </div>
+
+  <div id="valores">
+      <h2>Resumo de valores</h2>
+      <hr />
+      <div class="resumo-de-valores">
+          <div>
+              <p>Subtotal</p>
+              <p>Taxa de entrega</p>
+              <p>Total</p>
+          </div>
+          <div>
+              <p>{{ subtotal | currency:'BRL' }}</p>
+              <p>{{ taxaEntrega | currency:'BRL' }}</p>
+              <p>{{ total | currency:'BRL' }}</p>
+          </div>
+      </div>
+  </div>
+
+  <div id="pagamento">
+      <h2>Pagamento</h2>
+      <hr/>
+      <p id="texto">Realizar no ato da entrega</p>
+  </div>
+
+  <div id="observacao">
+      <h3>Observação no pedido?</h3>
+      <form>
+          <textarea class="forms-observacao" placeholder="Digite aqui" [(ngModel)]="observacao" name="observacao" (input)="ajustarAltura($event)"></textarea>
+      </form>
+  </div>
+
+  <div class="container">
+      <button 
+          [ngClass]="{'active-button': isButtonEnabled, 'inactive-button': !isButtonEnabled}"
+          [disabled]="!isButtonEnabled"
+          (click)="navegarParaOutroComponente()"
+          id="botao-fazer-pedido">Fazer o pedido</button>
+  </div>
+</section>

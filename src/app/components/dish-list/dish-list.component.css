@@ -1,3 +1,10 @@
+*  {
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1D2126;
+}
+
+
 header {
    
     margin: auto;
@@ -32,6 +39,7 @@ body {
     text-align: center;
     font-family: "Mulish", sans-serif;
     color: #ffff;
+    text-transform: capitalize;
 }
 #editar{
     border: none;
@@ -160,16 +168,7 @@ input:checked + .slider:before {
     top: 52px;
     left: 300px;
 }
-.menu  {
 
-    /* align-items: flex-start;
-    justify-content: space-between;
-    margin: auto;
-    padding-bottom: 20px;
-    max-width: 414px;
-    max-height: auto;
-    display: flex; */
-}
 
 .menu  {
     justify-content: space-between;

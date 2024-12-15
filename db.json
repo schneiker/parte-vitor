@@ -1,9 +1,5 @@
 {
-
-  "finalizados": [
-    
-  ],
-
+  "finalizados": [],
   "cart": [
     {
       "id": "12",
@@ -20,25 +16,41 @@
       "price": 50,
       "image": "https://s2-receitas.glbimg.com/tHeJvrKQVeIin3PTeGf6AaUcbag=/0x0:1280x805/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/9/E/l4TseUQAqVp32qAFW2AQ/bife-a-cavalo.jpeg",
       "category": "executivos"
+    },
+    {
+      "id": "9",
+      "name": "Salada Caesar",
+      "description": "Salada com alface, croutons e molho Caesar.",
+      "price": 30,
+      "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
+      "category": "executivos"
+    },
+    {
+      "id": "9",
+      "name": "Salada Caesar",
+      "description": "Salada com alface, croutons e molho Caesar.",
+      "price": 30,
+      "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
+      "category": "executivos"
+    },
+    {
+      "id": "9",
+      "name": "Salada Caesar",
+      "description": "Salada com alface, croutons e molho Caesar.",
+      "price": 30,
+      "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
+      "category": "executivos"
+    },
+    {
+      "id": "9",
+      "name": "Salada Caesar",
+      "description": "Salada com alface, croutons e molho Caesar.",
+      "price": 30,
+      "image": "https://assets.unileversolutions.com/recipes-v2/179515.jpg",
+      "category": "executivos"
     }
   ],
   "dishes": [
-    {
-      "id": "4",
-      "name": "Cerveja Artesanal",
-      "description": "Cerveja artesanal feita com ingredientes selecionados.",
-      "price": 12,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobh2ySv1Tb8IQ__Fgq1nt97xXljAWcc7Klg&s",
-      "category": "bebidas"
-    },
-    {
-      "id": "5",
-      "name": "Cerveja Artesanal",
-      "description": "Cerveja artesanal feita com ingredientes selecionados.",
-      "price": 12,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobh2ySv1Tb8IQ__Fgq1nt97xXljAWcc7Klg&s",
-      "category": "porcoes"
-    },
     {
       "id": "6",
       "name": "Risoto de Camarão",
@@ -190,6 +202,378 @@
       "price": 30,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdemp57aT-TAwNYZUcgjULmzpIe6wtAFtAUw&s",
       "category": "executivos"
+    },
+    {
+      "id": "45353",
+      "name": "teste",
+      "description": "rtyr",
+      "price": 35,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz_fVou6yoSlq9Djxe9pNq-21LWCQe_coc6Q&s",
+      "category": "executivos"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": "1",
+      "nomeCliente": "mário",
+      "itens": [
+        {
+          "nomePrato": "lasanha",
+          "descricao": "· carne com queijo",
+          "observacao": "· sem ervilha"
+        },
+        {
+          "nomePrato": "salmão grelhado",
+          "descricao": "· aspargo ao vapor",
+          "observacao": "· sem molho de manteiga"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 69.98,
+      "horario": "2024-10-24T18:40:00.000Z",
+      "status": "pedido finalizado",
+      "numeroPedido": 1,
+      "tempo": "7515 min",
+      "entregador": "Hugo Prado",
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13"
+    },
+    {
+      "id": "2",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-24T18:45:00.000Z",
+      "status": "em preparo",
+      "numeroPedido": 2,
+      "tempo": "1398 min"
+    },
+    {
+      "id": "3",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-24T18:45:00.000Z",
+      "status": "pedido enviado para entrega",
+      "numeroPedido": 3,
+      "tempo": "1398 min",
+      "entregador": ""
+    },
+    {
+      "id": "4",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-24T18:25:00.000Z",
+      "status": "pedido enviado para entrega",
+      "numeroPedido": 4,
+      "tempo": "1492 min",
+      "entregador": ""
+    },
+    {
+      "id": "5",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-24T18:45:00.000Z",
+      "status": "aguardando entrega",
+      "numeroPedido": 5,
+      "tempo": "3187 min",
+      "entregador": "Geraldo Cruz"
+    },
+    {
+      "id": "6",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-25T18:52:15.454Z",
+      "status": "aguardando entrega",
+      "numeroPedido": 6,
+      "tempo": "1628 min",
+      "entregador": "Claudinei Santos"
+    },
+    {
+      "id": "7",
+      "nomeCliente": "joão",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-24T18:58:57.905Z",
+      "status": "aguardando entrega",
+      "numeroPedido": 7,
+      "tempo": "3062 min",
+      "entregador": ""
+    },
+    {
+      "id": "8",
+      "nomeCliente": "ana",
+      "itens": [
+        {
+          "nomePrato": "tilápia com limão",
+          "descricao": "· peixe sem espinhas",
+          "observacao": "· sem espinhas"
+        },
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 29.99,
+      "horario": "2024-10-25T19:17:29.212Z",
+      "status": "aguardando entrega",
+      "numeroPedido": 8,
+      "tempo": "166 min",
+      "entregador": "Claudinei Santos"
+    },
+    {
+      "id": "9",
+      "nomeCliente": "Kauan Batista",
+      "itens": [
+        {
+          "nomePrato": "salmão frito",
+          "descricao": "· aspargo com molho",
+          "observacao": "· sem molho de amendoim"
+        }
+      ],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13",
+      "observacao": "sem maionese",
+      "numeroPedido": 9,
+      "horario": "2024-10-26T21:59:40.709Z",
+      "status": "pedido finalizado",
+      "tempo": "5 min",
+      "entregador": "Claudinei Santos"
+    },
+    {
+      "id": "10",
+      "nomeCliente": "Gustavo Sobrinho",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "258.189.438-52",
+      "observacao": "sem batatinha",
+      "numeroPedido": 10,
+      "horario": "2024-10-26T22:30:59.298Z",
+      "status": "pedido enviado para entrega",
+      "tempo": "0 min",
+      "entregador": "Hugo Prado"
+    },
+    {
+      "id": "11",
+      "nomeCliente": "Kayque",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13",
+      "observacao": "",
+      "numeroPedido": 11,
+      "horario": "2024-10-26T22:22:11.927Z",
+      "status": "aguardando entrega",
+      "tempo": "0 min",
+      "entregador": ""
+    },
+    {
+      "id": "12",
+      "nomeCliente": "Mariana",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13",
+      "observacao": "",
+      "numeroPedido": 12,
+      "horario": "2024-10-26T22:24:50.692Z",
+      "status": "pedido finalizado",
+      "tempo": "0 min",
+      "entregador": "Geraldo Cruz"
+    },
+    {
+      "id": "13",
+      "nomeCliente": "Vitor",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua José Martins de Araújo, 13 - Jardim Marmarita",
+      "cpf": "479.765.218-70",
+      "observacao": "bfsdhbvgdsbkjvdfbdfbfd gnkjn jkaeb j befwd nfkjebwkj bnwb wkb whjb b wbk wbk bkjb kjb kb kjb jb jb kjb k bkb jb kb kb k bkb ",
+      "numeroPedido": 13,
+      "horario": "2024-10-27T18:50:05.022Z",
+      "status": "pedido finalizado",
+      "tempo": "0 min",
+      "entregador": "Hugo Prado"
+    },
+    {
+      "id": "14",
+      "nomeCliente": "Thayna",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "471.711.778-66",
+      "observacao": "sem maionese",
+      "numeroPedido": 14,
+      "horario": "2024-10-29T00:29:19.597Z",
+      "status": "pedido finalizado",
+      "tempo": "11 min",
+      "entregador": "Hugo Prado"
+    },
+    {
+      "id": "15",
+      "nomeCliente": "Gustavo",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13",
+      "observacao": "sem maionese",
+      "numeroPedido": 15,
+      "horario": "2024-10-29T00:47:07.853Z",
+      "status": "pedido finalizado",
+      "tempo": "0 min",
+      "entregador": "Geraldo Cruz"
+    },
+    {
+      "id": "16",
+      "nomeCliente": "julia",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua Rainha Maria Stuart, 139 - Vila Regina",
+      "cpf": "490.883.748-13",
+      "observacao": "sem maionese",
+      "numeroPedido": 16,
+      "horario": "2024-10-30T00:33:02.321Z",
+      "status": "pedido enviado para entrega",
+      "tempo": "0 min",
+      "entregador": "Claudinei Santos"
+    },
+    {
+      "id": "17",
+      "nomeCliente": "teste-vitor",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua José Martins de Araújo, 13 - Jardim Marmarita",
+      "cpf": "479.765.218-70",
+      "observacao": "",
+      "numeroPedido": 17,
+      "horario": "2024-11-01T18:07:51.808Z",
+      "status": "aguardando entrega",
+      "tempo": "100 min",
+      "entregador": ""
+    },
+    {
+      "id": "18",
+      "nomeCliente": "NDA ITALIAN COFFEE",
+      "itens": [],
+      "preco": 115,
+      "endereco": "Rua dos Buritis, 2 - Vila Parque Jabaquara",
+      "cpf": "479.765.218-70",
+      "observacao": "tirar cebola",
+      "numeroPedido": 18,
+      "horario": "2024-11-01T19:16:39.234Z",
+      "status": "aguardando entrega",
+      "tempo": "32 min",
+      "entregador": ""
+    },
+    {
+      "id": "19",
+      "nomeCliente": "sniper",
+      "itens": [],
+      "preco": 235,
+      "endereco": "Rua dos Buritis, 13 - Vila Parque Jabaquara",
+      "cpf": "479.765.218-70",
+      "observacao": "uma observação do meu pedido",
+      "numeroPedido": 19,
+      "horario": "2024-11-01T19:47:37.958Z",
+      "status": "aguardando entrega",
+      "tempo": "0 min",
+      "entregador": ""
+    }
+  ],
+  "entregadores": [
+    {
+      "id": "1",
+      "nome": "Hugo Prado",
+      "status": "disponível",
+      "cpf": "494.785.860-50"
+    },
+    {
+      "id": "2",
+      "nome": "Geraldo Cruz",
+      "status": "disponível",
+      "cpf": "077.459.370-94"
+    },
+    {
+      "id": "3",
+      "nome": "Claudinei Santos",
+      "status": "disponível",
+      "cpf": "290.664.810-80"
     }
   ]
 }
